@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Soulesidibe</title>
+ <link href="http://soulesidibe.github.com/atom.xml" rel="self"/>
+ <link href="http://soulesidibe.github.com/"/>
+ <updated>2014-03-30T02:57:10+00:00</updated>
+ <id>http://soulesidibe.github.com</id>
+ <author>
+   <name>Souleymane Sidibe</name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>Introducing Poole</title>
+   <link href="http://soulesidibe.github.com/2014/01/02/introducing-poole/"/>
+   <updated>2014-01-02T00:00:00+00:00</updated>
+   <id>http://soulesidibe.github.com/2014/01/02/introducing-poole</id>
+   <content type="html">&lt;p&gt;&lt;em&gt;The Strange Case of Dr. Jeykll and Mr. Hyde&lt;/em&gt; tells the story of a lawyer investigating the connection of two persons, Dr. Henry Jekyll and Mr. Edward Hyde. Chief among the novel&amp;#39;s supporting cast is a man by the name of Mr. Poole, Dr. Jekyll&amp;#39;s loyal butler.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Poole is the butler for &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;, the static site generator. It&amp;#39;s designed and developed by &lt;a href=&quot;https://twitter.com/mdo&quot;&gt;@mdo&lt;/a&gt; to provide a clear and concise foundational setup for any Jekyll site. It does so by furnishing a full vanilla Jekyll install with example templates, pages, posts, and styles.&lt;/p&gt;
+
+&lt;p&gt;There are currently two themes built on Poole:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://hyde.getpoole.com&quot;&gt;Hyde&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://lanyon.getpoole.com&quot;&gt;Lanyon&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Learn more and contribute on &lt;a href=&quot;https://github.com/poole&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;What&amp;#39;s included&lt;/h3&gt;
+
+&lt;p&gt;Poole is a streamlined Jekyll site designed and built as a foundation for building more meaningful themes. Poole, and every theme built on it, includes the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Complete Jekyll setup included (layouts, config, &lt;a href=&quot;/404&quot;&gt;404&lt;/a&gt;, &lt;a href=&quot;/atom.xml&quot;&gt;RSS feed&lt;/a&gt;, posts, and &lt;a href=&quot;/about&quot;&gt;example page&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Mobile friendly design and development&lt;/li&gt;
+&lt;li&gt;Easily scalable text and component sizing with &lt;code&gt;rem&lt;/code&gt; units in the CSS&lt;/li&gt;
+&lt;li&gt;Support for a wide gamut of HTML elements&lt;/li&gt;
+&lt;li&gt;Related posts (time-based, because Jekyll) below each post&lt;/li&gt;
+&lt;li&gt;Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Additional features are available in individual themes.&lt;/p&gt;
+
+&lt;h3&gt;Browser support&lt;/h3&gt;
+
+&lt;p&gt;Poole and it&amp;#39;s themes are by preference a forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), and Firefox, it is only compatible with Internet Explorer 9 and above.&lt;/p&gt;
+
+&lt;h3&gt;Download&lt;/h3&gt;
+
+&lt;p&gt;Poole is developed on and hosted with GitHub. Head to the &lt;a href=&quot;https://github.com/poole/poole&quot;&gt;GitHub repository&lt;/a&gt; for downloads, bug reports, and features requests.&lt;/p&gt;
+
+&lt;p&gt;Thanks!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Example content</title>
+   <link href="http://soulesidibe.github.com/2014/01/01/example-content/"/>
+   <updated>2014-01-01T00:00:00+00:00</updated>
+   <id>http://soulesidibe.github.com/2014/01/01/example-content</id>
+   <content type="html">&lt;div class=&quot;message&quot;&gt;
+  Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
+&lt;/div&gt;
+
+&lt;p&gt;Cum sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Etiam porta &lt;strong&gt;sem malesuada magna&lt;/strong&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt;
+
+&lt;h2&gt;Inline HTML elements&lt;/h2&gt;
+
+&lt;p&gt;HTML defines a long list of available inline tags, a complete list of which can be found on the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element&quot;&gt;Mozilla Developer Network&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;To bold text&lt;/strong&gt;, use &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;To italicize text&lt;/em&gt;, use &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Abbreviations, like &lt;abbr title=&quot;HyperText Markup Langage&quot;&gt;HTML&lt;/abbr&gt; should use &lt;code&gt;&amp;lt;abbr&amp;gt;&lt;/code&gt;, with an optional &lt;code&gt;title&lt;/code&gt; attribute for the full phrase.&lt;/li&gt;
+&lt;li&gt;Citations, like &lt;cite&gt;&amp;mdash; Mark otto&lt;/cite&gt;, should use &lt;code&gt;&amp;lt;cite&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Deleted&lt;/del&gt; text should use &lt;code&gt;&amp;lt;del&amp;gt;&lt;/code&gt; and &lt;ins&gt;inserted&lt;/ins&gt; text should use &lt;code&gt;&amp;lt;ins&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Superscript &lt;sup&gt;text&lt;/sup&gt; uses &lt;code&gt;&amp;lt;sup&amp;gt;&lt;/code&gt; and subscript &lt;sub&gt;text&lt;/sub&gt; uses &lt;code&gt;&amp;lt;sub&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Most of these elements are styled by browsers with few modifications on our part.&lt;/p&gt;
+
+&lt;h2&gt;Heading&lt;/h2&gt;
+
+&lt;p&gt;Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.&lt;/p&gt;
+
+&lt;h3&gt;Code&lt;/h3&gt;
+
+&lt;p&gt;Cum sociis natoque penatibus et magnis dis &lt;code&gt;code element&lt;/code&gt; montes, nascetur ridiculus mus.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// Example can be run directly in your JavaScript console&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Create a function that takes two arguments and returns the sum of those arguments&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;adder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;a&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;b&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;return a + b&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Call the function&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;adder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// &amp;gt; 8&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.&lt;/p&gt;
+
+&lt;h3&gt;Gists via GitHub Pages&lt;/h3&gt;
+
+&lt;p&gt;Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/5555251.js?file=gist.md&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper.&lt;/p&gt;
+
+&lt;h3&gt;Lists&lt;/h3&gt;
+
+&lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Praesent commodo cursus magna, vel scelerisque nisl consectetur et.&lt;/li&gt;
+&lt;li&gt;Donec id elit non mi porta gravida at eget metus.&lt;/li&gt;
+&lt;li&gt;Nulla vitae elit libero, a pharetra augue.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Vestibulum id ligula porta felis euismod semper.&lt;/li&gt;
+&lt;li&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/li&gt;
+&lt;li&gt;Maecenas sed diam eget risus varius blandit sit amet non magna.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;HyperText Markup Language (HTML)&lt;/dt&gt;
+  &lt;dd&gt;The language used to describe and define the content of a Web page&lt;/dd&gt;
+
+  &lt;dt&gt;Cascading Style Sheets (CSS)&lt;/dt&gt;
+  &lt;dd&gt;Used to describe the appearance of Web content&lt;/dd&gt;
+
+  &lt;dt&gt;JavaScript (JS)&lt;/dt&gt;
+  &lt;dd&gt;The programming language used to build advanced Web sites and applications&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/p&gt;
+
+&lt;h3&gt;Tables&lt;/h3&gt;
+
+&lt;p&gt;Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      &lt;th&gt;Upvotes&lt;/th&gt;
+      &lt;th&gt;Downvotes&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Totals&lt;/td&gt;
+      &lt;td&gt;21&lt;/td&gt;
+      &lt;td&gt;23&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Alice&lt;/td&gt;
+      &lt;td&gt;10&lt;/td&gt;
+      &lt;td&gt;11&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Bob&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Charlie&lt;/td&gt;
+      &lt;td&gt;7&lt;/td&gt;
+      &lt;td&gt;9&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Want to see something else added? &lt;a href=&quot;https://github.com/poole/poole/issues/new&quot;&gt;Open an issue.&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>What's Jekyll?</title>
+   <link href="http://soulesidibe.github.com/2013/12/31/whats-jekyll/"/>
+   <updated>2013-12-31T00:00:00+00:00</updated>
+   <id>http://soulesidibe.github.com/2013/12/31/whats-jekyll</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From &lt;a href=&quot;https://github.com/jekyll/jekyll/blob/master/README.markdown&quot;&gt;the project&amp;#39;s readme&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Jekyll is a simple, blog aware, static site generator. It takes a template directory [...] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It&amp;#39;s an immensely useful tool and one we encourage you to use here with Hyde.&lt;/p&gt;
+
+&lt;p&gt;Find out more by &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;visiting the project on GitHub&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>L’injection de dépendances:roboguice</title>
+   <link href="http://soulesidibe.github.com/2013/11/10/Linjection-de-dependances-roboguice/"/>
+   <updated>2013-11-10T00:00:00+00:00</updated>
+   <id>http://soulesidibe.github.com/2013/11/10/Linjection-de-dependances-roboguice</id>
+   <content type="html">&lt;p&gt;Je ne vais pas vous faire un cours sur l’injection de dépendances en java. Il y a de très bons livres 
+et de bonnes ressources sur le net. 
+Mais ce que je peux vous dire en gros, l’injection de dépendances va nous permettre de manager nos objects, 
+nos classes en vu d’un code plus claire et maintenable. 
+Pour vous donner un exemple de ce qu’on peut faire avec, on a l’habitude de faire ceci pour instancier 
+une view: &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;findViewById&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;button&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Avec de l’injection de dépendances on aura qu’à faire ceci: &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@InjectView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;button&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;button&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Pas mal non? :D 
+Donc comme je l’ai dit ça va grandement simplifier notre code java.&lt;/p&gt;
+
+&lt;h2&gt;Comment faire de l’injection de dépendances&lt;/h2&gt;
+
+&lt;p&gt;Comme d’habitude dans le monde java, il existe un bon paquet de librairies open source pour nous 
+simplifier la vie. On aura pas besoin d’implémenter nous même notre système d’injection de 
+dépendances. On peut qu’en même retenir les types d’injections de dépendances qui existent:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;l’injection par constructeur &lt;/li&gt;
+&lt;li&gt;l’injection par interface &lt;/li&gt;
+&lt;li&gt;l’injection par mutateur &lt;/li&gt;
+&lt;li&gt;l’injection par champ &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pour plus de détails je vous renvoie vers &lt;a href=&quot;http://www-igm.univ-mlv.fr/%7Edr/XPOSE2010/guicespring/di_presentation.html&quot;&gt;ce lien&lt;/a&gt; qui explique assez clairement les choses… &lt;/p&gt;
+
+&lt;h2&gt;Roboguice&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;RoboGuice is a framework that brings the simplicity and ease of Dependency Injection to Android, using Google’s own Guice library. If you’ve ever used Spring (the #1 enterprise framework on Java, now more popular than J2EE itself) or Guice, you already know how convenient this style of programming can be.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Définition tirée du wiki du framework. 
+En résumé(ou pour traduire), roboguice permet d’adapter le framework d’injection de dépendances 
+&lt;strong&gt;Google Guice&lt;/strong&gt; au monde android tout en y ajoutant des subtilités dues au cycle de vie particulier 
+d’une application android.
+Voici une liste non exhaustive des fonctionnalités de roboguice: &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;L’injection de view (@InjectView)&lt;/li&gt;
+&lt;li&gt;l’injection de ressources(@InjectResource)&lt;/li&gt;
+&lt;li&gt;l’injection de service(par exemple pour NotificationManager, on aura @Inject NoificationManager notifManager;)&lt;/li&gt;
+&lt;li&gt;l’injection de pojo&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;et bien d’autres bonnes choses…&lt;/p&gt;
+
+&lt;h2&gt;Comment ça marche&lt;/h2&gt;
+
+&lt;p&gt;Je vais vous montrer quelques fonctionnalités de roboguice. Le code est disponible sur github(see below…)
+On commence par se faire un petit projet dans android studio(regarde ceci si tu n’utilise pas encore l’IDE).
+Je suppose que vous êtes prêt  donc allons-y! &lt;/p&gt;
+
+&lt;p&gt;NB: &lt;em&gt;Le projet que j’utilise a pour min SDK API 14 et pour target API 19 raison pour laquelle je n’ai pas pu injecter de view dans des fragments. Roboguice ne supportant pour le moment que la class Fragment du support V4.&lt;/em&gt; &lt;/p&gt;
+
+&lt;p&gt;Ajout de la dépendances dans le fichier build.gradle: &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;groovy&quot;&gt;&lt;span class=&quot;n&quot;&gt;dependencies&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;compile&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;org.roboguice:roboguice:2.0&amp;#39;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Dans votre activity, vous devez hériter de RoboActivity à la place de Activity. Jettez un coup d’oeil 
+dans le package &lt;strong&gt;roboguice.activity&lt;/strong&gt; pour voir un peu les types d’activity disponibles.&lt;/p&gt;
+
+&lt;p&gt;Voici à quoi ressemble mon fichier layout. C’est un simple écran de connexion avec deux EditText 
+et un Button de connexion: &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;RelativeLayout&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xmlns:android=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;xmlns:tools=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://schemas.android.com/tools&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;match_parent&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;match_parent&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;tools:context=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;.MainActivity&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;EditText&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;@+id/edt_name&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:singleLine=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;true&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:hint=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;@string/str_login_name&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;wrap_content&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;wrap_content&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_centerVertical=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;true&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_alignParentRight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;true&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_alignParentLeft=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;true&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;EditText&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:singleLine=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;true&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;@+id/edt_passwd&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:inputType=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;textPassword&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:hint=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;@string/str_login_name&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;wrap_content&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;wrap_content&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_marginTop=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;30dp&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_below=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;@+id/edt_name&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_alignParentLeft=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;true&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_alignParentRight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;true&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;Button&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;@+id/btn_connect&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:text=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;@string/str_button_signin&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;wrap_content&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;wrap_content&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_alignParentBottom=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;true&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_alignParentRight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;true&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_alignParentLeft=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;true&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/RelativeLayout&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Ma class MainActivity.java: &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MainActivity&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RoboActivity&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;nd&quot;&gt;@InjectView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;edt_name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;EditText&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;@InjectView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;edt_passwd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;EditText&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;passwd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;@InjectView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;btn_connect&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;signin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;nd&quot;&gt;@InjectResource&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;str_welcome&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;welcome&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onCreate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Bundle&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;savedInstanceState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+         &lt;span class=&quot;kd&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;onCreate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;savedInstanceState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+         &lt;span class=&quot;n&quot;&gt;setContentView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;activity_main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+         &lt;span class=&quot;n&quot;&gt;signin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setOnClickListener&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;View&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;OnClickListener&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+         &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+             &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onClick&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                 &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;strName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot; &amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+                 &lt;span class=&quot;n&quot;&gt;Toast&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;makeText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MainActivity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;welcome&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;strName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Toast&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;LENGTH_SHORT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+             &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;
+   &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ 
+
+&lt;p&gt;That’s it! C’est super simple à utiliser. Il ne faut juste pas oublier qu’on utilise &lt;strong&gt;RoboActivity&lt;/strong&gt; 
+à la place de Activity! Sinon, on se retouve avec des java.lang.NullPointerException!
+Regardons un peu notre méthode onCreate(). Elle s’est grandement simplifiée. Et il faut reconnaitre 
+que ce code ci-dessus est plus facile à lire et à maintenir que si on devait faire ceci: &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MainActivity&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Activity&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EditText&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EditText&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;passwd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;signin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onCreate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Bundle&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;savedInstanceState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;onCreate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;savedInstanceState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;setContentView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;activity_main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;EditText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;findViewById&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;edt_name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;passwd&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;EditText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;findViewById&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;edt_passwd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;signin&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;findViewById&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;btn_connect&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;welcome&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getResources&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;str_welcome&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+        &lt;span class=&quot;n&quot;&gt;signin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setOnClickListener&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;View&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;OnClickListener&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+            &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onClick&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;){&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;strName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot; &amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;Toast&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;makeText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MainActivity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;welcome&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;strName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Toast&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;LENGTH_SHORT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ 
+
+&lt;p&gt;Vous êtes convaincus? Non? Bon voici quelques exemples d’applications utilisant Roboguice:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Facebook Messenger&lt;/li&gt;
+&lt;li&gt;Pulse&lt;/li&gt;
+&lt;li&gt;Swiftkey&lt;/li&gt;
+&lt;li&gt;Google Docs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pas mal non?
+Bon la librairie n’est pas parfaite non plus. Ce que je n’ai pas aimé:&lt;/p&gt;
+
+&lt;p&gt;Si on utilise des fragments et qu’on a comme minSDKVersion 14, on ne peut tout simplement pas faire d’injections dans un fragment. La raison est que la classe RoboFragment, fournie, utilise android.support.v4.app.Fragment.
+Le non support de l’ActionBarCompat
+Heureusement que ces soucis seront corrigés dans les prochaines release! &lt;/p&gt;
+
+&lt;h2&gt;Alternative à Roboguice&lt;/h2&gt;
+
+&lt;p&gt;Il existe d’autres solutions pour faire de l’injection de dépendances. Je vais en citer deux!&lt;/p&gt;
+
+&lt;h3&gt;Dagger&lt;/h3&gt;
+
+&lt;p&gt;C’est une solution issue des labos de la célébre startup square. Elle permet d&amp;#39;injecter tout ce que l&amp;#39;on veut
+dans notre application. Pas uniquement des vues.
+Pour plus d’informations &lt;a href=&quot;http://square.github.io/dagger/&quot;&gt;le site officiel&lt;/a&gt; &lt;/p&gt;
+
+&lt;h3&gt;AndroidAnnotation&lt;/h3&gt;
+
+&lt;p&gt;Je pourrai écrire un post sur ce framework tellement il y a des choses à dire. Déjà le but de cette 
+librairie d’après les concepteurs:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;We want to facilitate the writing and the maintenance of Android applications.
+ We believe that simple code with clear intents is the best way to achieve those goals. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Pour atteindre leurs objectifs, on n’y trouve évidemment de l’injection de dépendances. Avec de simples annotations, 
+on peut faire des appels &lt;strong&gt;REST&lt;/strong&gt;, exécuter du code en background, mettre en place des listeners avec &lt;em&gt;@Click&lt;/em&gt;, etc. 
+Autre point fort, il supporte RoboGuice :). 
+Un truc sympa avec android annotation, supposons qu’on ait une vue avec comme id, &lt;em&gt;@+id/signin&lt;/em&gt;. Pour la récupérer dans le code il suffit de faire:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@ViewById&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ListView&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;signin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Pas besoin de lui spécifier l’id comme avec Roboguice. Il fera le mapping avec R.id.signin tout seul :).&lt;/p&gt;
+
+&lt;p&gt;Voila voila!
+Si vous avez ce souci de vouloir toujours un code plus propre et maintenable, je vous conseille vivement 
+de revoir Roboguice ou plus généralement l’injection de dépendances.
+Le petit exemple de prise en main est dispo sur &lt;a href=&quot;https://github.com/soulesidibe/roboguicesample&quot;&gt;github&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Nexus 5, Android kitkat et Android Studio 0.3.2</title>
+   <link href="http://soulesidibe.github.com/2013/11/01/Nexus-5-Android-kitkat-et-Android-Studio-0-3-2/"/>
+   <updated>2013-11-01T00:00:00+00:00</updated>
+   <id>http://soulesidibe.github.com/2013/11/01/Nexus-5-Android-kitkat-et-Android-Studio-0-3-2</id>
+   <content type="html">&lt;p&gt;Hier on a eu droit à un bon paquet de nouveautés dans le monde merveilleux d’android.
+Je vais essayer de revoir ce qui s’est passé :). &lt;/p&gt;
+
+&lt;h2&gt;Nexus 5&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://soulesidibe.files.wordpress.com/2013/11/lg-nexus-5-photo.png&quot; alt=&quot;nexus5&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Enfin! 
+Depuis un bon moment on nous parle de ce nouveau nexus sur les sites spécialisés. Il est là! Et il est beau! 
+La première chose qui frappe c’est la taille de la bête; un écran de 5 pouces(4.95&amp;quot; en réalité) full HD équipé 
+de la dernière version d’android(on en parle en bas). 
+Point important, il est 4G! Comme tous les smartphones récemment sortis. Pour plus de détails c’est ici ==&amp;gt; &lt;a href=&quot;http://www.google.fr/nexus/5/&quot;&gt;Page officielle&lt;/a&gt;. 
+Ayant un &lt;strong&gt;#nexus4&lt;/strong&gt;, quand je revois les spécifications techniques du &lt;strong&gt;#nexus5&lt;/strong&gt;, je me dis que c’est juste 
+une mise à jour du matériel avec un meilleur capteur photo, la 4G et un sublime écran. 
+Perso avoir un smartphone de 5 pouces ne me tente pas vraiment même si je pense que c’est la taille maximal pour un tel. 
+Si vous êtes un nexus fan boy et que vous avez un nexus 4(et qu’il est en bonne état), vous pouvez vous passer du nexus 5. 
+Surtout que vous recevrez bientôt la mise à jour KitKat… &lt;/p&gt;
+
+&lt;h2&gt;Android KiKat 4.4&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://soulesidibe.files.wordpress.com/2013/11/android-kitkat.jpg&quot; alt=&quot;kitkat&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Celui la on la vraiment attendu et il n’a pas déçu! Cette version android est annoncée comme celle qui 
+va permettre de réduire encore plus la fragmentation du système Android. En effet, d’après les dires de 
+&lt;a href=&quot;https://plus.google.com/+SundarPichai&quot;&gt;Sundar Pichai&lt;/a&gt;, Kitkat pourra tourner sur beaucoup plus de smartphones android et non que sur les derniers. 
+Il suffira d’un device avec au moins &lt;strong&gt;512Mo&lt;/strong&gt; de Ram. Ce qui va permettre de reduire encore plus vite la 
+part de &lt;a href=&quot;http://goo.gl/BvZRw&quot;&gt;Gingerbread&lt;/a&gt; pour le plus grand bonheur de nous les dév android mais aussi des possesseurs de tel 
+sous 2.3.x (rendez vous en mi 2014 pour déclarer la mort de Froyo, Gingerbread et HoneyComb :D ). &lt;/p&gt;
+
+&lt;p&gt;Côté apps, la plupart des apps de &lt;strong&gt;#google&lt;/strong&gt; vont recevoir des maj. Les plus attendus sont: &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Hangout: Avec l’intégration des sms(l’ancienne app sms disparaît), le partage de position et d’autres nouvelles fonctionnalités. Si vous êtes pressés l’app est déjà dispo sur le net ==&amp;gt; &lt;a href=&quot;http://goo.gl/uuKh2U&quot;&gt;ICI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Google Home: La home reçoit aussi une maj (je vais devoir désactiver &lt;a href=&quot;http://goo.gl/ApNyPM&quot;&gt;aviate&lt;/a&gt; :-( ) avec une nouvelle façon D’accéder à Google Now&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Et bien d’autres nouveautés que vous retrouverez assez facilement sur le net…&lt;/p&gt;
+
+&lt;h2&gt;Android Studio 0.3.2&lt;/h2&gt;
+
+&lt;p&gt;L’IDE pour faire des applications android est passé hier après-midi à la version 0.3.2 avec des fonctionnalités super sympa!&lt;/p&gt;
+
+&lt;h4&gt;Screenrecording&lt;/h4&gt;
+
+&lt;p&gt;Quand on publie une app sur le play store, il faut montrer des screenshots qui exposent les fonctionnalités 
+importantes de l’app. Encore mieux une vidéo de démo permet de voir comment l’app doit être utilisé. 
+Cette vidéo peut donner envie ou pas d’installer l’app. Faire des vidéos de qualité n’était pas chose simple 
+sur android. Mais ca c’était avant! le SDK android inclut un outil qui permet de faire des vidéos de démo à partir de notre tel et avec du MP4 comme ouput. C’est vraiment super! 
+NB: &lt;em&gt;Il faut etre sous &lt;strong&gt;kitkat&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h4&gt;Java 7&lt;/h4&gt;
+
+&lt;p&gt;Android supporte maintenant java 7! Un dév android c’est avant tout un dév java! et plus tu es bon en java plus tu l’es en dév android! Donc avec java 7 (je rentrerai pas dans les details) on peut par exemple faire un switch case avec des strings! Du multi catch:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://soulesidibe.files.wordpress.com/2013/11/multicatch1.png&quot; alt=&quot;Multi catch&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://soulesidibe.files.wordpress.com/2013/11/multicatch2.png&quot; alt=&quot;Multi catch&quot;&gt;&lt;/p&gt;
+
+&lt;h4&gt;Gradle integration&lt;/h4&gt;
+
+&lt;p&gt;Si vous l’utilisez déjà comme IDE principal(je ne me rappelle même plus la dernière fois que j’ai ouvert eclipse…), 
+vous vous êtes rendu compte de la lenteur quand on fait un build! Une petite astuce permet d’améliorer ca en 
+utilisant le mode daemon de gradle. Maintenant avec studio une simple case à cocher permet de gagner en temps lors de vos builds! &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://soulesidibe.files.wordpress.com/2013/11/faster-builds.png&quot; alt=&quot;daemon gradle&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;Voila voila en gros ce qui c’est passé hier! J’ai juste survolé mais je reviendrais sur les nombreuses nouveautés de l’API 19!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Gradle Please!</title>
+   <link href="http://soulesidibe.github.com/2013/10/15/gradle-please/"/>
+   <updated>2013-10-15T00:00:00+00:00</updated>
+   <id>http://soulesidibe.github.com/2013/10/15/gradle-please</id>
+   <content type="html">&lt;p&gt;Depuis son annonce au Google IO 2013, &lt;strong&gt;Android Studio&lt;/strong&gt; est devenu mon IDE number 1! 
+Je l’utilise au quotidien et tous mes projets eclipse ont migré. J’explique dans &lt;a href=&quot;http://soulesidibe.github.io&quot;&gt;ce billet&lt;/a&gt; comment faire la migration. 
+L’utilisation de gradle comment système de build rend un projet android beaucoup plus simple à maintenir surtout en ce qui concerne la gestion des dépendances. 
+Plus besoin d’importer des librairies à en plus finir! Un exemple d’ajout de dépendance: &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;groovy&quot;&gt;&lt;span class=&quot;n&quot;&gt;dependencies&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;compile&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;com.crashlytics.android:crashlytics:1.+&amp;#39;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Donc comme on le voit pour utiliser crashlytics c’est speed. Gradle se chargera de récupérer les fichiers qu’il faut et de les mettre dans le build path.&lt;/p&gt;
+
+&lt;p&gt;Maintenant, la plus part des projets open source qu’on utilise dans nos projets n’offrent pas cette possibilité(non disponibilité du aar). Donc voici un peu ce qu’on peut faire: &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Demander au développeur de rendre son projet compatible avec gradle(sur github on peut facilement dialoguer avec le dév. En anglais),&lt;/li&gt;
+&lt;li&gt;Si on ne peut pas patienter, on peut toujours récupérer le projet&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;git clone chemin/vers/project.git project&lt;/code&gt;, ajouter en tant que module dans le projet puis rajouter 
+cette ligne dans build.gradle &lt;code&gt;compile project(&amp;#39;:project&amp;#39;)&lt;/code&gt; et dans settings.gradle &lt;code&gt;include &amp;#39;:project&amp;#39;&lt;/code&gt; &lt;/p&gt;
+
+&lt;p&gt;Un site recense l’ensemble des projets open source qui ont été &lt;strong&gt;&amp;quot;gradlisé&amp;quot;&lt;/strong&gt;. C’est &lt;a href=&quot;http://gradleplease.appspot.com/&quot;&gt;gradle please&lt;/a&gt;! :D&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>De eclipse à android Studio</title>
+   <link href="http://soulesidibe.github.com/2013/08/11/de-eclipse-a-android-studio/"/>
+   <updated>2013-08-11T00:00:00+00:00</updated>
+   <id>http://soulesidibe.github.com/2013/08/11/de-eclipse-a-android-studio</id>
+   <content type="html">&lt;p&gt;Comme vous le savez tous, lors du google IO 2013, il y a eu beaucoup de nouvelles concernant les développeurs android. 
+Je ne vais pas toutes les lister ici mais juste celle qui nous intéressent pour l’article du jour. 
+La team android nous a donc annoncé Android Studio! La nouvelle bête pour nos dévs en remplacement de l’IDE éclipse. &lt;/p&gt;
+
+&lt;p&gt;Vous me direz ouff enfin un IDE dédié au développement android! Yes ils se sont enfin décidé. 
+La seconde grosse annonce fut le remplacement du système de build ant par gradle. 
+&lt;a href=&quot;http://tools.android.com/tech-docs/new-build-system/user-guide#TOC-Goals-of-the-new-Build-System&quot;&gt;&lt;strong&gt;ICI&lt;/strong&gt;&lt;/a&gt; les raisons pour lesquelles la team android l’a choisi. &lt;/p&gt;
+
+&lt;p&gt;Ok mais le souci est que tous nos projets actuels sont sous eclipse. Maintenant comment faire migrer ces projets 
+la vers SA et gradle? Google nous a fourni une démarche à suivre sur le site officiel. Pour un projet simple ca peut passer. Mais quand on a des projets librairies par ici ou des jars à en plus finir, ca devient un vrai casse-tête pour arriver à cette image:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://soulesidibe.files.wordpress.com/2013/08/capture-du-2013-08-11-140412.png&quot; alt=&quot;Android Studio&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Mais bon on est la pour atteindre cette objectif :-). 
+Il nous faut, avant de commencer, un projet concret où on retrouvera quelques librairies(sous forme de project library 
+ou de jar). Pour vous faire gagner du temps en voici un petit projet héberger sur &lt;a href=&quot;https://github.com/soulesidibe/KillApp&quot;&gt;githtub&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;Donc, on y trouve un projet utilisant les librairies ActionBarSherlock, PullToRefresh et deux jars l’un le support-v4 
+et une petite lib permettant d’utiliser l’api de bitly. Il vous suffit maintenant de cloner le projet et de redemarrer votre eclipse en prenant pour workspace le dossier créé lors du clone et enfin commencer :-). &lt;/p&gt;
+
+&lt;h2&gt;Mettre à jour ADT&lt;/h2&gt;
+
+&lt;p&gt;Pour faire la migration nous avons besoin d’un outil proposé par la dernière version du plugin ADT et permettant 
+de générer les fichiers utilisés par gradle pour construire notre projet. 
+D’où la nécessité de mettre à jour le plugin mais aussi votre sdk pour bénéficier des derniers &amp;quot;tools&amp;quot;.&lt;/p&gt;
+
+&lt;h2&gt;gradle.build, settings.gradle&lt;/h2&gt;
+
+&lt;p&gt;Il est temps maintenant d’exporter notre projet! La procédure est très simple! File -&amp;gt; Export et on a cette fenêtre qui s’affiche: &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://soulesidibe.files.wordpress.com/2013/08/capture-du-2013-08-11-151318.png&quot; alt=&quot;Eclipse adt&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Donc on choisit &amp;quot;Generate gradle build files&amp;quot;: &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://soulesidibe.files.wordpress.com/2013/08/capture-du-2013-08-11-151541.png&quot; alt=&quot;Eclipse adt&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;La il suffit de sélectionner le projet et non les dépendances du projet. Ici KillerApp. 
+Le reste c’est du suivant suivant… A ce stade, eclipse nous a généré tous les fichiers qu’il faut. 
+Quelques explications s’imposent. 
+Nous avons l’apparition de quelques fichiers à la racine de notre projet mais aussi dans les répertoires de chaque module.  Oops! je ne vous ai pas dit! Avec AS ou IntellIJ, le workspace de Eclipse devient un projet, le projet de Eclipse devient un module. &lt;a href=&quot;http://confluence.jetbrains.com/display/IntelliJIDEA/FAQ+on+Migrating+to+IntelliJ+IDEA&quot;&gt;Plus de détails ici&lt;/a&gt;. Que représentent ces fichiers?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://soulesidibe.files.wordpress.com/2013/08/capture-du-2013-08-11-152554.png&quot; alt=&quot;terminator&quot;&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;gradle/: ce répertoire est une &amp;quot;installation locale&amp;quot; de l’outil gradle. on a donc pas besoin de l’installer sur notre pc. C’est la pratique qui est conseillé pour etre sure d’avoir tout le temps la bonne version de gradle pour builder nos projets&lt;/li&gt;
+&lt;li&gt;gradlew, gradlew.bat: c’est le script qui nous permet de lancer les builds sur notre projet en ligne de commande au lieu de passer par Android Studio. Par exemple, pour générer un apk on peut lancer la commande ./gradlew clean assemble&lt;/li&gt;
+&lt;li&gt;build.gradle et settings.gradle sont les deux fichiers où on passera le plus de temps pour configurer nos projets et leurs dépendances. Ce sont les fichiers de configurations.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Android Studio&lt;/h2&gt;
+
+&lt;p&gt;On peut maintenant importer notre projet sur AS en choisissant le fichier build.gradle situé à la racine du projet. 
+Apres quelques temps(lecture des fichiers de conf, résolution des dépendances, etc), nous avons enfin AS qui se lance avec notre projet KillerApp ouvert! Et si on essayait de lancer l’app pour voir un peu?&lt;/p&gt;
+
+&lt;p&gt;Bon évidemment ça ne passe pas. Gradle nous signifie qu’il y a des erreurs un peu partout et quand on regarde de plus prêt, nos librairies en sont pour quelque chose… &lt;/p&gt;
+
+&lt;p&gt;Commençons par regarder le contenu des fichier build.gradle et settings.gradle de la racine.
+settings.gradle: &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;groovy&quot;&gt;&lt;span class=&quot;n&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;:pull_to_refresh&amp;#39;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;:ABS&amp;#39;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;:KillerApp&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Donc on comprends que c’est dans ce fichier qu’on déclare les modules à inclure dans le build.
+Le build lui même est configuré dans le fichier du même nom, build.gradle: &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;groovy&quot;&gt;&lt;span class=&quot;n&quot;&gt;buildscript&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;repositories&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;mavenCentral&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;dependencies&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;classpath&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;com.android.tools.build:gradle:0.5.+&amp;#39;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Il est assez simple comme fichier. La raison de cette simplicité est que la tendance est à avoir une convention de base dans la façon de construire un apk. Ce que l’on rajoute dans le fichier de configuration ce sont les informations qui font que le projet est spécifique. À savoir, les dépendances, l’emplacement de certains dossiers sources, etc. 
+Ici, une dépendance au plugin android pour gradle en version 0.5 au moins. &lt;/p&gt;
+
+&lt;p&gt;Autre détail, les fichiers build et settings de nos modules héritent des paramètres de deux de la racine. Donc on aura pas besoin de déclarer à nouveau une dépendance vers gradle 0.5. On comprend que c’est le lieux pour toutes configurations applicables à l’ensemble du projet. C’est le cas des paramétres comme le minSdk, le buildToolsVersion, etc. Ces informations sont souvent source de &amp;quot;fail&amp;quot; lors d’un build. &lt;/p&gt;
+
+&lt;p&gt;On a donc:  &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;groovy&quot;&gt;&lt;span class=&quot;n&quot;&gt;buildscript&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;repositories&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;mavenCentral&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;dependencies&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;classpath&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;com.android.tools.build:gradle:0.5.+&amp;#39;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;ext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;compileSdkVersion&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;buildToolsVersion&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;18.0.0&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;minSdkVersion&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;targetSdkVersion&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Passons aux dépendances du module ActionBarSherlock. Il a besoin de la librairie android support-v4. Il y a deux façons de procéder: &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;soit on met le fichier jar dans le dossier libs et on rajoute ceci dans son build.gradle: &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;groovy&quot;&gt;   &lt;span class=&quot;n&quot;&gt;dependencies&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;compile&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fileTree&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;dir:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;libs&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;include:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;*.jar&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;soit on utilise la pleine puissance de maven pour qu’il nous gére nos dépendances sans qu’on n’ait à se préoccuper des fichiers jars. Dans ce cas il suffira de rajouter ces quelques lignes: &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;groovy&quot;&gt;   &lt;span class=&quot;n&quot;&gt;repositories&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;mavenLocal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;dependencies&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;compile&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;com.android.support:support-v4:18.0.0&amp;#39;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Ainsi, on peut se débarrasser du dossier libs. gradle se chargera d’aller chercher le bon fichier jar et de l’inclure au classpath de notre projet.&lt;/p&gt;
+
+&lt;p&gt;Pour en savoir un peu plus sur maven, je vous recommande de lire cette série d’articles.
+Il ne faudra pas oublier de remplacer ceci: &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;groovy&quot;&gt;&lt;span class=&quot;n&quot;&gt;compileSdkVersion&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;14&lt;/span&gt;    
+&lt;span class=&quot;n&quot;&gt;buildToolsVersion&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;18.0.1&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;par:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;groovy&quot;&gt;&lt;span class=&quot;n&quot;&gt;compileSdkVersion&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rootProject&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;compileSdkVersion&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;buildToolsVersion&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rootProject&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;buildToolsVersion&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;dans tous les modules du projet.
+Pour rappel, on avait dit que certains paramètres devront être les mêmes pour tous les modules du projet par souci de cohérence. &lt;/p&gt;
+
+&lt;p&gt;Petite info que j’ai sauté, pour faire la diferrence entre une librairie et un module, il suffit d’appliquer le plugin qu’il faut. Donc pour ActionBarSherlock on aura
+&lt;code&gt;apply plugin: ‘android-library’&lt;/code&gt; et pour le module KillerApp &lt;code&gt;apply plugin: ‘android’&lt;/code&gt; dans le fichier build.gradle. &amp;quot;android-library&amp;quot; génére un aar(Android Archive) alors que &amp;quot;android&amp;quot; génére un APK. &lt;/p&gt;
+
+&lt;p&gt;Le module PullToRefresh n’a besoin d’aucune dépendance spécifique donc on peut s’attaquer au module KillerApp. Voici ce qu’on rajoutera&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;groovy&quot;&gt;&lt;span class=&quot;n&quot;&gt;repositories&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;mavenLocal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;dependencies&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;compile&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;com.android.support:support-v4:18.0.0&amp;#39;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;compile&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;files&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;dir:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;libs&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;include:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;*.jar&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;compile&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;project&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;:ABS&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;compile&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;project&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;:pull_to_refresh&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;On lui spécifie qu’il aura besoin du support-v4 et des librairies ABS et pull&lt;em&gt;to&lt;/em&gt;refresh présentes à la racine.
+On y est! Tout a été configuré, maintenant il suffit de faire un  build pour voir que tout compile comme il faut! &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://soulesidibe.files.wordpress.com/2013/08/capture-du-2013-08-11-204553.png&quot; alt=&quot;AS&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Nous venons de voir qu’il n’est pas très compliqué de passer de Éclipse à Android Studio. Il suffit juste d’avoir des connaissances sur gradle, maven et de se familiariser un peu avec l’IDE. &lt;/p&gt;
+
+&lt;p&gt;Vu que l’article n’avait pas pour objectif de vous donner ces bases, je vous recommande fortement d’aller lire en entier cette &lt;a href=&quot;http://blog.stylingandroid.com/archives/1872&quot;&gt;série d’articles&lt;/a&gt; sur gradle(7 en tout) et aussi de lire la &lt;a href=&quot;http://tools.android.com/tech-docs/new-build-system/user-guide&quot;&gt;documentation&lt;/a&gt; fournie par google(pour une utilisation avancée). 
+Avec cela vous pourrez avoir un usage professionnel de ces outils assez puissants :D.&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>

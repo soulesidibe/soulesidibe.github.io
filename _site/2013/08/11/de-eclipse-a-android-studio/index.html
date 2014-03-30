@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      De eclipse à android Studio &middot; Soulesidibe
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+    <div class="container content">
+      <div class="masthead">
+       <h3 class="masthead-title">
+    <a href="/" title="Home">Soulesidibe</a>
+
+    
+      &nbsp;&nbsp;&nbsp;
+      <small><a href="/about">About</a></small>
+    
+      &nbsp;&nbsp;&nbsp;
+      <small><a href="/archive">Archive</a></small>
+    
+      &nbsp;&nbsp;&nbsp;
+      <small><a href="/atom.xml">Feed</a></small>
+    
+    </h3>
+      </div>
+
+      <div class="post">
+  <h1 class="post-title">De eclipse à android Studio</h1>
+  <span class="post-date">11 Aug 2013</span>
+  <p>Comme vous le savez tous, lors du google IO 2013, il y a eu beaucoup de nouvelles concernant les développeurs android. 
+Je ne vais pas toutes les lister ici mais juste celle qui nous intéressent pour l’article du jour. 
+La team android nous a donc annoncé Android Studio! La nouvelle bête pour nos dévs en remplacement de l’IDE éclipse. </p>
+
+<p>Vous me direz ouff enfin un IDE dédié au développement android! Yes ils se sont enfin décidé. 
+La seconde grosse annonce fut le remplacement du système de build ant par gradle. 
+<a href="http://tools.android.com/tech-docs/new-build-system/user-guide#TOC-Goals-of-the-new-Build-System"><strong>ICI</strong></a> les raisons pour lesquelles la team android l’a choisi. </p>
+
+<p>Ok mais le souci est que tous nos projets actuels sont sous eclipse. Maintenant comment faire migrer ces projets 
+la vers SA et gradle? Google nous a fourni une démarche à suivre sur le site officiel. Pour un projet simple ca peut passer. Mais quand on a des projets librairies par ici ou des jars à en plus finir, ca devient un vrai casse-tête pour arriver à cette image:</p>
+
+<p><img src="http://soulesidibe.files.wordpress.com/2013/08/capture-du-2013-08-11-140412.png" alt="Android Studio"></p>
+
+<p>Mais bon on est la pour atteindre cette objectif :-). 
+Il nous faut, avant de commencer, un projet concret où on retrouvera quelques librairies(sous forme de project library 
+ou de jar). Pour vous faire gagner du temps en voici un petit projet héberger sur <a href="https://github.com/soulesidibe/KillApp">githtub</a>. </p>
+
+<p>Donc, on y trouve un projet utilisant les librairies ActionBarSherlock, PullToRefresh et deux jars l’un le support-v4 
+et une petite lib permettant d’utiliser l’api de bitly. Il vous suffit maintenant de cloner le projet et de redemarrer votre eclipse en prenant pour workspace le dossier créé lors du clone et enfin commencer :-). </p>
+
+<h2>Mettre à jour ADT</h2>
+
+<p>Pour faire la migration nous avons besoin d’un outil proposé par la dernière version du plugin ADT et permettant 
+de générer les fichiers utilisés par gradle pour construire notre projet. 
+D’où la nécessité de mettre à jour le plugin mais aussi votre sdk pour bénéficier des derniers &quot;tools&quot;.</p>
+
+<h2>gradle.build, settings.gradle</h2>
+
+<p>Il est temps maintenant d’exporter notre projet! La procédure est très simple! File -&gt; Export et on a cette fenêtre qui s’affiche: </p>
+
+<p><img src="http://soulesidibe.files.wordpress.com/2013/08/capture-du-2013-08-11-151318.png" alt="Eclipse adt"></p>
+
+<p>Donc on choisit &quot;Generate gradle build files&quot;: </p>
+
+<p><img src="http://soulesidibe.files.wordpress.com/2013/08/capture-du-2013-08-11-151541.png" alt="Eclipse adt"></p>
+
+<p>La il suffit de sélectionner le projet et non les dépendances du projet. Ici KillerApp. 
+Le reste c’est du suivant suivant… A ce stade, eclipse nous a généré tous les fichiers qu’il faut. 
+Quelques explications s’imposent. 
+Nous avons l’apparition de quelques fichiers à la racine de notre projet mais aussi dans les répertoires de chaque module.  Oops! je ne vous ai pas dit! Avec AS ou IntellIJ, le workspace de Eclipse devient un projet, le projet de Eclipse devient un module. <a href="http://confluence.jetbrains.com/display/IntelliJIDEA/FAQ+on+Migrating+to+IntelliJ+IDEA">Plus de détails ici</a>. Que représentent ces fichiers?</p>
+
+<p><img src="http://soulesidibe.files.wordpress.com/2013/08/capture-du-2013-08-11-152554.png" alt="terminator"></p>
+
+<ul>
+<li>gradle/: ce répertoire est une &quot;installation locale&quot; de l’outil gradle. on a donc pas besoin de l’installer sur notre pc. C’est la pratique qui est conseillé pour etre sure d’avoir tout le temps la bonne version de gradle pour builder nos projets</li>
+<li>gradlew, gradlew.bat: c’est le script qui nous permet de lancer les builds sur notre projet en ligne de commande au lieu de passer par Android Studio. Par exemple, pour générer un apk on peut lancer la commande ./gradlew clean assemble</li>
+<li>build.gradle et settings.gradle sont les deux fichiers où on passera le plus de temps pour configurer nos projets et leurs dépendances. Ce sont les fichiers de configurations.</li>
+</ul>
+
+<h2>Android Studio</h2>
+
+<p>On peut maintenant importer notre projet sur AS en choisissant le fichier build.gradle situé à la racine du projet. 
+Apres quelques temps(lecture des fichiers de conf, résolution des dépendances, etc), nous avons enfin AS qui se lance avec notre projet KillerApp ouvert! Et si on essayait de lancer l’app pour voir un peu?</p>
+
+<p>Bon évidemment ça ne passe pas. Gradle nous signifie qu’il y a des erreurs un peu partout et quand on regarde de plus prêt, nos librairies en sont pour quelque chose… </p>
+
+<p>Commençons par regarder le contenu des fichier build.gradle et settings.gradle de la racine.
+settings.gradle: </p>
+
+<div class="highlight"><pre><code class="groovy"><span class="n">include</span> <span class="s1">&#39;:pull_to_refresh&#39;</span>
+<span class="n">include</span> <span class="s1">&#39;:ABS&#39;</span>
+<span class="n">include</span> <span class="s1">&#39;:KillerApp&#39;</span>
+</code></pre></div>
+
+<p>Donc on comprends que c’est dans ce fichier qu’on déclare les modules à inclure dans le build.
+Le build lui même est configuré dans le fichier du même nom, build.gradle: </p>
+
+<div class="highlight"><pre><code class="groovy"><span class="n">buildscript</span> <span class="o">{</span>
+    <span class="n">repositories</span> <span class="o">{</span>
+        <span class="n">mavenCentral</span><span class="o">()</span>
+    <span class="o">}</span>
+    <span class="n">dependencies</span> <span class="o">{</span>
+        <span class="n">classpath</span> <span class="s1">&#39;com.android.tools.build:gradle:0.5.+&#39;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+
+<p>Il est assez simple comme fichier. La raison de cette simplicité est que la tendance est à avoir une convention de base dans la façon de construire un apk. Ce que l’on rajoute dans le fichier de configuration ce sont les informations qui font que le projet est spécifique. À savoir, les dépendances, l’emplacement de certains dossiers sources, etc. 
+Ici, une dépendance au plugin android pour gradle en version 0.5 au moins. </p>
+
+<p>Autre détail, les fichiers build et settings de nos modules héritent des paramètres de deux de la racine. Donc on aura pas besoin de déclarer à nouveau une dépendance vers gradle 0.5. On comprend que c’est le lieux pour toutes configurations applicables à l’ensemble du projet. C’est le cas des paramétres comme le minSdk, le buildToolsVersion, etc. Ces informations sont souvent source de &quot;fail&quot; lors d’un build. </p>
+
+<p>On a donc:  </p>
+
+<div class="highlight"><pre><code class="groovy"><span class="n">buildscript</span> <span class="o">{</span>
+    <span class="n">repositories</span> <span class="o">{</span>
+        <span class="n">mavenCentral</span><span class="o">()</span>
+    <span class="o">}</span>
+    <span class="n">dependencies</span> <span class="o">{</span>
+        <span class="n">classpath</span> <span class="s1">&#39;com.android.tools.build:gradle:0.5.+&#39;</span>
+    <span class="o">}</span>
+
+    <span class="n">ext</span><span class="o">.</span><span class="na">compileSdkVersion</span><span class="o">=</span><span class="mi">18</span>
+    <span class="n">ext</span><span class="o">.</span><span class="na">buildToolsVersion</span><span class="o">=</span><span class="s2">&quot;18.0.0&quot;</span>
+    <span class="n">ext</span><span class="o">.</span><span class="na">minSdkVersion</span><span class="o">=</span><span class="mi">8</span>
+    <span class="n">ext</span><span class="o">.</span><span class="na">targetSdkVersion</span><span class="o">=</span><span class="mi">18</span>
+<span class="o">}</span>
+</code></pre></div>
+
+<p>Passons aux dépendances du module ActionBarSherlock. Il a besoin de la librairie android support-v4. Il y a deux façons de procéder: </p>
+
+<ul>
+<li>soit on met le fichier jar dans le dossier libs et on rajoute ceci dans son build.gradle: </li>
+</ul>
+
+<div class="highlight"><pre><code class="groovy">   <span class="n">dependencies</span> <span class="o">{</span>
+        <span class="n">compile</span> <span class="nf">fileTree</span><span class="o">(</span><span class="nl">dir:</span> <span class="s1">&#39;libs&#39;</span><span class="o">,</span> <span class="nl">include:</span> <span class="s1">&#39;*.jar&#39;</span><span class="o">)</span>
+    <span class="o">}</span>
+    
+</code></pre></div>
+
+<ul>
+<li>soit on utilise la pleine puissance de maven pour qu’il nous gére nos dépendances sans qu’on n’ait à se préoccuper des fichiers jars. Dans ce cas il suffira de rajouter ces quelques lignes: </li>
+</ul>
+
+<div class="highlight"><pre><code class="groovy">   <span class="n">repositories</span> <span class="o">{</span>
+        <span class="n">mavenLocal</span><span class="o">()</span>
+    <span class="o">}</span>
+    <span class="n">dependencies</span> <span class="o">{</span>
+        <span class="n">compile</span> <span class="s1">&#39;com.android.support:support-v4:18.0.0&#39;</span>
+    <span class="o">}</span>
+    
+</code></pre></div>
+
+<p>Ainsi, on peut se débarrasser du dossier libs. gradle se chargera d’aller chercher le bon fichier jar et de l’inclure au classpath de notre projet.</p>
+
+<p>Pour en savoir un peu plus sur maven, je vous recommande de lire cette série d’articles.
+Il ne faudra pas oublier de remplacer ceci: </p>
+
+<div class="highlight"><pre><code class="groovy"><span class="n">compileSdkVersion</span> <span class="mi">14</span>    
+<span class="n">buildToolsVersion</span> <span class="s2">&quot;18.0.1&quot;</span>
+</code></pre></div>
+
+<p>par:</p>
+
+<div class="highlight"><pre><code class="groovy"><span class="n">compileSdkVersion</span> <span class="n">rootProject</span><span class="o">.</span><span class="na">compileSdkVersion</span>
+<span class="n">buildToolsVersion</span> <span class="n">rootProject</span><span class="o">.</span><span class="na">buildToolsVersion</span>
+</code></pre></div>
+
+<p>dans tous les modules du projet.
+Pour rappel, on avait dit que certains paramètres devront être les mêmes pour tous les modules du projet par souci de cohérence. </p>
+
+<p>Petite info que j’ai sauté, pour faire la diferrence entre une librairie et un module, il suffit d’appliquer le plugin qu’il faut. Donc pour ActionBarSherlock on aura
+<code>apply plugin: ‘android-library’</code> et pour le module KillerApp <code>apply plugin: ‘android’</code> dans le fichier build.gradle. &quot;android-library&quot; génére un aar(Android Archive) alors que &quot;android&quot; génére un APK. </p>
+
+<p>Le module PullToRefresh n’a besoin d’aucune dépendance spécifique donc on peut s’attaquer au module KillerApp. Voici ce qu’on rajoutera</p>
+
+<div class="highlight"><pre><code class="groovy"><span class="n">repositories</span> <span class="o">{</span>
+    <span class="n">mavenLocal</span><span class="o">()</span>
+<span class="o">}</span>
+<span class="n">dependencies</span> <span class="o">{</span>
+    <span class="n">compile</span> <span class="s1">&#39;com.android.support:support-v4:18.0.0&#39;</span>
+    <span class="n">compile</span> <span class="nf">files</span><span class="o">(</span><span class="nl">dir:</span> <span class="s1">&#39;libs&#39;</span><span class="o">,</span> <span class="nl">include:</span> <span class="s1">&#39;*.jar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span> <span class="nf">project</span><span class="o">(</span><span class="s1">&#39;:ABS&#39;</span><span class="o">)</span>
+    <span class="n">compile</span> <span class="nf">project</span><span class="o">(</span><span class="s1">&#39;:pull_to_refresh&#39;</span><span class="o">)</span>
+<span class="o">}</span>
+</code></pre></div>
+
+<p>On lui spécifie qu’il aura besoin du support-v4 et des librairies ABS et pull<em>to</em>refresh présentes à la racine.
+On y est! Tout a été configuré, maintenant il suffit de faire un  build pour voir que tout compile comme il faut! </p>
+
+<p><img src="http://soulesidibe.files.wordpress.com/2013/08/capture-du-2013-08-11-204553.png" alt="AS"></p>
+
+<p>Nous venons de voir qu’il n’est pas très compliqué de passer de Éclipse à Android Studio. Il suffit juste d’avoir des connaissances sur gradle, maven et de se familiariser un peu avec l’IDE. </p>
+
+<p>Vu que l’article n’avait pas pour objectif de vous donner ces bases, je vous recommande fortement d’aller lire en entier cette <a href="http://blog.stylingandroid.com/archives/1872">série d’articles</a> sur gradle(7 en tout) et aussi de lire la <a href="http://tools.android.com/tech-docs/new-build-system/user-guide">documentation</a> fournie par google(pour une utilisation avancée). 
+Avec cela vous pourrez avoir un usage professionnel de ces outils assez puissants :D.</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2014/01/02/introducing-poole/">
+            Introducing Poole
+            <small>02 Jan 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2014/01/01/example-content/">
+            Example content
+            <small>01 Jan 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2013/12/31/whats-jekyll/">
+            What's Jekyll?
+            <small>31 Dec 2013</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      <!-- Add Disqus comments. -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'souleymane_sidibe'; // required: replace example with your forum shortname
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      <div class="footer">
+        <p>
+          &copy; 2014. All rights reserved.
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>

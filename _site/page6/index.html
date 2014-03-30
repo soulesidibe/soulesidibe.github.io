@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Soulesidibe &middot; An android enthusiast
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+    <div class="container content">
+      <div class="masthead">
+       <h3 class="masthead-title">
+    <a href="/" title="Home">Soulesidibe</a>
+
+    
+      &nbsp;&nbsp;&nbsp;
+      <small><a href="/about">About</a></small>
+    
+      &nbsp;&nbsp;&nbsp;
+      <small><a href="/archive">Archive</a></small>
+    
+      &nbsp;&nbsp;&nbsp;
+      <small><a href="/atom.xml">Feed</a></small>
+    
+    </h3>
+      </div>
+
+      <div class="posts">
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2013/10/15/gradle-please/">
+        Gradle Please!
+      </a>
+    </h1>
+
+    <span class="post-date">15 Oct 2013</span>
+
+    <p>Depuis son annonce au Google IO 2013, <strong>Android Studio</strong> est devenu mon IDE number 1! 
+Je l’utilise au quotidien et tous mes projets eclipse ont migré. J’explique dans <a href="http://soulesidibe.github.io">ce billet</a> comment faire la migration. 
+L’utilisation de gradle comment système de build rend un projet android beaucoup plus simple à maintenir surtout en ce qui concerne la gestion des dépendances. 
+Plus besoin d’importer des librairies à en plus finir! Un exemple d’ajout de dépendance: </p>
+
+<div class="highlight"><pre><code class="groovy"><span class="n">dependencies</span> <span class="o">{</span>
+   <span class="n">compile</span> <span class="s1">&#39;com.crashlytics.android:crashlytics:1.+&#39;</span>
+<span class="o">}</span>
+</code></pre></div>
+
+<p>Donc comme on le voit pour utiliser crashlytics c’est speed. Gradle se chargera de récupérer les fichiers qu’il faut et de les mettre dans le build path.</p>
+
+<p>Maintenant, la plus part des projets open source qu’on utilise dans nos projets n’offrent pas cette possibilité(non disponibilité du aar). Donc voici un peu ce qu’on peut faire: </p>
+
+<ul>
+<li>Demander au développeur de rendre son projet compatible avec gradle(sur github on peut facilement dialoguer avec le dév. En anglais),</li>
+<li>Si on ne peut pas patienter, on peut toujours récupérer le projet</li>
+</ul>
+
+<p><code>git clone chemin/vers/project.git project</code>, ajouter en tant que module dans le projet puis rajouter 
+cette ligne dans build.gradle <code>compile project(&#39;:project&#39;)</code> et dans settings.gradle <code>include &#39;:project&#39;</code> </p>
+
+<p>Un site recense l’ensemble des projets open source qui ont été <strong>&quot;gradlisé&quot;</strong>. C’est <a href="http://gradleplease.appspot.com/">gradle please</a>! :D</p>
+
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page7">Older</a>
+  
+  
+    
+      <a class="pagination-item newer" href="/page5">Newer</a>
+    
+  
+</div>
+      <!-- Add Disqus comments. -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'souleymane_sidibe'; // required: replace example with your forum shortname
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      <div class="footer">
+        <p>
+          &copy; 2014. All rights reserved.
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>

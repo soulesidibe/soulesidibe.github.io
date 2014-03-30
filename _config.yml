@@ -6,10 +6,10 @@ pygments:         true
 permalink:        pretty
 
 # Setup
-title:            Poole
-tagline:          'The Jekyll Butler'
+title:            Soulesidibe
+tagline:          'An android enthusiast'
 description:      'Base theme for Jekyll themes by @mdo.'
-url:              http://getpoole.com
+url:              http://soulesidibe.github.com
 
 author:
   name:           'Souleymane Sidibe'
@@ -22,3 +22,8 @@ version:          1.0.0
 
 github:
   repo:           https://github.com/poole/poole
+
+pages_list:       
+  About: '/about'
+  Archive: '/archive'
+  Feed: '/atom.xml'
