@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-44424399-2', 'soulesidibe.github.io');
+  ga('send', 'pageview');
+
+</script>
   <head>
   <link href="http://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -50,80 +59,96 @@
   
   <div class="post">
     <h1 class="post-title">
-      <a href="/2013/11/01/Nexus-5-Android-kitkat-et-Android-Studio-0-3-2/">
-        Nexus 5, Android kitkat et Android Studio 0.3.2
+      <a href="/2013/06/09/Les-librairies-Android-ne-pas-r%C3%A9inventer-la-roue/">
+        Les librairies Android:ne pas réinventer la roue.
       </a>
     </h1>
 
-    <span class="post-date">01 Nov 2013</span>
+    <span class="post-date">09 Jun 2013</span>
 
-    <p>Hier on a eu droit à un bon paquet de nouveautés dans le monde merveilleux d’android.
-Je vais essayer de revoir ce qui s’est passé :). </p>
+    <p>Quand on développe pour une plateforme donnée, si on est novice ou pas assez informé, 
+on a tendance à perdre du temps à implémenter des fonctionnalités qui, avec un peu de recherche 
+sur la toile, nous aurait permis d’aller plus vite dans notre développement tout en ayant 
+du code propre et maintenable. 
+Le développement avec Android ne déroge pas à la règle. On trouvera une quantité inestimable 
+de ressources sur des sites, forums et blogs qui nous facilite ou disons nous permette d’aller 
+plus vite dans notre dév ou d’être plus focused sur le coeur même de l’application. </p>
 
-<h2>Nexus 5</h2>
+<p>Comme on peut le comprendre en lisant le titre de l’article, il s’agira ici d’essayer d’énumérer des 
+librairies android qui nous font gagner en temps et en qualité pour notre application! Des librairies 
+qui améliorent l’expériences utilisateurs tout en suivant les bonnes pratiques de la team Android de Google.</p>
 
-<p><img src="http://soulesidibe.files.wordpress.com/2013/11/lg-nexus-5-photo.png" alt="nexus5"></p>
+<h2>Pull To Refresh</h2>
 
-<p>Enfin! 
-Depuis un bon moment on nous parle de ce nouveau nexus sur les sites spécialisés. Il est là! Et il est beau! 
-La première chose qui frappe c’est la taille de la bête; un écran de 5 pouces(4.95&quot; en réalité) full HD équipé 
-de la dernière version d’android(on en parle en bas). 
-Point important, il est 4G! Comme tous les smartphones récemment sortis. Pour plus de détails c’est ici ==&gt; <a href="http://www.google.fr/nexus/5/">Page officielle</a>. 
-Ayant un <strong>#nexus4</strong>, quand je revois les spécifications techniques du <strong>#nexus5</strong>, je me dis que c’est juste 
-une mise à jour du matériel avec un meilleur capteur photo, la 4G et un sublime écran. 
-Perso avoir un smartphone de 5 pouces ne me tente pas vraiment même si je pense que c’est la taille maximal pour un tel. 
-Si vous êtes un nexus fan boy et que vous avez un nexus 4(et qu’il est en bonne état), vous pouvez vous passer du nexus 5. 
-Surtout que vous recevrez bientôt la mise à jour KitKat… </p>
+<p>Dans une application Android, il est presque impossible de ne pas trouver de liste d’éléments 
+(contacts, tweets, sms ou autres informations). Et en général les éléments de cette liste ne sont 
+pas statiques. D’où la nécessite de proposer un mécanisme de mise à jour des données assez simple et 
+intuitif: le PullToRefresh! </p>
 
-<h2>Android KiKat 4.4</h2>
+<p><img src="https://raw.github.com/chrisbanes/Android-PullToRefresh/master/header_graphic.png" alt="PullToRefresh"></p>
 
-<p><img src="http://soulesidibe.files.wordpress.com/2013/11/android-kitkat.jpg" alt="kitkat"></p>
+<p>on le voit sur l’image, d’un simple tiret vers le bas de la liste puis d’un relachement, on a la possibilité 
+de mettre à jour les données! On peut imaginer appeler un service sur un autre thread pour récupérer les mises 
+à jours. Une belle librairie open source qui permet de mettre en place un système de rafraîchissement que l’on 
+retrouve dans presque toutes les apps connues. </p>
 
-<p>Celui la on la vraiment attendu et il n’a pas déçu! Cette version android est annoncée comme celle qui 
-va permettre de réduire encore plus la fragmentation du système Android. En effet, d’après les dires de 
-<a href="https://plus.google.com/+SundarPichai">Sundar Pichai</a>, Kitkat pourra tourner sur beaucoup plus de smartphones android et non que sur les derniers. 
-Il suffira d’un device avec au moins <strong>512Mo</strong> de Ram. Ce qui va permettre de reduire encore plus vite la 
-part de <a href="http://goo.gl/BvZRw">Gingerbread</a> pour le plus grand bonheur de nous les dév android mais aussi des possesseurs de tel 
-sous 2.3.x (rendez vous en mi 2014 pour déclarer la mort de Froyo, Gingerbread et HoneyComb :D ). </p>
+<h2>Action Bar Sherlock</h2>
 
-<p>Côté apps, la plupart des apps de <strong>#google</strong> vont recevoir des maj. Les plus attendus sont: </p>
+<p><img src="http://soulesidibe.files.wordpress.com/2013/05/actionbar.png" alt="ActionBarSherlock"></p>
 
-<ul>
-<li>Hangout: Avec l’intégration des sms(l’ancienne app sms disparaît), le partage de position et d’autres nouvelles fonctionnalités. Si vous êtes pressés l’app est déjà dispo sur le net ==&gt; <a href="http://goo.gl/uuKh2U">ICI</a></li>
-<li>Google Home: La home reçoit aussi une maj (je vais devoir désactiver <a href="http://goo.gl/ApNyPM">aviate</a> :-( ) avec une nouvelle façon D’accéder à Google Now</li>
-</ul>
+<p>La prise en compte des tablettes à partir des version 3.0 d’Android est venu avec son lot de nouveautés dont 
+la action bar qui a rendu obseléte le bouton menu de nos anciens smartphones. 
+Le problème qui se pose c’est que pour utiliser cette bar d’action dans nos apps on est obligé d’avoir 
+comme minSdk l’api 11 dans notre manifest android! Ce qu’on ne peut pas faire pour cause une bonne partie 
+des devices sur android est en dessous de l’api 11! 
+La solution à cela est d’utiliser la librairie ActionBarSherlock qui va nous permettre d’avoir notre bar d’action 
+quelle que soit la version d’android (au minimum api 7). Et ainsi offrir la même expérience utilisateur sans tenir 
+compte de la version d’android de l’utilisateur. </p>
 
-<p>Et bien d’autres nouveautés que vous retrouverez assez facilement sur le net…</p>
+<h2>Holo Everywhere</h2>
 
-<h2>Android Studio 0.3.2</h2>
+<p>En suivant l’actualité autour de la sortie de la version 4 d’android, on n’a pas pu échapé au mot &quot;Holo&quot;. 
+C’est quoi Holo? 
+C’est tout simplement le nom donnée au thème qui est apparu avec ICS et surtout il a permis de rendre Android 
+beaucoup plus beau si on le compare un peu à IOS. Bon revenons au développeur qui veux faire une app qui le 
+rendra riche! Bah le truc qui coince ici c’est la même application n’a pas le même rendu quand on la lance 
+sur du Android 2.3.x ou sur du 4.2.x. Les composants ne sont pas les mêmes, la police de caractères change 
+et bien d’autres aspects visuels changent. 
+Vous l’avez compris, la librairie android Holo Everywhere, comme son nom l’indique va nous permettre d’avoir 
+le thème holo partout; les devices avec ICS inclus! </p>
 
-<p>L’IDE pour faire des applications android est passé hier après-midi à la version 0.3.2 avec des fonctionnalités super sympa!</p>
+<h2>Sliding Menu</h2>
 
-<h4>Screenrecording</h4>
+<p><img src="http://soulesidibe.files.wordpress.com/2013/05/4png.png" alt="SlidingMenu"></p>
 
-<p>Quand on publie une app sur le play store, il faut montrer des screenshots qui exposent les fonctionnalités 
-importantes de l’app. Encore mieux une vidéo de démo permet de voir comment l’app doit être utilisé. 
-Cette vidéo peut donner envie ou pas d’installer l’app. Faire des vidéos de qualité n’était pas chose simple 
-sur android. Mais ca c’était avant! le SDK android inclut un outil qui permet de faire des vidéos de démo à partir de notre tel et avec du MP4 comme ouput. C’est vraiment super! 
-NB: <em>Il faut etre sous <strong>kitkat</strong></em></p>
+<p>Si vous avez un android phone(normalement oui en tant que développeur android), vous avez du remarqué une 
+nouvelle tendance dans les interfaces. En effet, certaines fonctions de l’application ne sont plus présentent 
+sur la bar d’actions(qui sert le plus souvent pour partager du contenu sur les réseaux sociaux ou de menu 
+contextuel quand on fait un long press sur un élément d’une liste par exemple) mais sur un autre menu caché à 
+droite(et/ou à gauche) de l’écran et qui est rendu visible en faisant un &quot;slid&quot; des bordures de l’écran vers 
+l’écran lui même. ICI une app de démo. On retrouve cette façon de faire dans la plus part des apps stars du 
+playstore comme Google+, Evernote, The Verge, etc. 
+Une très belle libraire qui permet d’avoir accès à certaines fonctionnalités de nos apps de façon très simple. </p>
 
-<h4>Java 7</h4>
+<h2>Et beaucoup d’autres!</h2>
 
-<p>Android supporte maintenant java 7! Un dév android c’est avant tout un dév java! et plus tu es bon en java plus tu l’es en dév android! Donc avec java 7 (je rentrerai pas dans les details) on peut par exemple faire un switch case avec des strings! Du multi catch:</p>
+<p>La liste de librairies présentées est loin d’être exhaustive! Il y en a beaucoup d’autres à découvrir, 
+tester et pourquoi pas utiliser dans nos apps. Un petit tour vers ce site, TheUltimateAndroidLibrary, 
+nous permet de voir qu’il y a des dév qui ont déjà réglé certains soucis donc il ne faut pas se gêner!<br>
+C’est le monde merveilleux d’android. Plein de librairies open source qui ne demandent qu’à être utilisées, 
+forkées et améliorées. </p>
 
-<p><img src="http://soulesidibe.files.wordpress.com/2013/11/multicatch1.png" alt="Multi catch"></p>
+<h2>Bonus</h2>
 
-<p><img src="http://soulesidibe.files.wordpress.com/2013/11/multicatch2.png" alt="Multi catch"></p>
-
-<h4>Gradle integration</h4>
-
-<p>Si vous l’utilisez déjà comme IDE principal(je ne me rappelle même plus la dernière fois que j’ai ouvert eclipse…), 
-vous vous êtes rendu compte de la lenteur quand on fait un build! Une petite astuce permet d’améliorer ca en 
-utilisant le mode daemon de gradle. Maintenant avec studio une simple case à cocher permet de gagner en temps lors de vos builds! </p>
-
-<p><img src="http://soulesidibe.files.wordpress.com/2013/11/faster-builds.png" alt="daemon gradle"> </p>
-
-<p>Voila voila en gros ce qui c’est passé hier! J’ai juste survolé mais je reviendrais sur les nombreuses nouveautés de l’API 19!</p>
+<p>Pour pouvoir utiliser ces librairies il faut les télécharger et les inclure à nos projets(sauf si on utilise 
+le plugin maven). Chose pas tout le temps facile avec nos soucis de connexion internet en Afrique, ou Eclipse 
+(avec ca dernière version) qui bug. Au bout d’un moment, on risque d’abandonner. 
+J’ai la solution qui vous permettra d’avoir la config prête en un clin d’oeil :D 
+Android Kick Start est un site qui nous permet de générer un nouveau projet android et de sélectionner en même 
+temps des librairies qui seront incluses et configurées comme il le faut. Il suffira tout simple de télécharger 
+le projet et de l’importer dans votre ide! Simple non ;-). 
+N’ayez pas peur si on vous propose des noms de librairies que vous ne connaissez pas encore. 
+J’en parlerai prochainement…</p>
 
   </div>
   
@@ -139,6 +164,113 @@ utilisant le mode daemon de gradle. Maintenant avec studio une simple case à co
     
   
 </div>
+
+<!-- 
+
+  <h1><a href="/2013/06/09/Les-librairies-Android-ne-pas-r%C3%A9inventer-la-roue/">Les librairies Android:ne pas réinventer la roue.</a></h1>
+  <p class="author">
+    <span class="date">2013-06-09 00:00:00 +0000</span>
+  </p>
+  <div class="content">
+    <p>Quand on développe pour une plateforme donnée, si on est novice ou pas assez informé, 
+on a tendance à perdre du temps à implémenter des fonctionnalités qui, avec un peu de recherche 
+sur la toile, nous aurait permis d’aller plus vite dans notre développement tout en ayant 
+du code propre et maintenable. 
+Le développement avec Android ne déroge pas à la règle. On trouvera une quantité inestimable 
+de ressources sur des sites, forums et blogs qui nous facilite ou disons nous permette d’aller 
+plus vite dans notre dév ou d’être plus focused sur le coeur même de l’application. </p>
+
+<p>Comme on peut le comprendre en lisant le titre de l’article, il s’agira ici d’essayer d’énumérer des 
+librairies android qui nous font gagner en temps et en qualité pour notre application! Des librairies 
+qui améliorent l’expériences utilisateurs tout en suivant les bonnes pratiques de la team Android de Google.</p>
+
+<h2>Pull To Refresh</h2>
+
+<p>Dans une application Android, il est presque impossible de ne pas trouver de liste d’éléments 
+(contacts, tweets, sms ou autres informations). Et en général les éléments de cette liste ne sont 
+pas statiques. D’où la nécessite de proposer un mécanisme de mise à jour des données assez simple et 
+intuitif: le PullToRefresh! </p>
+
+<p><img src="https://raw.github.com/chrisbanes/Android-PullToRefresh/master/header_graphic.png" alt="PullToRefresh"></p>
+
+<p>on le voit sur l’image, d’un simple tiret vers le bas de la liste puis d’un relachement, on a la possibilité 
+de mettre à jour les données! On peut imaginer appeler un service sur un autre thread pour récupérer les mises 
+à jours. Une belle librairie open source qui permet de mettre en place un système de rafraîchissement que l’on 
+retrouve dans presque toutes les apps connues. </p>
+
+<h2>Action Bar Sherlock</h2>
+
+<p><img src="http://soulesidibe.files.wordpress.com/2013/05/actionbar.png" alt="ActionBarSherlock"></p>
+
+<p>La prise en compte des tablettes à partir des version 3.0 d’Android est venu avec son lot de nouveautés dont 
+la action bar qui a rendu obseléte le bouton menu de nos anciens smartphones. 
+Le problème qui se pose c’est que pour utiliser cette bar d’action dans nos apps on est obligé d’avoir 
+comme minSdk l’api 11 dans notre manifest android! Ce qu’on ne peut pas faire pour cause une bonne partie 
+des devices sur android est en dessous de l’api 11! 
+La solution à cela est d’utiliser la librairie ActionBarSherlock qui va nous permettre d’avoir notre bar d’action 
+quelle que soit la version d’android (au minimum api 7). Et ainsi offrir la même expérience utilisateur sans tenir 
+compte de la version d’android de l’utilisateur. </p>
+
+<h2>Holo Everywhere</h2>
+
+<p>En suivant l’actualité autour de la sortie de la version 4 d’android, on n’a pas pu échapé au mot &quot;Holo&quot;. 
+C’est quoi Holo? 
+C’est tout simplement le nom donnée au thème qui est apparu avec ICS et surtout il a permis de rendre Android 
+beaucoup plus beau si on le compare un peu à IOS. Bon revenons au développeur qui veux faire une app qui le 
+rendra riche! Bah le truc qui coince ici c’est la même application n’a pas le même rendu quand on la lance 
+sur du Android 2.3.x ou sur du 4.2.x. Les composants ne sont pas les mêmes, la police de caractères change 
+et bien d’autres aspects visuels changent. 
+Vous l’avez compris, la librairie android Holo Everywhere, comme son nom l’indique va nous permettre d’avoir 
+le thème holo partout; les devices avec ICS inclus! </p>
+
+<h2>Sliding Menu</h2>
+
+<p><img src="http://soulesidibe.files.wordpress.com/2013/05/4png.png" alt="SlidingMenu"></p>
+
+<p>Si vous avez un android phone(normalement oui en tant que développeur android), vous avez du remarqué une 
+nouvelle tendance dans les interfaces. En effet, certaines fonctions de l’application ne sont plus présentent 
+sur la bar d’actions(qui sert le plus souvent pour partager du contenu sur les réseaux sociaux ou de menu 
+contextuel quand on fait un long press sur un élément d’une liste par exemple) mais sur un autre menu caché à 
+droite(et/ou à gauche) de l’écran et qui est rendu visible en faisant un &quot;slid&quot; des bordures de l’écran vers 
+l’écran lui même. ICI une app de démo. On retrouve cette façon de faire dans la plus part des apps stars du 
+playstore comme Google+, Evernote, The Verge, etc. 
+Une très belle libraire qui permet d’avoir accès à certaines fonctionnalités de nos apps de façon très simple. </p>
+
+<h2>Et beaucoup d’autres!</h2>
+
+<p>La liste de librairies présentées est loin d’être exhaustive! Il y en a beaucoup d’autres à découvrir, 
+tester et pourquoi pas utiliser dans nos apps. Un petit tour vers ce site, TheUltimateAndroidLibrary, 
+nous permet de voir qu’il y a des dév qui ont déjà réglé certains soucis donc il ne faut pas se gêner!<br>
+C’est le monde merveilleux d’android. Plein de librairies open source qui ne demandent qu’à être utilisées, 
+forkées et améliorées. </p>
+
+<h2>Bonus</h2>
+
+<p>Pour pouvoir utiliser ces librairies il faut les télécharger et les inclure à nos projets(sauf si on utilise 
+le plugin maven). Chose pas tout le temps facile avec nos soucis de connexion internet en Afrique, ou Eclipse 
+(avec ca dernière version) qui bug. Au bout d’un moment, on risque d’abandonner. 
+J’ai la solution qui vous permettra d’avoir la config prête en un clin d’oeil :D 
+Android Kick Start est un site qui nous permet de générer un nouveau projet android et de sélectionner en même 
+temps des librairies qui seront incluses et configurées comme il le faut. Il suffira tout simple de télécharger 
+le projet et de l’importer dans votre ide! Simple non ;-). 
+N’ayez pas peur si on vous propose des noms de librairies que vous ne connaissez pas encore. 
+J’en parlerai prochainement…</p>
+
+  </div>
+
+
+
+<div class="pagination">
+  
+    <a href="/page4" class="previous">Previous</a>
+  
+  <span class="page_number ">Page: 5 of 8</span>
+  
+    <a href="/page6" class="next">Next</a>
+  
+</div>
+
+-->
       <!-- Add Disqus comments. -->
 <div id="disqus_thread"></div>
 <script type="text/javascript">

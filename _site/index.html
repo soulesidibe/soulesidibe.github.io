@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-44424399-2', 'soulesidibe.github.io');
+  ga('send', 'pageview');
+
+</script>
   <head>
   <link href="http://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -50,52 +59,240 @@
   
   <div class="post">
     <h1 class="post-title">
-      <a href="/2014/01/02/introducing-poole/">
-        Introducing Poole
+      <a href="/2013/11/10/Linjection-de-dependances-roboguice/">
+        L’injection de dépendances:roboguice
       </a>
     </h1>
 
-    <span class="post-date">02 Jan 2014</span>
+    <span class="post-date">10 Nov 2013</span>
 
-    <p><em>The Strange Case of Dr. Jeykll and Mr. Hyde</em> tells the story of a lawyer investigating the connection of two persons, Dr. Henry Jekyll and Mr. Edward Hyde. Chief among the novel&#39;s supporting cast is a man by the name of Mr. Poole, Dr. Jekyll&#39;s loyal butler.</p>
+    <p>Je ne vais pas vous faire un cours sur l’injection de dépendances en java. Il y a de très bons livres 
+et de bonnes ressources sur le net. 
+Mais ce que je peux vous dire en gros, l’injection de dépendances va nous permettre de manager nos objects, 
+nos classes en vu d’un code plus claire et maintenable. 
+Pour vous donner un exemple de ce qu’on peut faire avec, on a l’habitude de faire ceci pour instancier 
+une view: </p>
 
-<hr>
+<div class="highlight"><pre><code class="java"><span class="n">Button</span> <span class="n">button</span> <span class="o">=</span> <span class="o">(</span><span class="n">Button</span><span class="o">)</span><span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">button</span><span class="o">);</span> 
+</code></pre></div>
 
-<p>Poole is the butler for <a href="http://jekyllrb.com">Jekyll</a>, the static site generator. It&#39;s designed and developed by <a href="https://twitter.com/mdo">@mdo</a> to provide a clear and concise foundational setup for any Jekyll site. It does so by furnishing a full vanilla Jekyll install with example templates, pages, posts, and styles.</p>
+<p>Avec de l’injection de dépendances on aura qu’à faire ceci: </p>
 
-<p>There are currently two themes built on Poole:</p>
+<div class="highlight"><pre><code class="java"><span class="nd">@InjectView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">button</span><span class="o">)</span> <span class="n">Button</span> <span class="n">button</span><span class="o">;</span> 
+</code></pre></div>
+
+<p>Pas mal non? :D 
+Donc comme je l’ai dit ça va grandement simplifier notre code java.</p>
+
+<h2>Comment faire de l’injection de dépendances</h2>
+
+<p>Comme d’habitude dans le monde java, il existe un bon paquet de librairies open source pour nous 
+simplifier la vie. On aura pas besoin d’implémenter nous même notre système d’injection de 
+dépendances. On peut qu’en même retenir les types d’injections de dépendances qui existent:</p>
 
 <ul>
-<li><a href="http://hyde.getpoole.com">Hyde</a></li>
-<li><a href="http://lanyon.getpoole.com">Lanyon</a></li>
+<li>l’injection par constructeur </li>
+<li>l’injection par interface </li>
+<li>l’injection par mutateur </li>
+<li>l’injection par champ </li>
 </ul>
 
-<p>Learn more and contribute on <a href="https://github.com/poole">GitHub</a>.</p>
+<p>Pour plus de détails je vous renvoie vers <a href="http://www-igm.univ-mlv.fr/%7Edr/XPOSE2010/guicespring/di_presentation.html">ce lien</a> qui explique assez clairement les choses… </p>
 
-<h3>What&#39;s included</h3>
+<h2>Roboguice</h2>
 
-<p>Poole is a streamlined Jekyll site designed and built as a foundation for building more meaningful themes. Poole, and every theme built on it, includes the following:</p>
+<blockquote>
+<p>RoboGuice is a framework that brings the simplicity and ease of Dependency Injection to Android, using Google’s own Guice library. If you’ve ever used Spring (the #1 enterprise framework on Java, now more popular than J2EE itself) or Guice, you already know how convenient this style of programming can be.</p>
+</blockquote>
+
+<p>Définition tirée du wiki du framework. 
+En résumé(ou pour traduire), roboguice permet d’adapter le framework d’injection de dépendances 
+<strong>Google Guice</strong> au monde android tout en y ajoutant des subtilités dues au cycle de vie particulier 
+d’une application android.
+Voici une liste non exhaustive des fonctionnalités de roboguice: </p>
 
 <ul>
-<li>Complete Jekyll setup included (layouts, config, <a href="/404">404</a>, <a href="/atom.xml">RSS feed</a>, posts, and <a href="/about">example page</a>)</li>
-<li>Mobile friendly design and development</li>
-<li>Easily scalable text and component sizing with <code>rem</code> units in the CSS</li>
-<li>Support for a wide gamut of HTML elements</li>
-<li>Related posts (time-based, because Jekyll) below each post</li>
-<li>Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)</li>
+<li>L’injection de view (@InjectView)</li>
+<li>l’injection de ressources(@InjectResource)</li>
+<li>l’injection de service(par exemple pour NotificationManager, on aura @Inject NoificationManager notifManager;)</li>
+<li>l’injection de pojo</li>
 </ul>
 
-<p>Additional features are available in individual themes.</p>
+<p>et bien d’autres bonnes choses…</p>
 
-<h3>Browser support</h3>
+<h2>Comment ça marche</h2>
 
-<p>Poole and it&#39;s themes are by preference a forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), and Firefox, it is only compatible with Internet Explorer 9 and above.</p>
+<p>Je vais vous montrer quelques fonctionnalités de roboguice. Le code est disponible sur github(see below…)
+On commence par se faire un petit projet dans android studio(regarde ceci si tu n’utilise pas encore l’IDE).
+Je suppose que vous êtes prêt  donc allons-y! </p>
 
-<h3>Download</h3>
+<p>NB: <em>Le projet que j’utilise a pour min SDK API 14 et pour target API 19 raison pour laquelle je n’ai pas pu injecter de view dans des fragments. Roboguice ne supportant pour le moment que la class Fragment du support V4.</em> </p>
 
-<p>Poole is developed on and hosted with GitHub. Head to the <a href="https://github.com/poole/poole">GitHub repository</a> for downloads, bug reports, and features requests.</p>
+<p>Ajout de la dépendances dans le fichier build.gradle: </p>
 
-<p>Thanks!</p>
+<div class="highlight"><pre><code class="groovy"><span class="n">dependencies</span> <span class="o">{</span>
+    <span class="n">compile</span> <span class="s1">&#39;org.roboguice:roboguice:2.0&#39;</span>
+<span class="o">}</span> 
+</code></pre></div>
+
+<p>Dans votre activity, vous devez hériter de RoboActivity à la place de Activity. Jettez un coup d’oeil 
+dans le package <strong>roboguice.activity</strong> pour voir un peu les types d’activity disponibles.</p>
+
+<p>Voici à quoi ressemble mon fichier layout. C’est un simple écran de connexion avec deux EditText 
+et un Button de connexion: </p>
+
+<div class="highlight"><pre><code class="xml"><span class="nt">&lt;RelativeLayout</span> <span class="na">xmlns:android=</span><span class="s">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="na">xmlns:tools=</span><span class="s">&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+    <span class="na">android:layout_height=</span><span class="s">&quot;match_parent&quot;</span>
+    <span class="na">tools:context=</span><span class="s">&quot;.MainActivity&quot;</span><span class="nt">&gt;</span>
+
+        <span class="nt">&lt;EditText</span>
+            <span class="na">android:id=</span><span class="s">&quot;@+id/edt_name&quot;</span>
+            <span class="na">android:singleLine=</span><span class="s">&quot;true&quot;</span>
+            <span class="na">android:hint=</span><span class="s">&quot;@string/str_login_name&quot;</span>
+            <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+            <span class="na">android:layout_width=</span><span class="s">&quot;wrap_content&quot;</span>
+            <span class="na">android:layout_centerVertical=</span><span class="s">&quot;true&quot;</span>
+            <span class="na">android:layout_alignParentRight=</span><span class="s">&quot;true&quot;</span>
+            <span class="na">android:layout_alignParentLeft=</span><span class="s">&quot;true&quot;</span> <span class="nt">/&gt;</span>
+
+        <span class="nt">&lt;EditText</span>
+            <span class="na">android:singleLine=</span><span class="s">&quot;true&quot;</span>
+            <span class="na">android:id=</span><span class="s">&quot;@+id/edt_passwd&quot;</span>
+            <span class="na">android:inputType=</span><span class="s">&quot;textPassword&quot;</span>
+            <span class="na">android:hint=</span><span class="s">&quot;@string/str_login_name&quot;</span>
+            <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+            <span class="na">android:layout_width=</span><span class="s">&quot;wrap_content&quot;</span>
+            <span class="na">android:layout_marginTop=</span><span class="s">&quot;30dp&quot;</span>
+            <span class="na">android:layout_below=</span><span class="s">&quot;@+id/edt_name&quot;</span>
+            <span class="na">android:layout_alignParentLeft=</span><span class="s">&quot;true&quot;</span>
+            <span class="na">android:layout_alignParentRight=</span><span class="s">&quot;true&quot;</span> <span class="nt">/&gt;</span>
+
+        <span class="nt">&lt;Button</span>
+            <span class="na">android:id=</span><span class="s">&quot;@+id/btn_connect&quot;</span>
+            <span class="na">android:text=</span><span class="s">&quot;@string/str_button_signin&quot;</span>
+            <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+            <span class="na">android:layout_width=</span><span class="s">&quot;wrap_content&quot;</span>
+            <span class="na">android:layout_alignParentBottom=</span><span class="s">&quot;true&quot;</span>
+            <span class="na">android:layout_alignParentRight=</span><span class="s">&quot;true&quot;</span>
+            <span class="na">android:layout_alignParentLeft=</span><span class="s">&quot;true&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/RelativeLayout&gt;</span>
+</code></pre></div>
+
+<p>Ma class MainActivity.java: </p>
+
+<div class="highlight"><pre><code class="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">RoboActivity</span> <span class="o">{</span>
+
+    <span class="nd">@InjectView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">edt_name</span><span class="o">)</span>
+    <span class="n">EditText</span> <span class="n">name</span><span class="o">;</span>
+    <span class="nd">@InjectView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">edt_passwd</span><span class="o">)</span>
+    <span class="n">EditText</span> <span class="n">passwd</span><span class="o">;</span>
+    <span class="nd">@InjectView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">btn_connect</span><span class="o">)</span>
+    <span class="n">Button</span> <span class="n">signin</span><span class="o">;</span>
+
+    <span class="nd">@InjectResource</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">string</span><span class="o">.</span><span class="na">str_welcome</span><span class="o">)</span>
+    <span class="n">String</span> <span class="n">welcome</span><span class="o">;</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+         <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
+         <span class="n">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_main</span><span class="o">);</span>
+
+         <span class="n">signin</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+         <span class="nd">@Override</span>
+             <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">v</span><span class="o">)</span> <span class="o">{</span>
+                 <span class="n">String</span> <span class="n">strName</span> <span class="o">=</span> <span class="s">&quot; &quot;</span> <span class="o">+</span> <span class="n">name</span><span class="o">.</span><span class="na">getText</span><span class="o">().</span><span class="na">toString</span><span class="o">();</span>
+                 <span class="n">Toast</span><span class="o">.</span><span class="na">makeText</span><span class="o">(</span><span class="n">MainActivity</span><span class="o">.</span><span class="na">this</span><span class="o">,</span> <span class="n">welcome</span> <span class="o">+</span> <span class="n">strName</span><span class="o">,</span> <span class="n">Toast</span><span class="o">.</span><span class="na">LENGTH_SHORT</span><span class="o">).</span><span class="na">show</span><span class="o">();</span>
+             <span class="o">}</span>
+        <span class="o">});</span>
+   <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+ 
+
+<p>That’s it! C’est super simple à utiliser. Il ne faut juste pas oublier qu’on utilise <strong>RoboActivity</strong> 
+à la place de Activity! Sinon, on se retouve avec des java.lang.NullPointerException!
+Regardons un peu notre méthode onCreate(). Elle s’est grandement simplifiée. Et il faut reconnaitre 
+que ce code ci-dessus est plus facile à lire et à maintenir que si on devait faire ceci: </p>
+
+<div class="highlight"><pre><code class="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">Activity</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="n">EditText</span> <span class="n">name</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">EditText</span> <span class="n">passwd</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">Button</span> <span class="n">signin</span><span class="o">;</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
+        <span class="n">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_main</span><span class="o">);</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="o">(</span><span class="n">EditText</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">edt_name</span><span class="o">);</span>
+        <span class="n">passwd</span> <span class="o">=</span> <span class="o">(</span><span class="n">EditText</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">edt_passwd</span><span class="o">);</span>
+        <span class="n">signin</span> <span class="o">=</span> <span class="o">(</span><span class="n">Button</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">btn_connect</span><span class="o">);</span>
+        <span class="kd">final</span> <span class="n">String</span> <span class="n">welcome</span> <span class="o">=</span> <span class="n">getResources</span><span class="o">().</span><span class="na">getString</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">string</span><span class="o">.</span><span class="na">str_welcome</span><span class="o">);</span>
+
+        <span class="n">signin</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">v</span><span class="o">){</span>
+                <span class="n">String</span> <span class="n">strName</span> <span class="o">=</span> <span class="s">&quot; &quot;</span> <span class="o">+</span> <span class="n">name</span><span class="o">.</span><span class="na">getText</span><span class="o">().</span><span class="na">toString</span><span class="o">();</span>
+                <span class="n">Toast</span><span class="o">.</span><span class="na">makeText</span><span class="o">(</span><span class="n">MainActivity</span><span class="o">.</span><span class="na">this</span><span class="o">,</span> <span class="n">welcome</span> <span class="o">+</span> <span class="n">strName</span><span class="o">,</span> <span class="n">Toast</span><span class="o">.</span><span class="na">LENGTH_SHORT</span><span class="o">).</span><span class="na">show</span><span class="o">();</span>
+            <span class="o">}</span>
+        <span class="o">});</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+ 
+
+<p>Vous êtes convaincus? Non? Bon voici quelques exemples d’applications utilisant Roboguice:</p>
+
+<ul>
+<li>Facebook Messenger</li>
+<li>Pulse</li>
+<li>Swiftkey</li>
+<li>Google Docs</li>
+</ul>
+
+<p>Pas mal non?
+Bon la librairie n’est pas parfaite non plus. Ce que je n’ai pas aimé:</p>
+
+<p>Si on utilise des fragments et qu’on a comme minSDKVersion 14, on ne peut tout simplement pas faire d’injections dans un fragment. La raison est que la classe RoboFragment, fournie, utilise android.support.v4.app.Fragment.
+Le non support de l’ActionBarCompat
+Heureusement que ces soucis seront corrigés dans les prochaines release! </p>
+
+<h2>Alternative à Roboguice</h2>
+
+<p>Il existe d’autres solutions pour faire de l’injection de dépendances. Je vais en citer deux!</p>
+
+<h3>Dagger</h3>
+
+<p>C’est une solution issue des labos de la célébre startup square. Elle permet d&#39;injecter tout ce que l&#39;on veut
+dans notre application. Pas uniquement des vues.
+Pour plus d’informations <a href="http://square.github.io/dagger/">le site officiel</a> </p>
+
+<h3>AndroidAnnotation</h3>
+
+<p>Je pourrai écrire un post sur ce framework tellement il y a des choses à dire. Déjà le but de cette 
+librairie d’après les concepteurs:</p>
+
+<blockquote>
+<p>We want to facilitate the writing and the maintenance of Android applications.
+ We believe that simple code with clear intents is the best way to achieve those goals. </p>
+</blockquote>
+
+<p>Pour atteindre leurs objectifs, on n’y trouve évidemment de l’injection de dépendances. Avec de simples annotations, 
+on peut faire des appels <strong>REST</strong>, exécuter du code en background, mettre en place des listeners avec <em>@Click</em>, etc. 
+Autre point fort, il supporte RoboGuice :). 
+Un truc sympa avec android annotation, supposons qu’on ait une vue avec comme id, <em>@+id/signin</em>. Pour la récupérer dans le code il suffit de faire:</p>
+
+<div class="highlight"><pre><code class="java"><span class="nd">@ViewById</span>
+<span class="n">ListView</span> <span class="n">signin</span><span class="o">;</span>
+</code></pre></div>
+
+<p>Pas besoin de lui spécifier l’id comme avec Roboguice. Il fera le mapping avec R.id.signin tout seul :).</p>
+
+<p>Voila voila!
+Si vous avez ce souci de vouloir toujours un code plus propre et maintenable, je vous conseille vivement 
+de revoir Roboguice ou plus généralement l’injection de dépendances.
+Le petit exemple de prise en main est dispo sur <a href="https://github.com/soulesidibe/roboguicesample">github</a>.</p>
 
   </div>
   
@@ -109,6 +306,257 @@
     <span class="pagination-item newer">Newer</span>
   
 </div>
+
+<!-- 
+
+  <h1><a href="/2013/11/10/Linjection-de-dependances-roboguice/">L’injection de dépendances:roboguice</a></h1>
+  <p class="author">
+    <span class="date">2013-11-10 00:00:00 +0000</span>
+  </p>
+  <div class="content">
+    <p>Je ne vais pas vous faire un cours sur l’injection de dépendances en java. Il y a de très bons livres 
+et de bonnes ressources sur le net. 
+Mais ce que je peux vous dire en gros, l’injection de dépendances va nous permettre de manager nos objects, 
+nos classes en vu d’un code plus claire et maintenable. 
+Pour vous donner un exemple de ce qu’on peut faire avec, on a l’habitude de faire ceci pour instancier 
+une view: </p>
+
+<div class="highlight"><pre><code class="java"><span class="n">Button</span> <span class="n">button</span> <span class="o">=</span> <span class="o">(</span><span class="n">Button</span><span class="o">)</span><span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">button</span><span class="o">);</span> 
+</code></pre></div>
+
+<p>Avec de l’injection de dépendances on aura qu’à faire ceci: </p>
+
+<div class="highlight"><pre><code class="java"><span class="nd">@InjectView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">button</span><span class="o">)</span> <span class="n">Button</span> <span class="n">button</span><span class="o">;</span> 
+</code></pre></div>
+
+<p>Pas mal non? :D 
+Donc comme je l’ai dit ça va grandement simplifier notre code java.</p>
+
+<h2>Comment faire de l’injection de dépendances</h2>
+
+<p>Comme d’habitude dans le monde java, il existe un bon paquet de librairies open source pour nous 
+simplifier la vie. On aura pas besoin d’implémenter nous même notre système d’injection de 
+dépendances. On peut qu’en même retenir les types d’injections de dépendances qui existent:</p>
+
+<ul>
+<li>l’injection par constructeur </li>
+<li>l’injection par interface </li>
+<li>l’injection par mutateur </li>
+<li>l’injection par champ </li>
+</ul>
+
+<p>Pour plus de détails je vous renvoie vers <a href="http://www-igm.univ-mlv.fr/%7Edr/XPOSE2010/guicespring/di_presentation.html">ce lien</a> qui explique assez clairement les choses… </p>
+
+<h2>Roboguice</h2>
+
+<blockquote>
+<p>RoboGuice is a framework that brings the simplicity and ease of Dependency Injection to Android, using Google’s own Guice library. If you’ve ever used Spring (the #1 enterprise framework on Java, now more popular than J2EE itself) or Guice, you already know how convenient this style of programming can be.</p>
+</blockquote>
+
+<p>Définition tirée du wiki du framework. 
+En résumé(ou pour traduire), roboguice permet d’adapter le framework d’injection de dépendances 
+<strong>Google Guice</strong> au monde android tout en y ajoutant des subtilités dues au cycle de vie particulier 
+d’une application android.
+Voici une liste non exhaustive des fonctionnalités de roboguice: </p>
+
+<ul>
+<li>L’injection de view (@InjectView)</li>
+<li>l’injection de ressources(@InjectResource)</li>
+<li>l’injection de service(par exemple pour NotificationManager, on aura @Inject NoificationManager notifManager;)</li>
+<li>l’injection de pojo</li>
+</ul>
+
+<p>et bien d’autres bonnes choses…</p>
+
+<h2>Comment ça marche</h2>
+
+<p>Je vais vous montrer quelques fonctionnalités de roboguice. Le code est disponible sur github(see below…)
+On commence par se faire un petit projet dans android studio(regarde ceci si tu n’utilise pas encore l’IDE).
+Je suppose que vous êtes prêt  donc allons-y! </p>
+
+<p>NB: <em>Le projet que j’utilise a pour min SDK API 14 et pour target API 19 raison pour laquelle je n’ai pas pu injecter de view dans des fragments. Roboguice ne supportant pour le moment que la class Fragment du support V4.</em> </p>
+
+<p>Ajout de la dépendances dans le fichier build.gradle: </p>
+
+<div class="highlight"><pre><code class="groovy"><span class="n">dependencies</span> <span class="o">{</span>
+    <span class="n">compile</span> <span class="s1">&#39;org.roboguice:roboguice:2.0&#39;</span>
+<span class="o">}</span> 
+</code></pre></div>
+
+<p>Dans votre activity, vous devez hériter de RoboActivity à la place de Activity. Jettez un coup d’oeil 
+dans le package <strong>roboguice.activity</strong> pour voir un peu les types d’activity disponibles.</p>
+
+<p>Voici à quoi ressemble mon fichier layout. C’est un simple écran de connexion avec deux EditText 
+et un Button de connexion: </p>
+
+<div class="highlight"><pre><code class="xml"><span class="nt">&lt;RelativeLayout</span> <span class="na">xmlns:android=</span><span class="s">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="na">xmlns:tools=</span><span class="s">&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+    <span class="na">android:layout_height=</span><span class="s">&quot;match_parent&quot;</span>
+    <span class="na">tools:context=</span><span class="s">&quot;.MainActivity&quot;</span><span class="nt">&gt;</span>
+
+        <span class="nt">&lt;EditText</span>
+            <span class="na">android:id=</span><span class="s">&quot;@+id/edt_name&quot;</span>
+            <span class="na">android:singleLine=</span><span class="s">&quot;true&quot;</span>
+            <span class="na">android:hint=</span><span class="s">&quot;@string/str_login_name&quot;</span>
+            <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+            <span class="na">android:layout_width=</span><span class="s">&quot;wrap_content&quot;</span>
+            <span class="na">android:layout_centerVertical=</span><span class="s">&quot;true&quot;</span>
+            <span class="na">android:layout_alignParentRight=</span><span class="s">&quot;true&quot;</span>
+            <span class="na">android:layout_alignParentLeft=</span><span class="s">&quot;true&quot;</span> <span class="nt">/&gt;</span>
+
+        <span class="nt">&lt;EditText</span>
+            <span class="na">android:singleLine=</span><span class="s">&quot;true&quot;</span>
+            <span class="na">android:id=</span><span class="s">&quot;@+id/edt_passwd&quot;</span>
+            <span class="na">android:inputType=</span><span class="s">&quot;textPassword&quot;</span>
+            <span class="na">android:hint=</span><span class="s">&quot;@string/str_login_name&quot;</span>
+            <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+            <span class="na">android:layout_width=</span><span class="s">&quot;wrap_content&quot;</span>
+            <span class="na">android:layout_marginTop=</span><span class="s">&quot;30dp&quot;</span>
+            <span class="na">android:layout_below=</span><span class="s">&quot;@+id/edt_name&quot;</span>
+            <span class="na">android:layout_alignParentLeft=</span><span class="s">&quot;true&quot;</span>
+            <span class="na">android:layout_alignParentRight=</span><span class="s">&quot;true&quot;</span> <span class="nt">/&gt;</span>
+
+        <span class="nt">&lt;Button</span>
+            <span class="na">android:id=</span><span class="s">&quot;@+id/btn_connect&quot;</span>
+            <span class="na">android:text=</span><span class="s">&quot;@string/str_button_signin&quot;</span>
+            <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+            <span class="na">android:layout_width=</span><span class="s">&quot;wrap_content&quot;</span>
+            <span class="na">android:layout_alignParentBottom=</span><span class="s">&quot;true&quot;</span>
+            <span class="na">android:layout_alignParentRight=</span><span class="s">&quot;true&quot;</span>
+            <span class="na">android:layout_alignParentLeft=</span><span class="s">&quot;true&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/RelativeLayout&gt;</span>
+</code></pre></div>
+
+<p>Ma class MainActivity.java: </p>
+
+<div class="highlight"><pre><code class="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">RoboActivity</span> <span class="o">{</span>
+
+    <span class="nd">@InjectView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">edt_name</span><span class="o">)</span>
+    <span class="n">EditText</span> <span class="n">name</span><span class="o">;</span>
+    <span class="nd">@InjectView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">edt_passwd</span><span class="o">)</span>
+    <span class="n">EditText</span> <span class="n">passwd</span><span class="o">;</span>
+    <span class="nd">@InjectView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">btn_connect</span><span class="o">)</span>
+    <span class="n">Button</span> <span class="n">signin</span><span class="o">;</span>
+
+    <span class="nd">@InjectResource</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">string</span><span class="o">.</span><span class="na">str_welcome</span><span class="o">)</span>
+    <span class="n">String</span> <span class="n">welcome</span><span class="o">;</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+         <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
+         <span class="n">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_main</span><span class="o">);</span>
+
+         <span class="n">signin</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+         <span class="nd">@Override</span>
+             <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">v</span><span class="o">)</span> <span class="o">{</span>
+                 <span class="n">String</span> <span class="n">strName</span> <span class="o">=</span> <span class="s">&quot; &quot;</span> <span class="o">+</span> <span class="n">name</span><span class="o">.</span><span class="na">getText</span><span class="o">().</span><span class="na">toString</span><span class="o">();</span>
+                 <span class="n">Toast</span><span class="o">.</span><span class="na">makeText</span><span class="o">(</span><span class="n">MainActivity</span><span class="o">.</span><span class="na">this</span><span class="o">,</span> <span class="n">welcome</span> <span class="o">+</span> <span class="n">strName</span><span class="o">,</span> <span class="n">Toast</span><span class="o">.</span><span class="na">LENGTH_SHORT</span><span class="o">).</span><span class="na">show</span><span class="o">();</span>
+             <span class="o">}</span>
+        <span class="o">});</span>
+   <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+ 
+
+<p>That’s it! C’est super simple à utiliser. Il ne faut juste pas oublier qu’on utilise <strong>RoboActivity</strong> 
+à la place de Activity! Sinon, on se retouve avec des java.lang.NullPointerException!
+Regardons un peu notre méthode onCreate(). Elle s’est grandement simplifiée. Et il faut reconnaitre 
+que ce code ci-dessus est plus facile à lire et à maintenir que si on devait faire ceci: </p>
+
+<div class="highlight"><pre><code class="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">Activity</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="n">EditText</span> <span class="n">name</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">EditText</span> <span class="n">passwd</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">Button</span> <span class="n">signin</span><span class="o">;</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
+        <span class="n">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_main</span><span class="o">);</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="o">(</span><span class="n">EditText</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">edt_name</span><span class="o">);</span>
+        <span class="n">passwd</span> <span class="o">=</span> <span class="o">(</span><span class="n">EditText</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">edt_passwd</span><span class="o">);</span>
+        <span class="n">signin</span> <span class="o">=</span> <span class="o">(</span><span class="n">Button</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">btn_connect</span><span class="o">);</span>
+        <span class="kd">final</span> <span class="n">String</span> <span class="n">welcome</span> <span class="o">=</span> <span class="n">getResources</span><span class="o">().</span><span class="na">getString</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">string</span><span class="o">.</span><span class="na">str_welcome</span><span class="o">);</span>
+
+        <span class="n">signin</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">v</span><span class="o">){</span>
+                <span class="n">String</span> <span class="n">strName</span> <span class="o">=</span> <span class="s">&quot; &quot;</span> <span class="o">+</span> <span class="n">name</span><span class="o">.</span><span class="na">getText</span><span class="o">().</span><span class="na">toString</span><span class="o">();</span>
+                <span class="n">Toast</span><span class="o">.</span><span class="na">makeText</span><span class="o">(</span><span class="n">MainActivity</span><span class="o">.</span><span class="na">this</span><span class="o">,</span> <span class="n">welcome</span> <span class="o">+</span> <span class="n">strName</span><span class="o">,</span> <span class="n">Toast</span><span class="o">.</span><span class="na">LENGTH_SHORT</span><span class="o">).</span><span class="na">show</span><span class="o">();</span>
+            <span class="o">}</span>
+        <span class="o">});</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+ 
+
+<p>Vous êtes convaincus? Non? Bon voici quelques exemples d’applications utilisant Roboguice:</p>
+
+<ul>
+<li>Facebook Messenger</li>
+<li>Pulse</li>
+<li>Swiftkey</li>
+<li>Google Docs</li>
+</ul>
+
+<p>Pas mal non?
+Bon la librairie n’est pas parfaite non plus. Ce que je n’ai pas aimé:</p>
+
+<p>Si on utilise des fragments et qu’on a comme minSDKVersion 14, on ne peut tout simplement pas faire d’injections dans un fragment. La raison est que la classe RoboFragment, fournie, utilise android.support.v4.app.Fragment.
+Le non support de l’ActionBarCompat
+Heureusement que ces soucis seront corrigés dans les prochaines release! </p>
+
+<h2>Alternative à Roboguice</h2>
+
+<p>Il existe d’autres solutions pour faire de l’injection de dépendances. Je vais en citer deux!</p>
+
+<h3>Dagger</h3>
+
+<p>C’est une solution issue des labos de la célébre startup square. Elle permet d&#39;injecter tout ce que l&#39;on veut
+dans notre application. Pas uniquement des vues.
+Pour plus d’informations <a href="http://square.github.io/dagger/">le site officiel</a> </p>
+
+<h3>AndroidAnnotation</h3>
+
+<p>Je pourrai écrire un post sur ce framework tellement il y a des choses à dire. Déjà le but de cette 
+librairie d’après les concepteurs:</p>
+
+<blockquote>
+<p>We want to facilitate the writing and the maintenance of Android applications.
+ We believe that simple code with clear intents is the best way to achieve those goals. </p>
+</blockquote>
+
+<p>Pour atteindre leurs objectifs, on n’y trouve évidemment de l’injection de dépendances. Avec de simples annotations, 
+on peut faire des appels <strong>REST</strong>, exécuter du code en background, mettre en place des listeners avec <em>@Click</em>, etc. 
+Autre point fort, il supporte RoboGuice :). 
+Un truc sympa avec android annotation, supposons qu’on ait une vue avec comme id, <em>@+id/signin</em>. Pour la récupérer dans le code il suffit de faire:</p>
+
+<div class="highlight"><pre><code class="java"><span class="nd">@ViewById</span>
+<span class="n">ListView</span> <span class="n">signin</span><span class="o">;</span>
+</code></pre></div>
+
+<p>Pas besoin de lui spécifier l’id comme avec Roboguice. Il fera le mapping avec R.id.signin tout seul :).</p>
+
+<p>Voila voila!
+Si vous avez ce souci de vouloir toujours un code plus propre et maintenable, je vous conseille vivement 
+de revoir Roboguice ou plus généralement l’injection de dépendances.
+Le petit exemple de prise en main est dispo sur <a href="https://github.com/soulesidibe/roboguicesample">github</a>.</p>
+
+  </div>
+
+
+
+<div class="pagination">
+  
+    <span class="previous">Previous</span>
+  
+  <span class="page_number ">Page: 1 of 8</span>
+  
+    <a href="/page2" class="next">Next</a>
+  
+</div>
+
+-->
       <!-- Add Disqus comments. -->
 <div id="disqus_thread"></div>
 <script type="text/javascript">

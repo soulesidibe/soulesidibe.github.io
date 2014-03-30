@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-44424399-2', 'soulesidibe.github.io');
+  ga('send', 'pageview');
+
+</script>
   <head>
   <link href="http://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -50,180 +59,202 @@
   
   <div class="post">
     <h1 class="post-title">
-      <a href="/2013/08/11/de-eclipse-a-android-studio/">
-        De eclipse à android Studio
+      <a href="/2012/12/08/Android-Consommer-un-web-service/">
+        Android:Consommer un web service
       </a>
     </h1>
 
-    <span class="post-date">11 Aug 2013</span>
+    <span class="post-date">08 Dec 2012</span>
 
-    <p>Comme vous le savez tous, lors du google IO 2013, il y a eu beaucoup de nouvelles concernant les développeurs android. 
-Je ne vais pas toutes les lister ici mais juste celle qui nous intéressent pour l’article du jour. 
-La team android nous a donc annoncé Android Studio! La nouvelle bête pour nos dévs en remplacement de l’IDE éclipse. </p>
-
-<p>Vous me direz ouff enfin un IDE dédié au développement android! Yes ils se sont enfin décidé. 
-La seconde grosse annonce fut le remplacement du système de build ant par gradle. 
-<a href="http://tools.android.com/tech-docs/new-build-system/user-guide#TOC-Goals-of-the-new-Build-System"><strong>ICI</strong></a> les raisons pour lesquelles la team android l’a choisi. </p>
-
-<p>Ok mais le souci est que tous nos projets actuels sont sous eclipse. Maintenant comment faire migrer ces projets 
-la vers SA et gradle? Google nous a fourni une démarche à suivre sur le site officiel. Pour un projet simple ca peut passer. Mais quand on a des projets librairies par ici ou des jars à en plus finir, ca devient un vrai casse-tête pour arriver à cette image:</p>
-
-<p><img src="http://soulesidibe.files.wordpress.com/2013/08/capture-du-2013-08-11-140412.png" alt="Android Studio"></p>
-
-<p>Mais bon on est la pour atteindre cette objectif :-). 
-Il nous faut, avant de commencer, un projet concret où on retrouvera quelques librairies(sous forme de project library 
-ou de jar). Pour vous faire gagner du temps en voici un petit projet héberger sur <a href="https://github.com/soulesidibe/KillApp">githtub</a>. </p>
-
-<p>Donc, on y trouve un projet utilisant les librairies ActionBarSherlock, PullToRefresh et deux jars l’un le support-v4 
-et une petite lib permettant d’utiliser l’api de bitly. Il vous suffit maintenant de cloner le projet et de redemarrer votre eclipse en prenant pour workspace le dossier créé lors du clone et enfin commencer :-). </p>
-
-<h2>Mettre à jour ADT</h2>
-
-<p>Pour faire la migration nous avons besoin d’un outil proposé par la dernière version du plugin ADT et permettant 
-de générer les fichiers utilisés par gradle pour construire notre projet. 
-D’où la nécessité de mettre à jour le plugin mais aussi votre sdk pour bénéficier des derniers &quot;tools&quot;.</p>
-
-<h2>gradle.build, settings.gradle</h2>
-
-<p>Il est temps maintenant d’exporter notre projet! La procédure est très simple! File -&gt; Export et on a cette fenêtre qui s’affiche: </p>
-
-<p><img src="http://soulesidibe.files.wordpress.com/2013/08/capture-du-2013-08-11-151318.png" alt="Eclipse adt"></p>
-
-<p>Donc on choisit &quot;Generate gradle build files&quot;: </p>
-
-<p><img src="http://soulesidibe.files.wordpress.com/2013/08/capture-du-2013-08-11-151541.png" alt="Eclipse adt"></p>
-
-<p>La il suffit de sélectionner le projet et non les dépendances du projet. Ici KillerApp. 
-Le reste c’est du suivant suivant… A ce stade, eclipse nous a généré tous les fichiers qu’il faut. 
-Quelques explications s’imposent. 
-Nous avons l’apparition de quelques fichiers à la racine de notre projet mais aussi dans les répertoires de chaque module.  Oops! je ne vous ai pas dit! Avec AS ou IntellIJ, le workspace de Eclipse devient un projet, le projet de Eclipse devient un module. <a href="http://confluence.jetbrains.com/display/IntelliJIDEA/FAQ+on+Migrating+to+IntelliJ+IDEA">Plus de détails ici</a>. Que représentent ces fichiers?</p>
-
-<p><img src="http://soulesidibe.files.wordpress.com/2013/08/capture-du-2013-08-11-152554.png" alt="terminator"></p>
+    <p>Je vais vous parler de comment se fait la consommation de web services dans une application android. 
+Pourquoi android? Deux raisons me pousse à parler des services sous cette plateforme mobile: </p>
 
 <ul>
-<li>gradle/: ce répertoire est une &quot;installation locale&quot; de l’outil gradle. on a donc pas besoin de l’installer sur notre pc. C’est la pratique qui est conseillé pour etre sure d’avoir tout le temps la bonne version de gradle pour builder nos projets</li>
-<li>gradlew, gradlew.bat: c’est le script qui nous permet de lancer les builds sur notre projet en ligne de commande au lieu de passer par Android Studio. Par exemple, pour générer un apk on peut lancer la commande ./gradlew clean assemble</li>
-<li>build.gradle et settings.gradle sont les deux fichiers où on passera le plus de temps pour configurer nos projets et leurs dépendances. Ce sont les fichiers de configurations.</li>
+<li>La presque totalité des jeunes étudiants fraîchement sortis de nos écoles d’informatique a eu à suivre un 
+programme sur le développement avec le langage java (le langage de choix des profs pour appliquer les 
+concepts de l’orienté objet). Et c’est se même langage qui est utilisé pour le développement sous android. </li>
+<li>Parmi les plateformes mobiles à la mode, android offre une accessibilité &quot;bon marché&quot;: 12.OOOFCFA ($25) 
+pour avoir un compte développeur à vie, et les outils de développement sont accessible sur tous les systèmes 
+d’exploitation et gratuitement. </li>
 </ul>
 
-<h2>Android Studio</h2>
+<p>Avant de rentrer dans le vif du sujet, il est bon se mettre dans un contexte où utiliser des web 
+services devient essentiel! Imaginons que vous avez développer une application (desktop, web ou autre) 
+qui a fait le buzz! Et tout vas pour le mieux :-). Mais à un moment donné, vous vous rendez compte que votre 
+application devrait pouvoir être utilisé pas que quand on est devant un PC. Et là vous commencez à penser à 
+une application mobile sur les différentes plateforme star à savoir Android, IOS et Windows phone.</p>
 
-<p>On peut maintenant importer notre projet sur AS en choisissant le fichier build.gradle situé à la racine du projet. 
-Apres quelques temps(lecture des fichiers de conf, résolution des dépendances, etc), nous avons enfin AS qui se lance avec notre projet KillerApp ouvert! Et si on essayait de lancer l’app pour voir un peu?</p>
+<p>Un autre problème se pose. Comment allez vous faire pour mettre toute la logique de votre killer app dans 
+un smartphone! déjà qu’il faudra une version par système d’exploitation, si on doit porter toute la logique 
+sur chaque langage de programmation(java, objective-C, C#), bonjour la galère! </p>
 
-<p>Bon évidemment ça ne passe pas. Gradle nous signifie qu’il y a des erreurs un peu partout et quand on regarde de plus prêt, nos librairies en sont pour quelque chose… </p>
+<p>Vous l’avez devenez! La solution c’est de garder la logique métier côté serveur et que chaque client
+(mobile, web, desktop) fasse des appels quand il a besoin d’une ressource spécifique. Les web services REST 
+sont une très bonne alternative pour mettre en place ce genre de technique.  Pas besoin d’une implémentation 
+par langage; tous les clients utiliseront le protocole http pour communiquer avec les serveurs. Ce qui simplifie 
+grandement les échanges entres les différentes entités. </p>
 
-<p>Commençons par regarder le contenu des fichier build.gradle et settings.gradle de la racine.
-settings.gradle: </p>
+<p>(La gestion des exceptions et certaines initialisations de variable ont été volontairement omises.) </p>
 
-<div class="highlight"><pre><code class="groovy"><span class="n">include</span> <span class="s1">&#39;:pull_to_refresh&#39;</span>
-<span class="n">include</span> <span class="s1">&#39;:ABS&#39;</span>
-<span class="n">include</span> <span class="s1">&#39;:KillerApp&#39;</span>
+<h2>Faire un appel</h2>
+
+<p>Pour faire un appel vu que REST est orienté web, on va utiliser les classes du package java.net. On crée un objet 
+de type URL qui va contenir l’adresse de la ressource ou tout simplement le lien du service: </p>
+
+<div class="highlight"><pre><code class="java"><span class="n">URL</span> <span class="n">url</span> <span class="o">=</span> <span class="k">new</span> <span class="n">URL</span><span class="o">(</span><span class="s">&quot;http://chemin/vers/service&quot;</span><span class="o">);</span>
 </code></pre></div>
 
-<p>Donc on comprends que c’est dans ce fichier qu’on déclare les modules à inclure dans le build.
-Le build lui même est configuré dans le fichier du même nom, build.gradle: </p>
+<p>On ouvre une connexion</p>
 
-<div class="highlight"><pre><code class="groovy"><span class="n">buildscript</span> <span class="o">{</span>
-    <span class="n">repositories</span> <span class="o">{</span>
-        <span class="n">mavenCentral</span><span class="o">()</span>
-    <span class="o">}</span>
-    <span class="n">dependencies</span> <span class="o">{</span>
-        <span class="n">classpath</span> <span class="s1">&#39;com.android.tools.build:gradle:0.5.+&#39;</span>
-    <span class="o">}</span>
+<div class="highlight"><pre><code class="java"><span class="n">URLConnection</span> <span class="n">connection</span> <span class="o">=</span> <span class="n">url</span><span class="o">.</span><span class="na">openConnection</span><span class="o">();</span>
+<span class="n">HttpURLConnection</span> <span class="n">httpConnection</span> <span class="o">=</span> <span class="o">(</span><span class="n">HttpURLConnection</span><span class="o">)</span> <span class="n">connection</span><span class="o">;</span>
+</code></pre></div>
+
+<p>Récupération du code de retour. Vu qu’on est en HTTP. Si tout c’est bien passé on doit recevoir le code 200 (ici HttpURLConnection.HTTP_OK) et enfin récupérer notre flux:</p>
+
+<div class="highlight"><pre><code class="java"><span class="kt">int</span> <span class="n">responseCode</span> <span class="o">=</span> <span class="n">httpConnection</span><span class="o">.</span><span class="na">getResponseCode</span><span class="o">();</span>
+<span class="k">if</span> <span class="o">(</span><span class="n">responseCode</span> <span class="o">==</span> <span class="n">HttpURLConnection</span><span class="o">.</span><span class="na">HTTP_OK</span><span class="o">)</span> <span class="o">{</span>
+   <span class="n">in</span> <span class="o">=</span> <span class="n">httpConnection</span><span class="o">.</span><span class="na">getInputStream</span><span class="o">();</span>
 <span class="o">}</span>
 </code></pre></div>
 
-<p>Il est assez simple comme fichier. La raison de cette simplicité est que la tendance est à avoir une convention de base dans la façon de construire un apk. Ce que l’on rajoute dans le fichier de configuration ce sont les informations qui font que le projet est spécifique. À savoir, les dépendances, l’emplacement de certains dossiers sources, etc. 
-Ici, une dépendance au plugin android pour gradle en version 0.5 au moins. </p>
+<p>A ce stade nous avons un objet de type InputStream qui contient les informations que le serveur a renvoyé.</p>
 
-<p>Autre détail, les fichiers build et settings de nos modules héritent des paramètres de deux de la racine. Donc on aura pas besoin de déclarer à nouveau une dépendance vers gradle 0.5. On comprend que c’est le lieux pour toutes configurations applicables à l’ensemble du projet. C’est le cas des paramétres comme le minSdk, le buildToolsVersion, etc. Ces informations sont souvent source de &quot;fail&quot; lors d’un build. </p>
+<h2>Parser du xml avec XMLPullParser</h2>
 
-<p>On a donc:  </p>
+<p>Apres la récupération des données il faut bien les lires. 
+Pour cela il faudra utiliser un parseur en fonction de la techno utiliser pour envoyer les données côté serveur. 
+Dans le cas du xml, il existe un parseur natif intégrer à Android: XMLPullParser. C’est un parseur bas niveau; 
+c’est a dire qu’il faudra parcourir tout le document xml, tag par tag et faire des traitements en fonction du tag 
+rencontré. Voici un exemple de xml que l’on peut recevoir: </p>
 
-<div class="highlight"><pre><code class="groovy"><span class="n">buildscript</span> <span class="o">{</span>
-    <span class="n">repositories</span> <span class="o">{</span>
-        <span class="n">mavenCentral</span><span class="o">()</span>
-    <span class="o">}</span>
-    <span class="n">dependencies</span> <span class="o">{</span>
-        <span class="n">classpath</span> <span class="s1">&#39;com.android.tools.build:gradle:0.5.+&#39;</span>
-    <span class="o">}</span>
+<div class="highlight"><pre><code class="xml"><span class="nt">&lt;personnes&gt;</span>
+   <span class="nt">&lt;personne</span> <span class="na">genre=</span><span class="s">&quot;feminin&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;nom&gt;</span>Diallo<span class="nt">&lt;/nom&gt;</span>
+      <span class="nt">&lt;prenom&gt;</span>Binta<span class="nt">&lt;/prenom&gt;</span>
+      <span class="nt">&lt;age&gt;</span>15<span class="nt">&lt;/age&gt;</span>
+   <span class="nt">&lt;/personne&gt;</span>
+   <span class="nt">&lt;personne</span> <span class="na">genre=</span><span class="s">&quot;masculin&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;nom&gt;</span>Ndiaye<span class="nt">&lt;/nom&gt;</span>
+      <span class="nt">&lt;prenom&gt;</span>Alioune<span class="nt">&lt;/prenom&gt;</span>
+      <span class="nt">&lt;age&gt;</span>25<span class="nt">&lt;/age&gt;</span>
+   <span class="nt">&lt;/personne&gt;</span>
+<span class="nt">&lt;/personnes&gt;</span>
+</code></pre></div>
+ 
 
-    <span class="n">ext</span><span class="o">.</span><span class="na">compileSdkVersion</span><span class="o">=</span><span class="mi">18</span>
-    <span class="n">ext</span><span class="o">.</span><span class="na">buildToolsVersion</span><span class="o">=</span><span class="s2">&quot;18.0.0&quot;</span>
-    <span class="n">ext</span><span class="o">.</span><span class="na">minSdkVersion</span><span class="o">=</span><span class="mi">8</span>
-    <span class="n">ext</span><span class="o">.</span><span class="na">targetSdkVersion</span><span class="o">=</span><span class="mi">18</span>
+<p>On aura besoin d’un objet String pour contenir la valeur d’un tag à chaque passage., un objet qui va nous 
+fournir un parseur qui aura les paramètres indiqués( ici le support des espaces de noms, voir doc de <strong>XmlPullParserFactory</strong>), 
+Et enfin générer notre parseur et lui spécifier l’objet InputStream avec lequel il devra travailler: </p>
+
+<div class="highlight"><pre><code class="java"><span class="n">String</span> <span class="n">valeur</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+<span class="n">XmlPullParserFactory</span> <span class="n">factory</span> <span class="o">=</span> <span class="n">XmlPullParserFactory</span><span class="o">.</span><span class="na">newInstance</span><span class="o">();</span>
+<span class="n">factory</span><span class="o">.</span><span class="na">setNamespaceAware</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+<span class="n">XmlPullParser</span> <span class="n">xpp</span> <span class="o">=</span> <span class="n">factory</span><span class="o">.</span><span class="na">newPullParser</span><span class="o">();</span>
+<span class="n">xpp</span><span class="o">.</span><span class="na">setInput</span><span class="o">(</span><span class="n">in</span><span class="o">,</span> <span class="kc">null</span><span class="o">);</span>
+</code></pre></div>
+ 
+
+<p>Voici un morceau de code tiré de la doc officiel qu’on peut utiliser pour extraire les informations du InputStream: </p>
+
+<div class="highlight"><pre><code class="java"><span class="c1">//Le type d&#39;evenement pour savoir si on est au debut du xml et bien </span>
+<span class="c1">//d&#39;autres informations</span>
+<span class="kt">int</span> <span class="n">eventType</span> <span class="o">=</span> <span class="n">xpp</span><span class="o">.</span><span class="na">getEventType</span><span class="o">();</span>
+<span class="c1">//Tant qu&#39;on n&#39;est pas à la fin du document</span>
+<span class="k">while</span> <span class="o">(</span><span class="n">eventType</span> <span class="o">!=</span> <span class="n">XmlPullParser</span><span class="o">.</span><span class="na">END_DOCUMENT</span><span class="o">)</span> <span class="o">{</span>
+   <span class="c1">//Si on est au debut d&#39;un tag</span>
+   <span class="k">if</span><span class="o">(</span><span class="n">eventType</span> <span class="o">==</span> <span class="n">XmlPullParser</span><span class="o">.</span><span class="na">START_TAG</span><span class="o">)</span> <span class="o">{</span>
+      <span class="k">if</span> <span class="o">(</span><span class="n">xpp</span><span class="o">.</span><span class="na">getName</span><span class="o">().</span><span class="na">equals</span><span class="o">(</span><span class="s">&quot;personne&quot;</span><span class="o">))</span> <span class="o">{</span>
+         <span class="n">genre</span> <span class="o">=</span> <span class="n">xpp</span><span class="o">.</span><span class="na">getAttributeValue</span><span class="o">(</span><span class="kc">null</span><span class="o">,</span> <span class="s">&quot;genre&quot;</span><span class="o">);</span>
+      <span class="o">}</span>
+   <span class="o">}</span> <span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">eventType</span> <span class="o">==</span> <span class="n">XmlPullParser</span><span class="o">.</span><span class="na">END_TAG</span><span class="o">)</span> <span class="o">{</span>
+      <span class="k">if</span> <span class="o">(</span><span class="n">xpp</span><span class="o">.</span><span class="na">getName</span><span class="o">().</span><span class="na">equals</span><span class="o">(</span><span class="s">&quot;nom&quot;</span><span class="o">)){</span>
+         <span class="n">nom</span> <span class="o">=</span> <span class="n">valeur</span><span class="o">;</span>
+         <span class="n">valeur</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+      <span class="o">}</span> 
+   <span class="o">}</span> <span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">eventType</span> <span class="o">==</span> <span class="n">XmlPullParser</span><span class="o">.</span><span class="na">TEXT</span><span class="o">)</span> <span class="o">{</span>
+       <span class="c1">//recuperation de la valeur pour le tag actuel</span>
+       <span class="n">valeur</span> <span class="o">=</span> <span class="n">xpp</span><span class="o">.</span><span class="na">getText</span><span class="o">();</span>
+   <span class="o">}</span>
+   <span class="n">eventType</span> <span class="o">=</span> <span class="n">xpp</span><span class="o">.</span><span class="na">next</span><span class="o">();</span>
 <span class="o">}</span>
 </code></pre></div>
+ 
 
-<p>Passons aux dépendances du module ActionBarSherlock. Il a besoin de la librairie android support-v4. Il y a deux façons de procéder: </p>
+<p>Une petite astuce que vous avez surement remarqué, en début de tag on récupére les attributs du tag, en fin de 
+tag on récupère la valeur pour ce tag. 
+Un exemple concret sur ce parseur sur <a href="https://github.com/soulesidibe/xmlPullParserExemple">github</a>. </p>
+
+<h2>Manipuler du json</h2>
+
+<p>Pour traiter du json reçu via un web service, Android embarque en natif un package constituer de classe 
+pour faire le job: <strong>org.json.</strong>* .Elles sont très simples d’utilisation. Voyons ce cas pratique de json: </p>
+
+<div class="highlight"><pre><code class="json"><span class="p">{</span>
+   <span class="nt">&quot;personnes&quot;</span><span class="p">:[</span>
+      <span class="p">{</span>
+         <span class="nt">&quot;nom&quot;</span><span class="p">:</span><span class="s2">&quot;Fama&quot;</span><span class="p">,</span>         
+         <span class="nt">&quot;prenom&quot;</span><span class="p">:</span><span class="s2">&quot;Mbaye&quot;</span><span class="p">,</span>         
+         <span class="nt">&quot;age&quot;</span><span class="p">:</span><span class="s2">&quot;19&quot;</span><span class="p">,</span>        
+         <span class="nt">&quot;genre&quot;</span><span class="p">:</span><span class="s2">&quot;feminin&quot;</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+         <span class="nt">&quot;nom&quot;</span><span class="p">:</span><span class="s2">&quot;Jack&quot;</span><span class="p">,</span>
+         <span class="nt">&quot;prenom&quot;</span><span class="p">:</span><span class="s2">&quot;Anthoine&quot;</span><span class="p">,</span>
+         <span class="nt">&quot;age&quot;</span><span class="p">:</span><span class="s2">&quot;30&quot;</span><span class="p">,</span>
+         <span class="nt">&quot;genre&quot;</span><span class="p">:</span><span class="s2">&quot;masculin&quot;</span>
+      <span class="p">}</span>
+   <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+ 
+
+<p>Le code pour récupérer les informations ci-dessus: </p>
+
+<div class="highlight"><pre><code class="java"><span class="c1">//Convertir le InputStream de départ en String</span>
+<span class="n">BufferedReader</span> <span class="n">bufferedReader</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BufferedReader</span><span class="o">(</span>
+    <span class="k">new</span> <span class="nf">InputStreamReader</span><span class="o">(</span><span class="n">in</span><span class="o">));</span>
+<span class="n">StringBuilder</span> <span class="n">stringBuilder</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StringBuilder</span><span class="o">();</span>
+<span class="n">String</span> <span class="n">uneLigneLue</span> <span class="o">=</span> <span class="n">bufferedReader</span><span class="o">.</span><span class="na">readLine</span><span class="o">();</span>
+<span class="k">while</span> <span class="o">(</span><span class="n">uneLigneLue</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+   <span class="c1">//on ajoute la nouvelle ligne lue dans le StringBuilder</span>
+   <span class="n">stringBuilder</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">UneLigneLue</span> <span class="o">+</span> <span class="s">&quot;\n&quot;</span><span class="o">);</span>
+   <span class="c1">//lecture de la ligne suivante</span>
+   <span class="n">ligneLue</span> <span class="o">=</span> <span class="n">bufferedReader</span><span class="o">.</span><span class="na">readLine</span><span class="o">();</span> 
+<span class="o">}</span>
+<span class="n">bufferedReader</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+
+<span class="c1">//notre Objet maguique</span>
+<span class="n">JSONObject</span> <span class="n">object</span> <span class="o">=</span> <span class="k">new</span> <span class="n">JSONObject</span><span class="o">(</span><span class="n">stringBuilder</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
+<span class="n">JSONArray</span> <span class="n">array</span> <span class="o">=</span> <span class="n">object</span><span class="o">.</span><span class="na">getJSONArray</span><span class="o">(</span><span class="s">&quot;personnes&quot;</span><span class="o">);</span>
+<span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">array</span><span class="o">.</span><span class="na">length</span><span class="o">()</span> <span class="o">;</span> <span class="n">i</span><span class="o">++){</span>
+    <span class="n">nom</span> <span class="o">=</span> <span class="n">array</span><span class="o">.</span><span class="na">getJSONObject</span><span class="o">(</span><span class="n">i</span><span class="o">).</span><span class="na">getString</span><span class="o">(</span><span class="s">&quot;nom&quot;</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div>
+ 
+
+<p>Un cas concret de manipulation du json sur <a href="https://github.com/soulesidibe/JsonParserExemple">github</a>. </p>
+
+<p>Cette facon de faire est pratique pour des fichiers aussi simple que celui utilisé mais il est mieux dans 
+certains cas d’opter pour des librairies qui ajoutent un niveau d’abstraction dans un souci de simplifier 
+la manipulation du json. C’est le cas de la librairie <strong>GSON</strong> qui permet de faire le passage du JSON en <strong>POJO</strong> 
+et vice versa.  Il y a aussi la librairie <strong>JACKSON</strong> tout aussi puissante. 
+Il faut juste choisir celle qui nous rend efficace. </p>
+
+<h2>Oui mais pourquoi faire?</h2>
+
+<p>Apres avoir reçu les données du serveur, après avoir convertir le xml/json en objet java, en tant que 
+dévelopeur java, il n’y a pas vraiment de limite! 
+Dans le contexte d’un développement android, il y a plusieurs manières d’utiliser ces données: </p>
 
 <ul>
-<li>soit on met le fichier jar dans le dossier libs et on rajoute ceci dans son build.gradle: </li>
+<li>Mettre à jour une liste: exemple une vue qui affiche la timeline d’un compte twitter a besoin de récupérer 
+les informations des serveurs de twitter pour les exposer à l’utilisateur via une ListView ou une ListActivity;</li>
+<li>Renseigner une base de données (sqlite) pour une utilisation de l’application en offline </li>
 </ul>
 
-<div class="highlight"><pre><code class="groovy">   <span class="n">dependencies</span> <span class="o">{</span>
-        <span class="n">compile</span> <span class="nf">fileTree</span><span class="o">(</span><span class="nl">dir:</span> <span class="s1">&#39;libs&#39;</span><span class="o">,</span> <span class="nl">include:</span> <span class="s1">&#39;*.jar&#39;</span><span class="o">)</span>
-    <span class="o">}</span>
-    
-</code></pre></div>
-
-<ul>
-<li>soit on utilise la pleine puissance de maven pour qu’il nous gére nos dépendances sans qu’on n’ait à se préoccuper des fichiers jars. Dans ce cas il suffira de rajouter ces quelques lignes: </li>
-</ul>
-
-<div class="highlight"><pre><code class="groovy">   <span class="n">repositories</span> <span class="o">{</span>
-        <span class="n">mavenLocal</span><span class="o">()</span>
-    <span class="o">}</span>
-    <span class="n">dependencies</span> <span class="o">{</span>
-        <span class="n">compile</span> <span class="s1">&#39;com.android.support:support-v4:18.0.0&#39;</span>
-    <span class="o">}</span>
-    
-</code></pre></div>
-
-<p>Ainsi, on peut se débarrasser du dossier libs. gradle se chargera d’aller chercher le bon fichier jar et de l’inclure au classpath de notre projet.</p>
-
-<p>Pour en savoir un peu plus sur maven, je vous recommande de lire cette série d’articles.
-Il ne faudra pas oublier de remplacer ceci: </p>
-
-<div class="highlight"><pre><code class="groovy"><span class="n">compileSdkVersion</span> <span class="mi">14</span>    
-<span class="n">buildToolsVersion</span> <span class="s2">&quot;18.0.1&quot;</span>
-</code></pre></div>
-
-<p>par:</p>
-
-<div class="highlight"><pre><code class="groovy"><span class="n">compileSdkVersion</span> <span class="n">rootProject</span><span class="o">.</span><span class="na">compileSdkVersion</span>
-<span class="n">buildToolsVersion</span> <span class="n">rootProject</span><span class="o">.</span><span class="na">buildToolsVersion</span>
-</code></pre></div>
-
-<p>dans tous les modules du projet.
-Pour rappel, on avait dit que certains paramètres devront être les mêmes pour tous les modules du projet par souci de cohérence. </p>
-
-<p>Petite info que j’ai sauté, pour faire la diferrence entre une librairie et un module, il suffit d’appliquer le plugin qu’il faut. Donc pour ActionBarSherlock on aura
-<code>apply plugin: ‘android-library’</code> et pour le module KillerApp <code>apply plugin: ‘android’</code> dans le fichier build.gradle. &quot;android-library&quot; génére un aar(Android Archive) alors que &quot;android&quot; génére un APK. </p>
-
-<p>Le module PullToRefresh n’a besoin d’aucune dépendance spécifique donc on peut s’attaquer au module KillerApp. Voici ce qu’on rajoutera</p>
-
-<div class="highlight"><pre><code class="groovy"><span class="n">repositories</span> <span class="o">{</span>
-    <span class="n">mavenLocal</span><span class="o">()</span>
-<span class="o">}</span>
-<span class="n">dependencies</span> <span class="o">{</span>
-    <span class="n">compile</span> <span class="s1">&#39;com.android.support:support-v4:18.0.0&#39;</span>
-    <span class="n">compile</span> <span class="nf">files</span><span class="o">(</span><span class="nl">dir:</span> <span class="s1">&#39;libs&#39;</span><span class="o">,</span> <span class="nl">include:</span> <span class="s1">&#39;*.jar&#39;</span><span class="o">)</span>
-    <span class="n">compile</span> <span class="nf">project</span><span class="o">(</span><span class="s1">&#39;:ABS&#39;</span><span class="o">)</span>
-    <span class="n">compile</span> <span class="nf">project</span><span class="o">(</span><span class="s1">&#39;:pull_to_refresh&#39;</span><span class="o">)</span>
-<span class="o">}</span>
-</code></pre></div>
-
-<p>On lui spécifie qu’il aura besoin du support-v4 et des librairies ABS et pull<em>to</em>refresh présentes à la racine.
-On y est! Tout a été configuré, maintenant il suffit de faire un  build pour voir que tout compile comme il faut! </p>
-
-<p><img src="http://soulesidibe.files.wordpress.com/2013/08/capture-du-2013-08-11-204553.png" alt="AS"></p>
-
-<p>Nous venons de voir qu’il n’est pas très compliqué de passer de Éclipse à Android Studio. Il suffit juste d’avoir des connaissances sur gradle, maven et de se familiariser un peu avec l’IDE. </p>
-
-<p>Vu que l’article n’avait pas pour objectif de vous donner ces bases, je vous recommande fortement d’aller lire en entier cette <a href="http://blog.stylingandroid.com/archives/1872">série d’articles</a> sur gradle(7 en tout) et aussi de lire la <a href="http://tools.android.com/tech-docs/new-build-system/user-guide">documentation</a> fournie par google(pour une utilisation avancée). 
-Avec cela vous pourrez avoir un usage professionnel de ces outils assez puissants :D.</p>
+<p>Les possibilités n’ont pas de limite. Ça dépendra de ce que l’application fait et de comment 
+le développeur veut le faire.</p>
 
   </div>
   
@@ -231,7 +262,7 @@ Avec cela vous pourrez avoir un usage professionnel de ces outils assez puissant
 
 <div class="pagination">
   
-    <span class="pagination-item older">Older</span>
+    <a class="pagination-item older" href="/page8">Older</a>
   
   
     
@@ -239,6 +270,219 @@ Avec cela vous pourrez avoir un usage professionnel de ces outils assez puissant
     
   
 </div>
+
+<!-- 
+
+  <h1><a href="/2012/12/08/Android-Consommer-un-web-service/">Android:Consommer un web service</a></h1>
+  <p class="author">
+    <span class="date">2012-12-08 00:00:00 +0000</span>
+  </p>
+  <div class="content">
+    <p>Je vais vous parler de comment se fait la consommation de web services dans une application android. 
+Pourquoi android? Deux raisons me pousse à parler des services sous cette plateforme mobile: </p>
+
+<ul>
+<li>La presque totalité des jeunes étudiants fraîchement sortis de nos écoles d’informatique a eu à suivre un 
+programme sur le développement avec le langage java (le langage de choix des profs pour appliquer les 
+concepts de l’orienté objet). Et c’est se même langage qui est utilisé pour le développement sous android. </li>
+<li>Parmi les plateformes mobiles à la mode, android offre une accessibilité &quot;bon marché&quot;: 12.OOOFCFA ($25) 
+pour avoir un compte développeur à vie, et les outils de développement sont accessible sur tous les systèmes 
+d’exploitation et gratuitement. </li>
+</ul>
+
+<p>Avant de rentrer dans le vif du sujet, il est bon se mettre dans un contexte où utiliser des web 
+services devient essentiel! Imaginons que vous avez développer une application (desktop, web ou autre) 
+qui a fait le buzz! Et tout vas pour le mieux :-). Mais à un moment donné, vous vous rendez compte que votre 
+application devrait pouvoir être utilisé pas que quand on est devant un PC. Et là vous commencez à penser à 
+une application mobile sur les différentes plateforme star à savoir Android, IOS et Windows phone.</p>
+
+<p>Un autre problème se pose. Comment allez vous faire pour mettre toute la logique de votre killer app dans 
+un smartphone! déjà qu’il faudra une version par système d’exploitation, si on doit porter toute la logique 
+sur chaque langage de programmation(java, objective-C, C#), bonjour la galère! </p>
+
+<p>Vous l’avez devenez! La solution c’est de garder la logique métier côté serveur et que chaque client
+(mobile, web, desktop) fasse des appels quand il a besoin d’une ressource spécifique. Les web services REST 
+sont une très bonne alternative pour mettre en place ce genre de technique.  Pas besoin d’une implémentation 
+par langage; tous les clients utiliseront le protocole http pour communiquer avec les serveurs. Ce qui simplifie 
+grandement les échanges entres les différentes entités. </p>
+
+<p>(La gestion des exceptions et certaines initialisations de variable ont été volontairement omises.) </p>
+
+<h2>Faire un appel</h2>
+
+<p>Pour faire un appel vu que REST est orienté web, on va utiliser les classes du package java.net. On crée un objet 
+de type URL qui va contenir l’adresse de la ressource ou tout simplement le lien du service: </p>
+
+<div class="highlight"><pre><code class="java"><span class="n">URL</span> <span class="n">url</span> <span class="o">=</span> <span class="k">new</span> <span class="n">URL</span><span class="o">(</span><span class="s">&quot;http://chemin/vers/service&quot;</span><span class="o">);</span>
+</code></pre></div>
+
+<p>On ouvre une connexion</p>
+
+<div class="highlight"><pre><code class="java"><span class="n">URLConnection</span> <span class="n">connection</span> <span class="o">=</span> <span class="n">url</span><span class="o">.</span><span class="na">openConnection</span><span class="o">();</span>
+<span class="n">HttpURLConnection</span> <span class="n">httpConnection</span> <span class="o">=</span> <span class="o">(</span><span class="n">HttpURLConnection</span><span class="o">)</span> <span class="n">connection</span><span class="o">;</span>
+</code></pre></div>
+
+<p>Récupération du code de retour. Vu qu’on est en HTTP. Si tout c’est bien passé on doit recevoir le code 200 (ici HttpURLConnection.HTTP_OK) et enfin récupérer notre flux:</p>
+
+<div class="highlight"><pre><code class="java"><span class="kt">int</span> <span class="n">responseCode</span> <span class="o">=</span> <span class="n">httpConnection</span><span class="o">.</span><span class="na">getResponseCode</span><span class="o">();</span>
+<span class="k">if</span> <span class="o">(</span><span class="n">responseCode</span> <span class="o">==</span> <span class="n">HttpURLConnection</span><span class="o">.</span><span class="na">HTTP_OK</span><span class="o">)</span> <span class="o">{</span>
+   <span class="n">in</span> <span class="o">=</span> <span class="n">httpConnection</span><span class="o">.</span><span class="na">getInputStream</span><span class="o">();</span>
+<span class="o">}</span>
+</code></pre></div>
+
+<p>A ce stade nous avons un objet de type InputStream qui contient les informations que le serveur a renvoyé.</p>
+
+<h2>Parser du xml avec XMLPullParser</h2>
+
+<p>Apres la récupération des données il faut bien les lires. 
+Pour cela il faudra utiliser un parseur en fonction de la techno utiliser pour envoyer les données côté serveur. 
+Dans le cas du xml, il existe un parseur natif intégrer à Android: XMLPullParser. C’est un parseur bas niveau; 
+c’est a dire qu’il faudra parcourir tout le document xml, tag par tag et faire des traitements en fonction du tag 
+rencontré. Voici un exemple de xml que l’on peut recevoir: </p>
+
+<div class="highlight"><pre><code class="xml"><span class="nt">&lt;personnes&gt;</span>
+   <span class="nt">&lt;personne</span> <span class="na">genre=</span><span class="s">&quot;feminin&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;nom&gt;</span>Diallo<span class="nt">&lt;/nom&gt;</span>
+      <span class="nt">&lt;prenom&gt;</span>Binta<span class="nt">&lt;/prenom&gt;</span>
+      <span class="nt">&lt;age&gt;</span>15<span class="nt">&lt;/age&gt;</span>
+   <span class="nt">&lt;/personne&gt;</span>
+   <span class="nt">&lt;personne</span> <span class="na">genre=</span><span class="s">&quot;masculin&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;nom&gt;</span>Ndiaye<span class="nt">&lt;/nom&gt;</span>
+      <span class="nt">&lt;prenom&gt;</span>Alioune<span class="nt">&lt;/prenom&gt;</span>
+      <span class="nt">&lt;age&gt;</span>25<span class="nt">&lt;/age&gt;</span>
+   <span class="nt">&lt;/personne&gt;</span>
+<span class="nt">&lt;/personnes&gt;</span>
+</code></pre></div>
+ 
+
+<p>On aura besoin d’un objet String pour contenir la valeur d’un tag à chaque passage., un objet qui va nous 
+fournir un parseur qui aura les paramètres indiqués( ici le support des espaces de noms, voir doc de <strong>XmlPullParserFactory</strong>), 
+Et enfin générer notre parseur et lui spécifier l’objet InputStream avec lequel il devra travailler: </p>
+
+<div class="highlight"><pre><code class="java"><span class="n">String</span> <span class="n">valeur</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+<span class="n">XmlPullParserFactory</span> <span class="n">factory</span> <span class="o">=</span> <span class="n">XmlPullParserFactory</span><span class="o">.</span><span class="na">newInstance</span><span class="o">();</span>
+<span class="n">factory</span><span class="o">.</span><span class="na">setNamespaceAware</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+<span class="n">XmlPullParser</span> <span class="n">xpp</span> <span class="o">=</span> <span class="n">factory</span><span class="o">.</span><span class="na">newPullParser</span><span class="o">();</span>
+<span class="n">xpp</span><span class="o">.</span><span class="na">setInput</span><span class="o">(</span><span class="n">in</span><span class="o">,</span> <span class="kc">null</span><span class="o">);</span>
+</code></pre></div>
+ 
+
+<p>Voici un morceau de code tiré de la doc officiel qu’on peut utiliser pour extraire les informations du InputStream: </p>
+
+<div class="highlight"><pre><code class="java"><span class="c1">//Le type d&#39;evenement pour savoir si on est au debut du xml et bien </span>
+<span class="c1">//d&#39;autres informations</span>
+<span class="kt">int</span> <span class="n">eventType</span> <span class="o">=</span> <span class="n">xpp</span><span class="o">.</span><span class="na">getEventType</span><span class="o">();</span>
+<span class="c1">//Tant qu&#39;on n&#39;est pas à la fin du document</span>
+<span class="k">while</span> <span class="o">(</span><span class="n">eventType</span> <span class="o">!=</span> <span class="n">XmlPullParser</span><span class="o">.</span><span class="na">END_DOCUMENT</span><span class="o">)</span> <span class="o">{</span>
+   <span class="c1">//Si on est au debut d&#39;un tag</span>
+   <span class="k">if</span><span class="o">(</span><span class="n">eventType</span> <span class="o">==</span> <span class="n">XmlPullParser</span><span class="o">.</span><span class="na">START_TAG</span><span class="o">)</span> <span class="o">{</span>
+      <span class="k">if</span> <span class="o">(</span><span class="n">xpp</span><span class="o">.</span><span class="na">getName</span><span class="o">().</span><span class="na">equals</span><span class="o">(</span><span class="s">&quot;personne&quot;</span><span class="o">))</span> <span class="o">{</span>
+         <span class="n">genre</span> <span class="o">=</span> <span class="n">xpp</span><span class="o">.</span><span class="na">getAttributeValue</span><span class="o">(</span><span class="kc">null</span><span class="o">,</span> <span class="s">&quot;genre&quot;</span><span class="o">);</span>
+      <span class="o">}</span>
+   <span class="o">}</span> <span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">eventType</span> <span class="o">==</span> <span class="n">XmlPullParser</span><span class="o">.</span><span class="na">END_TAG</span><span class="o">)</span> <span class="o">{</span>
+      <span class="k">if</span> <span class="o">(</span><span class="n">xpp</span><span class="o">.</span><span class="na">getName</span><span class="o">().</span><span class="na">equals</span><span class="o">(</span><span class="s">&quot;nom&quot;</span><span class="o">)){</span>
+         <span class="n">nom</span> <span class="o">=</span> <span class="n">valeur</span><span class="o">;</span>
+         <span class="n">valeur</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+      <span class="o">}</span> 
+   <span class="o">}</span> <span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">eventType</span> <span class="o">==</span> <span class="n">XmlPullParser</span><span class="o">.</span><span class="na">TEXT</span><span class="o">)</span> <span class="o">{</span>
+       <span class="c1">//recuperation de la valeur pour le tag actuel</span>
+       <span class="n">valeur</span> <span class="o">=</span> <span class="n">xpp</span><span class="o">.</span><span class="na">getText</span><span class="o">();</span>
+   <span class="o">}</span>
+   <span class="n">eventType</span> <span class="o">=</span> <span class="n">xpp</span><span class="o">.</span><span class="na">next</span><span class="o">();</span>
+<span class="o">}</span>
+</code></pre></div>
+ 
+
+<p>Une petite astuce que vous avez surement remarqué, en début de tag on récupére les attributs du tag, en fin de 
+tag on récupère la valeur pour ce tag. 
+Un exemple concret sur ce parseur sur <a href="https://github.com/soulesidibe/xmlPullParserExemple">github</a>. </p>
+
+<h2>Manipuler du json</h2>
+
+<p>Pour traiter du json reçu via un web service, Android embarque en natif un package constituer de classe 
+pour faire le job: <strong>org.json.</strong>* .Elles sont très simples d’utilisation. Voyons ce cas pratique de json: </p>
+
+<div class="highlight"><pre><code class="json"><span class="p">{</span>
+   <span class="nt">&quot;personnes&quot;</span><span class="p">:[</span>
+      <span class="p">{</span>
+         <span class="nt">&quot;nom&quot;</span><span class="p">:</span><span class="s2">&quot;Fama&quot;</span><span class="p">,</span>         
+         <span class="nt">&quot;prenom&quot;</span><span class="p">:</span><span class="s2">&quot;Mbaye&quot;</span><span class="p">,</span>         
+         <span class="nt">&quot;age&quot;</span><span class="p">:</span><span class="s2">&quot;19&quot;</span><span class="p">,</span>        
+         <span class="nt">&quot;genre&quot;</span><span class="p">:</span><span class="s2">&quot;feminin&quot;</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+         <span class="nt">&quot;nom&quot;</span><span class="p">:</span><span class="s2">&quot;Jack&quot;</span><span class="p">,</span>
+         <span class="nt">&quot;prenom&quot;</span><span class="p">:</span><span class="s2">&quot;Anthoine&quot;</span><span class="p">,</span>
+         <span class="nt">&quot;age&quot;</span><span class="p">:</span><span class="s2">&quot;30&quot;</span><span class="p">,</span>
+         <span class="nt">&quot;genre&quot;</span><span class="p">:</span><span class="s2">&quot;masculin&quot;</span>
+      <span class="p">}</span>
+   <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+ 
+
+<p>Le code pour récupérer les informations ci-dessus: </p>
+
+<div class="highlight"><pre><code class="java"><span class="c1">//Convertir le InputStream de départ en String</span>
+<span class="n">BufferedReader</span> <span class="n">bufferedReader</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BufferedReader</span><span class="o">(</span>
+    <span class="k">new</span> <span class="nf">InputStreamReader</span><span class="o">(</span><span class="n">in</span><span class="o">));</span>
+<span class="n">StringBuilder</span> <span class="n">stringBuilder</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StringBuilder</span><span class="o">();</span>
+<span class="n">String</span> <span class="n">uneLigneLue</span> <span class="o">=</span> <span class="n">bufferedReader</span><span class="o">.</span><span class="na">readLine</span><span class="o">();</span>
+<span class="k">while</span> <span class="o">(</span><span class="n">uneLigneLue</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+   <span class="c1">//on ajoute la nouvelle ligne lue dans le StringBuilder</span>
+   <span class="n">stringBuilder</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">UneLigneLue</span> <span class="o">+</span> <span class="s">&quot;\n&quot;</span><span class="o">);</span>
+   <span class="c1">//lecture de la ligne suivante</span>
+   <span class="n">ligneLue</span> <span class="o">=</span> <span class="n">bufferedReader</span><span class="o">.</span><span class="na">readLine</span><span class="o">();</span> 
+<span class="o">}</span>
+<span class="n">bufferedReader</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+
+<span class="c1">//notre Objet maguique</span>
+<span class="n">JSONObject</span> <span class="n">object</span> <span class="o">=</span> <span class="k">new</span> <span class="n">JSONObject</span><span class="o">(</span><span class="n">stringBuilder</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
+<span class="n">JSONArray</span> <span class="n">array</span> <span class="o">=</span> <span class="n">object</span><span class="o">.</span><span class="na">getJSONArray</span><span class="o">(</span><span class="s">&quot;personnes&quot;</span><span class="o">);</span>
+<span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">array</span><span class="o">.</span><span class="na">length</span><span class="o">()</span> <span class="o">;</span> <span class="n">i</span><span class="o">++){</span>
+    <span class="n">nom</span> <span class="o">=</span> <span class="n">array</span><span class="o">.</span><span class="na">getJSONObject</span><span class="o">(</span><span class="n">i</span><span class="o">).</span><span class="na">getString</span><span class="o">(</span><span class="s">&quot;nom&quot;</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div>
+ 
+
+<p>Un cas concret de manipulation du json sur <a href="https://github.com/soulesidibe/JsonParserExemple">github</a>. </p>
+
+<p>Cette facon de faire est pratique pour des fichiers aussi simple que celui utilisé mais il est mieux dans 
+certains cas d’opter pour des librairies qui ajoutent un niveau d’abstraction dans un souci de simplifier 
+la manipulation du json. C’est le cas de la librairie <strong>GSON</strong> qui permet de faire le passage du JSON en <strong>POJO</strong> 
+et vice versa.  Il y a aussi la librairie <strong>JACKSON</strong> tout aussi puissante. 
+Il faut juste choisir celle qui nous rend efficace. </p>
+
+<h2>Oui mais pourquoi faire?</h2>
+
+<p>Apres avoir reçu les données du serveur, après avoir convertir le xml/json en objet java, en tant que 
+dévelopeur java, il n’y a pas vraiment de limite! 
+Dans le contexte d’un développement android, il y a plusieurs manières d’utiliser ces données: </p>
+
+<ul>
+<li>Mettre à jour une liste: exemple une vue qui affiche la timeline d’un compte twitter a besoin de récupérer 
+les informations des serveurs de twitter pour les exposer à l’utilisateur via une ListView ou une ListActivity;</li>
+<li>Renseigner une base de données (sqlite) pour une utilisation de l’application en offline </li>
+</ul>
+
+<p>Les possibilités n’ont pas de limite. Ça dépendra de ce que l’application fait et de comment 
+le développeur veut le faire.</p>
+
+  </div>
+
+
+
+<div class="pagination">
+  
+    <a href="/page6" class="previous">Previous</a>
+  
+  <span class="page_number ">Page: 7 of 8</span>
+  
+    <a href="/page8" class="next">Next</a>
+  
+</div>
+
+-->
       <!-- Add Disqus comments. -->
 <div id="disqus_thread"></div>
 <script type="text/javascript">

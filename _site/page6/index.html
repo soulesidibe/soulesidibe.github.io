@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-44424399-2', 'soulesidibe.github.io');
+  ga('send', 'pageview');
+
+</script>
   <head>
   <link href="http://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -50,36 +59,121 @@
   
   <div class="post">
     <h1 class="post-title">
-      <a href="/2013/10/15/gradle-please/">
-        Gradle Please!
+      <a href="/2012/12/16/Git-La-suite/">
+        Git:La suite
       </a>
     </h1>
 
-    <span class="post-date">15 Oct 2013</span>
+    <span class="post-date">16 Dec 2012</span>
 
-    <p>Depuis son annonce au Google IO 2013, <strong>Android Studio</strong> est devenu mon IDE number 1! 
-Je l’utilise au quotidien et tous mes projets eclipse ont migré. J’explique dans <a href="http://soulesidibe.github.io">ce billet</a> comment faire la migration. 
-L’utilisation de gradle comment système de build rend un projet android beaucoup plus simple à maintenir surtout en ce qui concerne la gestion des dépendances. 
-Plus besoin d’importer des librairies à en plus finir! Un exemple d’ajout de dépendance: </p>
+    <p>Dans un précédent article je vous parlais de git et d’une certaine façon de bien démarrer avec cette outil très puissant 
+et surtout incontournable en ce moment.Maintenant qu’on arrive à travailler avec git on peut essayer de voir un peu plus 
+ce qu’offre la bête. </p>
 
-<div class="highlight"><pre><code class="groovy"><span class="n">dependencies</span> <span class="o">{</span>
-   <span class="n">compile</span> <span class="s1">&#39;com.crashlytics.android:crashlytics:1.+&#39;</span>
-<span class="o">}</span>
-</code></pre></div>
+<h2>Merge, push, pull</h2>
 
-<p>Donc comme on le voit pour utiliser crashlytics c’est speed. Gradle se chargera de récupérer les fichiers qu’il faut et de les mettre dans le build path.</p>
-
-<p>Maintenant, la plus part des projets open source qu’on utilise dans nos projets n’offrent pas cette possibilité(non disponibilité du aar). Donc voici un peu ce qu’on peut faire: </p>
+<p>Imaginons que vous avez créez une nouvelle branche &quot;newFeature&quot; histoire de tester une nouvelle fonction que vous 
+trouvez pertinente. 
+Vous codez, vous commitez. Tout marche! vous venez de mettre en place une fonctionnalité qui va vous valoir 
+une prime! Bah il ne reste plus qu’à faire un push! 
+Oops non mais attend je suis sur une autre branche; ai-je le droit de faire qu’en même le push? 
+Heuu oui et non. </p>
 
 <ul>
-<li>Demander au développeur de rendre son projet compatible avec gradle(sur github on peut facilement dialoguer avec le dév. En anglais),</li>
-<li>Si on ne peut pas patienter, on peut toujours récupérer le projet</li>
+<li>Non du fait que, au niveau du dépôt distant, il n’y a pas de banche &quot;<em>newFeature</em>&quot;. Donc si on fait un <code>git push origin master</code> 
+on aura comme message &quot;Everything up-to-date&quot;. Ce qui est normal si on comprend un peu comment marche les branches. 
+On demande à git de mettre à jour le dépôt distant identifié par &quot;origin&quot; avec nos modifications locales de la 
+branche master(<code>git push origin master</code>). Alors que nos modifications ont été faites sur la branche &quot;newFeature&quot;. 
+Pour y remédier: il faut informer la branche master qu’il s’est passé des trucs et qu’elle doit se mettre au parfum: on merge! 
+C’est très simple à faire: </li>
 </ul>
 
-<p><code>git clone chemin/vers/project.git project</code>, ajouter en tant que module dans le projet puis rajouter 
-cette ligne dans build.gradle <code>compile project(&#39;:project&#39;)</code> et dans settings.gradle <code>include &#39;:project&#39;</code> </p>
+<div class="highlight"><pre><code class="bash">git co master
+git merge newFeature
+</code></pre></div>
+ 
 
-<p>Un site recense l’ensemble des projets open source qui ont été <strong>&quot;gradlisé&quot;</strong>. C’est <a href="http://gradleplease.appspot.com/">gradle please</a>! :D</p>
+<p>D’abord on se positionne sur la branche master (co= checkout, je ferai un article sur les raccourcis git et comment en rajouter) 
+puis on fait un merge en donnant en paramètre le nom de la branche que l’on doit merger (l’auto-complétion marche pour les branches). 
+Si on est seul à travailler sur ce dépôt local tout devrait bien se passer. Mais si ce n’est pas le cas et que un autre 
+développeur a modifié un des fichiers sur lesquels vous avez apporté des modifications, il peut y avoir des conflits! 
+Pour rappel, git ne gère pas les fichiers mais le contenu des fichiers. Donc en cas de conflit, git vous guidera à régler le conflit. </p>
+
+<ul>
+<li>Oui Dans le cas où newFeature est une branche de suivi.Une branche de suivi est une branche locale liée à une branche 
+située au niveau du serveur. </li>
+</ul>
+
+<p>Pour récupérer une branche distante: </p>
+
+<div class="highlight"><pre><code class="bash">git co --track origin/newFeature
+</code></pre></div>
+ 
+
+<p>La on aura une nouvelle branche newFeature et on sera en même temps connecter deçu. 
+Avant de pousser sur la branche distante il faut toujours récupérer les derniers changements au cas où il y en a; 
+puis faire son push:</p>
+
+<div class="highlight"><pre><code class="bash">git pull
+git push
+</code></pre></div>
+
+<p>Lors du pull, il est possible que git vous sort votre éditeur par défaut(vim, gedit, ou autre). C’est dans le cas où la branche 
+de suivi et la branche distante diverge(en plus simple, ne sont plus identiques). Donc git fait un merge des deux. 
+Il est malin ce git! </p>
+
+<p>Mais au fait comment on crée une nouvelle branche sur le dépôt distant? 
+Il suffit de pousser la branche! </p>
+
+<div class="highlight"><pre><code class="bash">git branch nouvelleBranche
+git push origin nouvelleBranche
+</code></pre></div>
+ 
+
+<p>De même si on veut en supprimer une:</p>
+
+<div class="highlight"><pre><code class="bash">git push origin :nouvelleBranche
+</code></pre></div>
+
+<p>Le &quot;:&quot; suffit pour supprimer la branche distante! Mais elle sera toujours présente en local.</p>
+
+<h2>Git Stash</h2>
+
+<p>Il arrive qu’on soit entrain de coder un truc dans une branche et que à un moment on ait besoin de changer de branche 
+pour corriger un bug ou un truc du genre. Vu que git n’aime pas quand on essaye de faire un checkout alors que la branche 
+actuelle a subit des modifications et que on ne veux pas commiter du code non fini, la solution ici est de dire à git de 
+garder les modifications dans un coin et qu’on reviendra continuer notre travail plus tard: <code>git stash</code>.</p>
+
+<p>Si on fait un <code>git status</code>, on remarque que le répertoire de travail est propre! les modifications ont été mises à l’écart. 
+Et si à un moment on souhaite revenir sur notre sauvegarde: <code>git stash apply</code> ou <code>git stash pop</code>.</p>
+
+<p>Et la on se rend compte que tout est revenu comme on l’avait laissé! C’est génial. 
+La différence entre git stash pop et git stash apply est que avec pop, le stash est appliqué et supprimé mais 
+avec apply il est juste appliqué; donc on peut toujours le retrouver et l’appliquer à nouveau. 
+Au passage pour supprimer un stash, <code>git stash drop [nomStash]</code>. 
+Pour éviter de faire un <code>git add</code> apres un git stash apply, rajoutez <code>–index</code> à la fin: <code>git stash apply --index</code>. </p>
+
+<p>Il est possible qu’on est mis, de la même manière, en quarantaine d’autres modifications. 
+Pour voir la liste des stashs, il suffit de faire <code>git stash list</code>. Et git nous affiche des lignes de ce genre: 
+<code>stash@{0}: WIP on master: 25af4b3 autre commit</code> </p>
+
+<p>Et là, on a le nom du stash (<em>stash@{0}</em>), le nom de la branche(ici <em>master</em>) et des informations sur le commit qui 
+précède ce stash (<em>25af4b3</em> autre commit). 
+Avec le nom du stash, on peut appliquer un stash spécifique en faisant <code>git stash apply [nomStash]</code>. 
+Si on ne met pas de nom, le dernier stash sera utilisé. 
+Et un petit dernier, Si un stash devient important et que vous sentez que c’est plus qu’une petite modification, 
+vous pouvez la transformer en une branche! 
+<code>git stash branch nomBranche nomStash</code> 
+Et git vous connecte automatiquement à cette nouvelle branche! 
+Git stash est une commande très puissante avec laquelle on peut faire énormément de choses. 
+Je vous conseille d’aller lire le man (man git-stash ou git help stash)  pour voir les autres possibilités. 
+D’ailleurs, je vous conseille d’aller consulter le man pour toutes les autres fonctionnalités de git. On y rencontre 
+des astuces qu’on ne voit pas souvent dans les tutos. </p>
+
+<p>Vous le savez git est vraiment puissant. Il permet de ne plus perdre des heures à chercher des fichiers ou des dossiers. 
+Et ainsi se concentrer sur l’essentiel! 
+Mais git peut aussi être fun. J’entends par là, personnaliser les commandes, la coloration de git et bien d’autres 
+qui feront l’objet d’un article! :D </p>
 
   </div>
   
@@ -95,6 +189,138 @@ cette ligne dans build.gradle <code>compile project(&#39;:project&#39;)</code> e
     
   
 </div>
+
+<!-- 
+
+  <h1><a href="/2012/12/16/Git-La-suite/">Git:La suite</a></h1>
+  <p class="author">
+    <span class="date">2012-12-16 00:00:00 +0000</span>
+  </p>
+  <div class="content">
+    <p>Dans un précédent article je vous parlais de git et d’une certaine façon de bien démarrer avec cette outil très puissant 
+et surtout incontournable en ce moment.Maintenant qu’on arrive à travailler avec git on peut essayer de voir un peu plus 
+ce qu’offre la bête. </p>
+
+<h2>Merge, push, pull</h2>
+
+<p>Imaginons que vous avez créez une nouvelle branche &quot;newFeature&quot; histoire de tester une nouvelle fonction que vous 
+trouvez pertinente. 
+Vous codez, vous commitez. Tout marche! vous venez de mettre en place une fonctionnalité qui va vous valoir 
+une prime! Bah il ne reste plus qu’à faire un push! 
+Oops non mais attend je suis sur une autre branche; ai-je le droit de faire qu’en même le push? 
+Heuu oui et non. </p>
+
+<ul>
+<li>Non du fait que, au niveau du dépôt distant, il n’y a pas de banche &quot;<em>newFeature</em>&quot;. Donc si on fait un <code>git push origin master</code> 
+on aura comme message &quot;Everything up-to-date&quot;. Ce qui est normal si on comprend un peu comment marche les branches. 
+On demande à git de mettre à jour le dépôt distant identifié par &quot;origin&quot; avec nos modifications locales de la 
+branche master(<code>git push origin master</code>). Alors que nos modifications ont été faites sur la branche &quot;newFeature&quot;. 
+Pour y remédier: il faut informer la branche master qu’il s’est passé des trucs et qu’elle doit se mettre au parfum: on merge! 
+C’est très simple à faire: </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git co master
+git merge newFeature
+</code></pre></div>
+ 
+
+<p>D’abord on se positionne sur la branche master (co= checkout, je ferai un article sur les raccourcis git et comment en rajouter) 
+puis on fait un merge en donnant en paramètre le nom de la branche que l’on doit merger (l’auto-complétion marche pour les branches). 
+Si on est seul à travailler sur ce dépôt local tout devrait bien se passer. Mais si ce n’est pas le cas et que un autre 
+développeur a modifié un des fichiers sur lesquels vous avez apporté des modifications, il peut y avoir des conflits! 
+Pour rappel, git ne gère pas les fichiers mais le contenu des fichiers. Donc en cas de conflit, git vous guidera à régler le conflit. </p>
+
+<ul>
+<li>Oui Dans le cas où newFeature est une branche de suivi.Une branche de suivi est une branche locale liée à une branche 
+située au niveau du serveur. </li>
+</ul>
+
+<p>Pour récupérer une branche distante: </p>
+
+<div class="highlight"><pre><code class="bash">git co --track origin/newFeature
+</code></pre></div>
+ 
+
+<p>La on aura une nouvelle branche newFeature et on sera en même temps connecter deçu. 
+Avant de pousser sur la branche distante il faut toujours récupérer les derniers changements au cas où il y en a; 
+puis faire son push:</p>
+
+<div class="highlight"><pre><code class="bash">git pull
+git push
+</code></pre></div>
+
+<p>Lors du pull, il est possible que git vous sort votre éditeur par défaut(vim, gedit, ou autre). C’est dans le cas où la branche 
+de suivi et la branche distante diverge(en plus simple, ne sont plus identiques). Donc git fait un merge des deux. 
+Il est malin ce git! </p>
+
+<p>Mais au fait comment on crée une nouvelle branche sur le dépôt distant? 
+Il suffit de pousser la branche! </p>
+
+<div class="highlight"><pre><code class="bash">git branch nouvelleBranche
+git push origin nouvelleBranche
+</code></pre></div>
+ 
+
+<p>De même si on veut en supprimer une:</p>
+
+<div class="highlight"><pre><code class="bash">git push origin :nouvelleBranche
+</code></pre></div>
+
+<p>Le &quot;:&quot; suffit pour supprimer la branche distante! Mais elle sera toujours présente en local.</p>
+
+<h2>Git Stash</h2>
+
+<p>Il arrive qu’on soit entrain de coder un truc dans une branche et que à un moment on ait besoin de changer de branche 
+pour corriger un bug ou un truc du genre. Vu que git n’aime pas quand on essaye de faire un checkout alors que la branche 
+actuelle a subit des modifications et que on ne veux pas commiter du code non fini, la solution ici est de dire à git de 
+garder les modifications dans un coin et qu’on reviendra continuer notre travail plus tard: <code>git stash</code>.</p>
+
+<p>Si on fait un <code>git status</code>, on remarque que le répertoire de travail est propre! les modifications ont été mises à l’écart. 
+Et si à un moment on souhaite revenir sur notre sauvegarde: <code>git stash apply</code> ou <code>git stash pop</code>.</p>
+
+<p>Et la on se rend compte que tout est revenu comme on l’avait laissé! C’est génial. 
+La différence entre git stash pop et git stash apply est que avec pop, le stash est appliqué et supprimé mais 
+avec apply il est juste appliqué; donc on peut toujours le retrouver et l’appliquer à nouveau. 
+Au passage pour supprimer un stash, <code>git stash drop [nomStash]</code>. 
+Pour éviter de faire un <code>git add</code> apres un git stash apply, rajoutez <code>–index</code> à la fin: <code>git stash apply --index</code>. </p>
+
+<p>Il est possible qu’on est mis, de la même manière, en quarantaine d’autres modifications. 
+Pour voir la liste des stashs, il suffit de faire <code>git stash list</code>. Et git nous affiche des lignes de ce genre: 
+<code>stash@{0}: WIP on master: 25af4b3 autre commit</code> </p>
+
+<p>Et là, on a le nom du stash (<em>stash@{0}</em>), le nom de la branche(ici <em>master</em>) et des informations sur le commit qui 
+précède ce stash (<em>25af4b3</em> autre commit). 
+Avec le nom du stash, on peut appliquer un stash spécifique en faisant <code>git stash apply [nomStash]</code>. 
+Si on ne met pas de nom, le dernier stash sera utilisé. 
+Et un petit dernier, Si un stash devient important et que vous sentez que c’est plus qu’une petite modification, 
+vous pouvez la transformer en une branche! 
+<code>git stash branch nomBranche nomStash</code> 
+Et git vous connecte automatiquement à cette nouvelle branche! 
+Git stash est une commande très puissante avec laquelle on peut faire énormément de choses. 
+Je vous conseille d’aller lire le man (man git-stash ou git help stash)  pour voir les autres possibilités. 
+D’ailleurs, je vous conseille d’aller consulter le man pour toutes les autres fonctionnalités de git. On y rencontre 
+des astuces qu’on ne voit pas souvent dans les tutos. </p>
+
+<p>Vous le savez git est vraiment puissant. Il permet de ne plus perdre des heures à chercher des fichiers ou des dossiers. 
+Et ainsi se concentrer sur l’essentiel! 
+Mais git peut aussi être fun. J’entends par là, personnaliser les commandes, la coloration de git et bien d’autres 
+qui feront l’objet d’un article! :D </p>
+
+  </div>
+
+
+
+<div class="pagination">
+  
+    <a href="/page5" class="previous">Previous</a>
+  
+  <span class="page_number ">Page: 6 of 8</span>
+  
+    <a href="/page7" class="next">Next</a>
+  
+</div>
+
+-->
       <!-- Add Disqus comments. -->
 <div id="disqus_thread"></div>
 <script type="text/javascript">

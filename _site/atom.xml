@@ -4,216 +4,13 @@
  <title>Soulesidibe</title>
  <link href="http://soulesidibe.github.com/atom.xml" rel="self"/>
  <link href="http://soulesidibe.github.com/"/>
- <updated>2014-03-30T02:57:10+00:00</updated>
+ <updated>2014-03-30T16:52:05+00:00</updated>
  <id>http://soulesidibe.github.com</id>
  <author>
    <name>Souleymane Sidibe</name>
    <email></email>
  </author>
 
- 
- <entry>
-   <title>Introducing Poole</title>
-   <link href="http://soulesidibe.github.com/2014/01/02/introducing-poole/"/>
-   <updated>2014-01-02T00:00:00+00:00</updated>
-   <id>http://soulesidibe.github.com/2014/01/02/introducing-poole</id>
-   <content type="html">&lt;p&gt;&lt;em&gt;The Strange Case of Dr. Jeykll and Mr. Hyde&lt;/em&gt; tells the story of a lawyer investigating the connection of two persons, Dr. Henry Jekyll and Mr. Edward Hyde. Chief among the novel&amp;#39;s supporting cast is a man by the name of Mr. Poole, Dr. Jekyll&amp;#39;s loyal butler.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;Poole is the butler for &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;, the static site generator. It&amp;#39;s designed and developed by &lt;a href=&quot;https://twitter.com/mdo&quot;&gt;@mdo&lt;/a&gt; to provide a clear and concise foundational setup for any Jekyll site. It does so by furnishing a full vanilla Jekyll install with example templates, pages, posts, and styles.&lt;/p&gt;
-
-&lt;p&gt;There are currently two themes built on Poole:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://hyde.getpoole.com&quot;&gt;Hyde&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://lanyon.getpoole.com&quot;&gt;Lanyon&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Learn more and contribute on &lt;a href=&quot;https://github.com/poole&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3&gt;What&amp;#39;s included&lt;/h3&gt;
-
-&lt;p&gt;Poole is a streamlined Jekyll site designed and built as a foundation for building more meaningful themes. Poole, and every theme built on it, includes the following:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Complete Jekyll setup included (layouts, config, &lt;a href=&quot;/404&quot;&gt;404&lt;/a&gt;, &lt;a href=&quot;/atom.xml&quot;&gt;RSS feed&lt;/a&gt;, posts, and &lt;a href=&quot;/about&quot;&gt;example page&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Mobile friendly design and development&lt;/li&gt;
-&lt;li&gt;Easily scalable text and component sizing with &lt;code&gt;rem&lt;/code&gt; units in the CSS&lt;/li&gt;
-&lt;li&gt;Support for a wide gamut of HTML elements&lt;/li&gt;
-&lt;li&gt;Related posts (time-based, because Jekyll) below each post&lt;/li&gt;
-&lt;li&gt;Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Additional features are available in individual themes.&lt;/p&gt;
-
-&lt;h3&gt;Browser support&lt;/h3&gt;
-
-&lt;p&gt;Poole and it&amp;#39;s themes are by preference a forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), and Firefox, it is only compatible with Internet Explorer 9 and above.&lt;/p&gt;
-
-&lt;h3&gt;Download&lt;/h3&gt;
-
-&lt;p&gt;Poole is developed on and hosted with GitHub. Head to the &lt;a href=&quot;https://github.com/poole/poole&quot;&gt;GitHub repository&lt;/a&gt; for downloads, bug reports, and features requests.&lt;/p&gt;
-
-&lt;p&gt;Thanks!&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Example content</title>
-   <link href="http://soulesidibe.github.com/2014/01/01/example-content/"/>
-   <updated>2014-01-01T00:00:00+00:00</updated>
-   <id>http://soulesidibe.github.com/2014/01/01/example-content</id>
-   <content type="html">&lt;div class=&quot;message&quot;&gt;
-  Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
-&lt;/div&gt;
-
-&lt;p&gt;Cum sociis natoque penatibus et magnis &lt;a href=&quot;#&quot;&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. &lt;em&gt;Aenean eu leo quam.&lt;/em&gt; Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Etiam porta &lt;strong&gt;sem malesuada magna&lt;/strong&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt;
-
-&lt;h2&gt;Inline HTML elements&lt;/h2&gt;
-
-&lt;p&gt;HTML defines a long list of available inline tags, a complete list of which can be found on the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element&quot;&gt;Mozilla Developer Network&lt;/a&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;To bold text&lt;/strong&gt;, use &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;To italicize text&lt;/em&gt;, use &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Abbreviations, like &lt;abbr title=&quot;HyperText Markup Langage&quot;&gt;HTML&lt;/abbr&gt; should use &lt;code&gt;&amp;lt;abbr&amp;gt;&lt;/code&gt;, with an optional &lt;code&gt;title&lt;/code&gt; attribute for the full phrase.&lt;/li&gt;
-&lt;li&gt;Citations, like &lt;cite&gt;&amp;mdash; Mark otto&lt;/cite&gt;, should use &lt;code&gt;&amp;lt;cite&amp;gt;&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Deleted&lt;/del&gt; text should use &lt;code&gt;&amp;lt;del&amp;gt;&lt;/code&gt; and &lt;ins&gt;inserted&lt;/ins&gt; text should use &lt;code&gt;&amp;lt;ins&amp;gt;&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Superscript &lt;sup&gt;text&lt;/sup&gt; uses &lt;code&gt;&amp;lt;sup&amp;gt;&lt;/code&gt; and subscript &lt;sub&gt;text&lt;/sub&gt; uses &lt;code&gt;&amp;lt;sub&amp;gt;&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Most of these elements are styled by browsers with few modifications on our part.&lt;/p&gt;
-
-&lt;h2&gt;Heading&lt;/h2&gt;
-
-&lt;p&gt;Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.&lt;/p&gt;
-
-&lt;h3&gt;Code&lt;/h3&gt;
-
-&lt;p&gt;Cum sociis natoque penatibus et magnis dis &lt;code&gt;code element&lt;/code&gt; montes, nascetur ridiculus mus.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;js&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// Example can be run directly in your JavaScript console&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// Create a function that takes two arguments and returns the sum of those arguments&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;adder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;a&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;b&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;return a + b&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// Call the function&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;adder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// &amp;gt; 8&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.&lt;/p&gt;
-
-&lt;h3&gt;Gists via GitHub Pages&lt;/h3&gt;
-
-&lt;p&gt;Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/5555251.js?file=gist.md&quot;&gt; &lt;/script&gt;
-
-&lt;p&gt;Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper.&lt;/p&gt;
-
-&lt;h3&gt;Lists&lt;/h3&gt;
-
-&lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Praesent commodo cursus magna, vel scelerisque nisl consectetur et.&lt;/li&gt;
-&lt;li&gt;Donec id elit non mi porta gravida at eget metus.&lt;/li&gt;
-&lt;li&gt;Nulla vitae elit libero, a pharetra augue.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Vestibulum id ligula porta felis euismod semper.&lt;/li&gt;
-&lt;li&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/li&gt;
-&lt;li&gt;Maecenas sed diam eget risus varius blandit sit amet non magna.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.&lt;/p&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;HyperText Markup Language (HTML)&lt;/dt&gt;
-  &lt;dd&gt;The language used to describe and define the content of a Web page&lt;/dd&gt;
-
-  &lt;dt&gt;Cascading Style Sheets (CSS)&lt;/dt&gt;
-  &lt;dd&gt;Used to describe the appearance of Web content&lt;/dd&gt;
-
-  &lt;dt&gt;JavaScript (JS)&lt;/dt&gt;
-  &lt;dd&gt;The programming language used to build advanced Web sites and applications&lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;p&gt;Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/p&gt;
-
-&lt;h3&gt;Tables&lt;/h3&gt;
-
-&lt;p&gt;Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Name&lt;/th&gt;
-      &lt;th&gt;Upvotes&lt;/th&gt;
-      &lt;th&gt;Downvotes&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tfoot&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Totals&lt;/td&gt;
-      &lt;td&gt;21&lt;/td&gt;
-      &lt;td&gt;23&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tfoot&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Alice&lt;/td&gt;
-      &lt;td&gt;10&lt;/td&gt;
-      &lt;td&gt;11&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Bob&lt;/td&gt;
-      &lt;td&gt;4&lt;/td&gt;
-      &lt;td&gt;3&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Charlie&lt;/td&gt;
-      &lt;td&gt;7&lt;/td&gt;
-      &lt;td&gt;9&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;Want to see something else added? &lt;a href=&quot;https://github.com/poole/poole/issues/new&quot;&gt;Open an issue.&lt;/a&gt;&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>What's Jekyll?</title>
-   <link href="http://soulesidibe.github.com/2013/12/31/whats-jekyll/"/>
-   <updated>2013-12-31T00:00:00+00:00</updated>
-   <id>http://soulesidibe.github.com/2013/12/31/whats-jekyll</id>
-   <content type="html">&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From &lt;a href=&quot;https://github.com/jekyll/jekyll/blob/master/README.markdown&quot;&gt;the project&amp;#39;s readme&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Jekyll is a simple, blog aware, static site generator. It takes a template directory [...] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;It&amp;#39;s an immensely useful tool and one we encourage you to use here with Hyde.&lt;/p&gt;
-
-&lt;p&gt;Find out more by &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;visiting the project on GitHub&lt;/a&gt;.&lt;/p&gt;
-</content>
- </entry>
  
  <entry>
    <title>L’injection de dépendances:roboguice</title>
@@ -728,6 +525,545 @@ On y est! Tout a été configuré, maintenant il suffit de faire un  build pour 
 
 &lt;p&gt;Vu que l’article n’avait pas pour objectif de vous donner ces bases, je vous recommande fortement d’aller lire en entier cette &lt;a href=&quot;http://blog.stylingandroid.com/archives/1872&quot;&gt;série d’articles&lt;/a&gt; sur gradle(7 en tout) et aussi de lire la &lt;a href=&quot;http://tools.android.com/tech-docs/new-build-system/user-guide&quot;&gt;documentation&lt;/a&gt; fournie par google(pour une utilisation avancée). 
 Avec cela vous pourrez avoir un usage professionnel de ces outils assez puissants :D.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Les librairies Android:ne pas réinventer la roue.</title>
+   <link href="http://soulesidibe.github.com/2013/06/09/Les-librairies-Android-ne-pas-r%C3%A9inventer-la-roue/"/>
+   <updated>2013-06-09T00:00:00+00:00</updated>
+   <id>http://soulesidibe.github.com/2013/06/09/Les-librairies-Android-ne-pas-réinventer-la-roue</id>
+   <content type="html">&lt;p&gt;Quand on développe pour une plateforme donnée, si on est novice ou pas assez informé, 
+on a tendance à perdre du temps à implémenter des fonctionnalités qui, avec un peu de recherche 
+sur la toile, nous aurait permis d’aller plus vite dans notre développement tout en ayant 
+du code propre et maintenable. 
+Le développement avec Android ne déroge pas à la règle. On trouvera une quantité inestimable 
+de ressources sur des sites, forums et blogs qui nous facilite ou disons nous permette d’aller 
+plus vite dans notre dév ou d’être plus focused sur le coeur même de l’application. &lt;/p&gt;
+
+&lt;p&gt;Comme on peut le comprendre en lisant le titre de l’article, il s’agira ici d’essayer d’énumérer des 
+librairies android qui nous font gagner en temps et en qualité pour notre application! Des librairies 
+qui améliorent l’expériences utilisateurs tout en suivant les bonnes pratiques de la team Android de Google.&lt;/p&gt;
+
+&lt;h2&gt;Pull To Refresh&lt;/h2&gt;
+
+&lt;p&gt;Dans une application Android, il est presque impossible de ne pas trouver de liste d’éléments 
+(contacts, tweets, sms ou autres informations). Et en général les éléments de cette liste ne sont 
+pas statiques. D’où la nécessite de proposer un mécanisme de mise à jour des données assez simple et 
+intuitif: le PullToRefresh! &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.github.com/chrisbanes/Android-PullToRefresh/master/header_graphic.png&quot; alt=&quot;PullToRefresh&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;on le voit sur l’image, d’un simple tiret vers le bas de la liste puis d’un relachement, on a la possibilité 
+de mettre à jour les données! On peut imaginer appeler un service sur un autre thread pour récupérer les mises 
+à jours. Une belle librairie open source qui permet de mettre en place un système de rafraîchissement que l’on 
+retrouve dans presque toutes les apps connues. &lt;/p&gt;
+
+&lt;h2&gt;Action Bar Sherlock&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://soulesidibe.files.wordpress.com/2013/05/actionbar.png&quot; alt=&quot;ActionBarSherlock&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;La prise en compte des tablettes à partir des version 3.0 d’Android est venu avec son lot de nouveautés dont 
+la action bar qui a rendu obseléte le bouton menu de nos anciens smartphones. 
+Le problème qui se pose c’est que pour utiliser cette bar d’action dans nos apps on est obligé d’avoir 
+comme minSdk l’api 11 dans notre manifest android! Ce qu’on ne peut pas faire pour cause une bonne partie 
+des devices sur android est en dessous de l’api 11! 
+La solution à cela est d’utiliser la librairie ActionBarSherlock qui va nous permettre d’avoir notre bar d’action 
+quelle que soit la version d’android (au minimum api 7). Et ainsi offrir la même expérience utilisateur sans tenir 
+compte de la version d’android de l’utilisateur. &lt;/p&gt;
+
+&lt;h2&gt;Holo Everywhere&lt;/h2&gt;
+
+&lt;p&gt;En suivant l’actualité autour de la sortie de la version 4 d’android, on n’a pas pu échapé au mot &amp;quot;Holo&amp;quot;. 
+C’est quoi Holo? 
+C’est tout simplement le nom donnée au thème qui est apparu avec ICS et surtout il a permis de rendre Android 
+beaucoup plus beau si on le compare un peu à IOS. Bon revenons au développeur qui veux faire une app qui le 
+rendra riche! Bah le truc qui coince ici c’est la même application n’a pas le même rendu quand on la lance 
+sur du Android 2.3.x ou sur du 4.2.x. Les composants ne sont pas les mêmes, la police de caractères change 
+et bien d’autres aspects visuels changent. 
+Vous l’avez compris, la librairie android Holo Everywhere, comme son nom l’indique va nous permettre d’avoir 
+le thème holo partout; les devices avec ICS inclus! &lt;/p&gt;
+
+&lt;h2&gt;Sliding Menu&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://soulesidibe.files.wordpress.com/2013/05/4png.png&quot; alt=&quot;SlidingMenu&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Si vous avez un android phone(normalement oui en tant que développeur android), vous avez du remarqué une 
+nouvelle tendance dans les interfaces. En effet, certaines fonctions de l’application ne sont plus présentent 
+sur la bar d’actions(qui sert le plus souvent pour partager du contenu sur les réseaux sociaux ou de menu 
+contextuel quand on fait un long press sur un élément d’une liste par exemple) mais sur un autre menu caché à 
+droite(et/ou à gauche) de l’écran et qui est rendu visible en faisant un &amp;quot;slid&amp;quot; des bordures de l’écran vers 
+l’écran lui même. ICI une app de démo. On retrouve cette façon de faire dans la plus part des apps stars du 
+playstore comme Google+, Evernote, The Verge, etc. 
+Une très belle libraire qui permet d’avoir accès à certaines fonctionnalités de nos apps de façon très simple. &lt;/p&gt;
+
+&lt;h2&gt;Et beaucoup d’autres!&lt;/h2&gt;
+
+&lt;p&gt;La liste de librairies présentées est loin d’être exhaustive! Il y en a beaucoup d’autres à découvrir, 
+tester et pourquoi pas utiliser dans nos apps. Un petit tour vers ce site, TheUltimateAndroidLibrary, 
+nous permet de voir qu’il y a des dév qui ont déjà réglé certains soucis donc il ne faut pas se gêner!&lt;br&gt;
+C’est le monde merveilleux d’android. Plein de librairies open source qui ne demandent qu’à être utilisées, 
+forkées et améliorées. &lt;/p&gt;
+
+&lt;h2&gt;Bonus&lt;/h2&gt;
+
+&lt;p&gt;Pour pouvoir utiliser ces librairies il faut les télécharger et les inclure à nos projets(sauf si on utilise 
+le plugin maven). Chose pas tout le temps facile avec nos soucis de connexion internet en Afrique, ou Eclipse 
+(avec ca dernière version) qui bug. Au bout d’un moment, on risque d’abandonner. 
+J’ai la solution qui vous permettra d’avoir la config prête en un clin d’oeil :D 
+Android Kick Start est un site qui nous permet de générer un nouveau projet android et de sélectionner en même 
+temps des librairies qui seront incluses et configurées comme il le faut. Il suffira tout simple de télécharger 
+le projet et de l’importer dans votre ide! Simple non ;-). 
+N’ayez pas peur si on vous propose des noms de librairies que vous ne connaissez pas encore. 
+J’en parlerai prochainement…&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Git:La suite</title>
+   <link href="http://soulesidibe.github.com/2012/12/16/Git-La-suite/"/>
+   <updated>2012-12-16T00:00:00+00:00</updated>
+   <id>http://soulesidibe.github.com/2012/12/16/Git-La-suite</id>
+   <content type="html">&lt;p&gt;Dans un précédent article je vous parlais de git et d’une certaine façon de bien démarrer avec cette outil très puissant 
+et surtout incontournable en ce moment.Maintenant qu’on arrive à travailler avec git on peut essayer de voir un peu plus 
+ce qu’offre la bête. &lt;/p&gt;
+
+&lt;h2&gt;Merge, push, pull&lt;/h2&gt;
+
+&lt;p&gt;Imaginons que vous avez créez une nouvelle branche &amp;quot;newFeature&amp;quot; histoire de tester une nouvelle fonction que vous 
+trouvez pertinente. 
+Vous codez, vous commitez. Tout marche! vous venez de mettre en place une fonctionnalité qui va vous valoir 
+une prime! Bah il ne reste plus qu’à faire un push! 
+Oops non mais attend je suis sur une autre branche; ai-je le droit de faire qu’en même le push? 
+Heuu oui et non. &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Non du fait que, au niveau du dépôt distant, il n’y a pas de banche &amp;quot;&lt;em&gt;newFeature&lt;/em&gt;&amp;quot;. Donc si on fait un &lt;code&gt;git push origin master&lt;/code&gt; 
+on aura comme message &amp;quot;Everything up-to-date&amp;quot;. Ce qui est normal si on comprend un peu comment marche les branches. 
+On demande à git de mettre à jour le dépôt distant identifié par &amp;quot;origin&amp;quot; avec nos modifications locales de la 
+branche master(&lt;code&gt;git push origin master&lt;/code&gt;). Alors que nos modifications ont été faites sur la branche &amp;quot;newFeature&amp;quot;. 
+Pour y remédier: il faut informer la branche master qu’il s’est passé des trucs et qu’elle doit se mettre au parfum: on merge! 
+C’est très simple à faire: &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;git co master
+git merge newFeature
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ 
+
+&lt;p&gt;D’abord on se positionne sur la branche master (co= checkout, je ferai un article sur les raccourcis git et comment en rajouter) 
+puis on fait un merge en donnant en paramètre le nom de la branche que l’on doit merger (l’auto-complétion marche pour les branches). 
+Si on est seul à travailler sur ce dépôt local tout devrait bien se passer. Mais si ce n’est pas le cas et que un autre 
+développeur a modifié un des fichiers sur lesquels vous avez apporté des modifications, il peut y avoir des conflits! 
+Pour rappel, git ne gère pas les fichiers mais le contenu des fichiers. Donc en cas de conflit, git vous guidera à régler le conflit. &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Oui Dans le cas où newFeature est une branche de suivi.Une branche de suivi est une branche locale liée à une branche 
+située au niveau du serveur. &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pour récupérer une branche distante: &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;git co --track origin/newFeature
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ 
+
+&lt;p&gt;La on aura une nouvelle branche newFeature et on sera en même temps connecter deçu. 
+Avant de pousser sur la branche distante il faut toujours récupérer les derniers changements au cas où il y en a; 
+puis faire son push:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;git pull
+git push
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Lors du pull, il est possible que git vous sort votre éditeur par défaut(vim, gedit, ou autre). C’est dans le cas où la branche 
+de suivi et la branche distante diverge(en plus simple, ne sont plus identiques). Donc git fait un merge des deux. 
+Il est malin ce git! &lt;/p&gt;
+
+&lt;p&gt;Mais au fait comment on crée une nouvelle branche sur le dépôt distant? 
+Il suffit de pousser la branche! &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;git branch nouvelleBranche
+git push origin nouvelleBranche
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ 
+
+&lt;p&gt;De même si on veut en supprimer une:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;git push origin :nouvelleBranche
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Le &amp;quot;:&amp;quot; suffit pour supprimer la branche distante! Mais elle sera toujours présente en local.&lt;/p&gt;
+
+&lt;h2&gt;Git Stash&lt;/h2&gt;
+
+&lt;p&gt;Il arrive qu’on soit entrain de coder un truc dans une branche et que à un moment on ait besoin de changer de branche 
+pour corriger un bug ou un truc du genre. Vu que git n’aime pas quand on essaye de faire un checkout alors que la branche 
+actuelle a subit des modifications et que on ne veux pas commiter du code non fini, la solution ici est de dire à git de 
+garder les modifications dans un coin et qu’on reviendra continuer notre travail plus tard: &lt;code&gt;git stash&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Si on fait un &lt;code&gt;git status&lt;/code&gt;, on remarque que le répertoire de travail est propre! les modifications ont été mises à l’écart. 
+Et si à un moment on souhaite revenir sur notre sauvegarde: &lt;code&gt;git stash apply&lt;/code&gt; ou &lt;code&gt;git stash pop&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Et la on se rend compte que tout est revenu comme on l’avait laissé! C’est génial. 
+La différence entre git stash pop et git stash apply est que avec pop, le stash est appliqué et supprimé mais 
+avec apply il est juste appliqué; donc on peut toujours le retrouver et l’appliquer à nouveau. 
+Au passage pour supprimer un stash, &lt;code&gt;git stash drop [nomStash]&lt;/code&gt;. 
+Pour éviter de faire un &lt;code&gt;git add&lt;/code&gt; apres un git stash apply, rajoutez &lt;code&gt;–index&lt;/code&gt; à la fin: &lt;code&gt;git stash apply --index&lt;/code&gt;. &lt;/p&gt;
+
+&lt;p&gt;Il est possible qu’on est mis, de la même manière, en quarantaine d’autres modifications. 
+Pour voir la liste des stashs, il suffit de faire &lt;code&gt;git stash list&lt;/code&gt;. Et git nous affiche des lignes de ce genre: 
+&lt;code&gt;stash@{0}: WIP on master: 25af4b3 autre commit&lt;/code&gt; &lt;/p&gt;
+
+&lt;p&gt;Et là, on a le nom du stash (&lt;em&gt;stash@{0}&lt;/em&gt;), le nom de la branche(ici &lt;em&gt;master&lt;/em&gt;) et des informations sur le commit qui 
+précède ce stash (&lt;em&gt;25af4b3&lt;/em&gt; autre commit). 
+Avec le nom du stash, on peut appliquer un stash spécifique en faisant &lt;code&gt;git stash apply [nomStash]&lt;/code&gt;. 
+Si on ne met pas de nom, le dernier stash sera utilisé. 
+Et un petit dernier, Si un stash devient important et que vous sentez que c’est plus qu’une petite modification, 
+vous pouvez la transformer en une branche! 
+&lt;code&gt;git stash branch nomBranche nomStash&lt;/code&gt; 
+Et git vous connecte automatiquement à cette nouvelle branche! 
+Git stash est une commande très puissante avec laquelle on peut faire énormément de choses. 
+Je vous conseille d’aller lire le man (man git-stash ou git help stash)  pour voir les autres possibilités. 
+D’ailleurs, je vous conseille d’aller consulter le man pour toutes les autres fonctionnalités de git. On y rencontre 
+des astuces qu’on ne voit pas souvent dans les tutos. &lt;/p&gt;
+
+&lt;p&gt;Vous le savez git est vraiment puissant. Il permet de ne plus perdre des heures à chercher des fichiers ou des dossiers. 
+Et ainsi se concentrer sur l’essentiel! 
+Mais git peut aussi être fun. J’entends par là, personnaliser les commandes, la coloration de git et bien d’autres 
+qui feront l’objet d’un article! :D &lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Android:Consommer un web service</title>
+   <link href="http://soulesidibe.github.com/2012/12/08/Android-Consommer-un-web-service/"/>
+   <updated>2012-12-08T00:00:00+00:00</updated>
+   <id>http://soulesidibe.github.com/2012/12/08/Android-Consommer-un-web-service</id>
+   <content type="html">&lt;p&gt;Je vais vous parler de comment se fait la consommation de web services dans une application android. 
+Pourquoi android? Deux raisons me pousse à parler des services sous cette plateforme mobile: &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;La presque totalité des jeunes étudiants fraîchement sortis de nos écoles d’informatique a eu à suivre un 
+programme sur le développement avec le langage java (le langage de choix des profs pour appliquer les 
+concepts de l’orienté objet). Et c’est se même langage qui est utilisé pour le développement sous android. &lt;/li&gt;
+&lt;li&gt;Parmi les plateformes mobiles à la mode, android offre une accessibilité &amp;quot;bon marché&amp;quot;: 12.OOOFCFA ($25) 
+pour avoir un compte développeur à vie, et les outils de développement sont accessible sur tous les systèmes 
+d’exploitation et gratuitement. &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Avant de rentrer dans le vif du sujet, il est bon se mettre dans un contexte où utiliser des web 
+services devient essentiel! Imaginons que vous avez développer une application (desktop, web ou autre) 
+qui a fait le buzz! Et tout vas pour le mieux :-). Mais à un moment donné, vous vous rendez compte que votre 
+application devrait pouvoir être utilisé pas que quand on est devant un PC. Et là vous commencez à penser à 
+une application mobile sur les différentes plateforme star à savoir Android, IOS et Windows phone.&lt;/p&gt;
+
+&lt;p&gt;Un autre problème se pose. Comment allez vous faire pour mettre toute la logique de votre killer app dans 
+un smartphone! déjà qu’il faudra une version par système d’exploitation, si on doit porter toute la logique 
+sur chaque langage de programmation(java, objective-C, C#), bonjour la galère! &lt;/p&gt;
+
+&lt;p&gt;Vous l’avez devenez! La solution c’est de garder la logique métier côté serveur et que chaque client
+(mobile, web, desktop) fasse des appels quand il a besoin d’une ressource spécifique. Les web services REST 
+sont une très bonne alternative pour mettre en place ce genre de technique.  Pas besoin d’une implémentation 
+par langage; tous les clients utiliseront le protocole http pour communiquer avec les serveurs. Ce qui simplifie 
+grandement les échanges entres les différentes entités. &lt;/p&gt;
+
+&lt;p&gt;(La gestion des exceptions et certaines initialisations de variable ont été volontairement omises.) &lt;/p&gt;
+
+&lt;h2&gt;Faire un appel&lt;/h2&gt;
+
+&lt;p&gt;Pour faire un appel vu que REST est orienté web, on va utiliser les classes du package java.net. On crée un objet 
+de type URL qui va contenir l’adresse de la ressource ou tout simplement le lien du service: &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;URL&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;URL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://chemin/vers/service&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;On ouvre une connexion&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;URLConnection&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;connection&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;openConnection&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;HttpURLConnection&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;httpConnection&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HttpURLConnection&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;connection&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Récupération du code de retour. Vu qu’on est en HTTP. Si tout c’est bien passé on doit recevoir le code 200 (ici HttpURLConnection.HTTP_OK) et enfin récupérer notre flux:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;responseCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;httpConnection&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getResponseCode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;responseCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HttpURLConnection&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;HTTP_OK&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;httpConnection&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getInputStream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;A ce stade nous avons un objet de type InputStream qui contient les informations que le serveur a renvoyé.&lt;/p&gt;
+
+&lt;h2&gt;Parser du xml avec XMLPullParser&lt;/h2&gt;
+
+&lt;p&gt;Apres la récupération des données il faut bien les lires. 
+Pour cela il faudra utiliser un parseur en fonction de la techno utiliser pour envoyer les données côté serveur. 
+Dans le cas du xml, il existe un parseur natif intégrer à Android: XMLPullParser. C’est un parseur bas niveau; 
+c’est a dire qu’il faudra parcourir tout le document xml, tag par tag et faire des traitements en fonction du tag 
+rencontré. Voici un exemple de xml que l’on peut recevoir: &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;personnes&amp;gt;&lt;/span&gt;
+   &lt;span class=&quot;nt&quot;&gt;&amp;lt;personne&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;genre=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;feminin&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;nom&amp;gt;&lt;/span&gt;Diallo&lt;span class=&quot;nt&quot;&gt;&amp;lt;/nom&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;prenom&amp;gt;&lt;/span&gt;Binta&lt;span class=&quot;nt&quot;&gt;&amp;lt;/prenom&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;age&amp;gt;&lt;/span&gt;15&lt;span class=&quot;nt&quot;&gt;&amp;lt;/age&amp;gt;&lt;/span&gt;
+   &lt;span class=&quot;nt&quot;&gt;&amp;lt;/personne&amp;gt;&lt;/span&gt;
+   &lt;span class=&quot;nt&quot;&gt;&amp;lt;personne&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;genre=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;masculin&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;nom&amp;gt;&lt;/span&gt;Ndiaye&lt;span class=&quot;nt&quot;&gt;&amp;lt;/nom&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;prenom&amp;gt;&lt;/span&gt;Alioune&lt;span class=&quot;nt&quot;&gt;&amp;lt;/prenom&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;age&amp;gt;&lt;/span&gt;25&lt;span class=&quot;nt&quot;&gt;&amp;lt;/age&amp;gt;&lt;/span&gt;
+   &lt;span class=&quot;nt&quot;&gt;&amp;lt;/personne&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/personnes&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ 
+
+&lt;p&gt;On aura besoin d’un objet String pour contenir la valeur d’un tag à chaque passage., un objet qui va nous 
+fournir un parseur qui aura les paramètres indiqués( ici le support des espaces de noms, voir doc de &lt;strong&gt;XmlPullParserFactory&lt;/strong&gt;), 
+Et enfin générer notre parseur et lui spécifier l’objet InputStream avec lequel il devra travailler: &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;valeur&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;XmlPullParserFactory&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;factory&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;XmlPullParserFactory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;newInstance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;factory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setNamespaceAware&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;XmlPullParser&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xpp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;factory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;newPullParser&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;xpp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setInput&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ 
+
+&lt;p&gt;Voici un morceau de code tiré de la doc officiel qu’on peut utiliser pour extraire les informations du InputStream: &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;c1&quot;&gt;//Le type d&amp;#39;evenement pour savoir si on est au debut du xml et bien &lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//d&amp;#39;autres informations&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;eventType&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xpp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getEventType&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;//Tant qu&amp;#39;on n&amp;#39;est pas à la fin du document&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eventType&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;XmlPullParser&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;END_DOCUMENT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;c1&quot;&gt;//Si on est au debut d&amp;#39;un tag&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eventType&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;XmlPullParser&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;START_TAG&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xpp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;equals&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;personne&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+         &lt;span class=&quot;n&quot;&gt;genre&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xpp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getAttributeValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;genre&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+   &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eventType&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;XmlPullParser&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;END_TAG&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xpp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;equals&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;nom&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)){&lt;/span&gt;
+         &lt;span class=&quot;n&quot;&gt;nom&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;valeur&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+         &lt;span class=&quot;n&quot;&gt;valeur&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; 
+   &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eventType&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;XmlPullParser&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;TEXT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+       &lt;span class=&quot;c1&quot;&gt;//recuperation de la valeur pour le tag actuel&lt;/span&gt;
+       &lt;span class=&quot;n&quot;&gt;valeur&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xpp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+   &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;eventType&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xpp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ 
+
+&lt;p&gt;Une petite astuce que vous avez surement remarqué, en début de tag on récupére les attributs du tag, en fin de 
+tag on récupère la valeur pour ce tag. 
+Un exemple concret sur ce parseur sur &lt;a href=&quot;https://github.com/soulesidibe/xmlPullParserExemple&quot;&gt;github&lt;/a&gt;. &lt;/p&gt;
+
+&lt;h2&gt;Manipuler du json&lt;/h2&gt;
+
+&lt;p&gt;Pour traiter du json reçu via un web service, Android embarque en natif un package constituer de classe 
+pour faire le job: &lt;strong&gt;org.json.&lt;/strong&gt;* .Elles sont très simples d’utilisation. Voyons ce cas pratique de json: &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;json&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;nt&quot;&gt;&amp;quot;personnes&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:[&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+         &lt;span class=&quot;nt&quot;&gt;&amp;quot;nom&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Fama&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;         
+         &lt;span class=&quot;nt&quot;&gt;&amp;quot;prenom&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Mbaye&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;         
+         &lt;span class=&quot;nt&quot;&gt;&amp;quot;age&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;19&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;        
+         &lt;span class=&quot;nt&quot;&gt;&amp;quot;genre&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;feminin&amp;quot;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+         &lt;span class=&quot;nt&quot;&gt;&amp;quot;nom&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Jack&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+         &lt;span class=&quot;nt&quot;&gt;&amp;quot;prenom&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Anthoine&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+         &lt;span class=&quot;nt&quot;&gt;&amp;quot;age&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;30&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+         &lt;span class=&quot;nt&quot;&gt;&amp;quot;genre&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;masculin&amp;quot;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+   &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ 
+
+&lt;p&gt;Le code pour récupérer les informations ci-dessus: &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;c1&quot;&gt;//Convertir le InputStream de départ en String&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;BufferedReader&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bufferedReader&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BufferedReader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;InputStreamReader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;StringBuilder&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stringBuilder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;StringBuilder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;uneLigneLue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bufferedReader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;readLine&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;uneLigneLue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;c1&quot;&gt;//on ajoute la nouvelle ligne lue dans le StringBuilder&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;stringBuilder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;UneLigneLue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;\n&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+   &lt;span class=&quot;c1&quot;&gt;//lecture de la ligne suivante&lt;/span&gt;
+   &lt;span class=&quot;n&quot;&gt;ligneLue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bufferedReader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;readLine&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; 
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;bufferedReader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;//notre Objet maguique&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;JSONObject&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;JSONObject&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stringBuilder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;JSONArray&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;array&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getJSONArray&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;personnes&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++){&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;nom&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getJSONObject&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;nom&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ 
+
+&lt;p&gt;Un cas concret de manipulation du json sur &lt;a href=&quot;https://github.com/soulesidibe/JsonParserExemple&quot;&gt;github&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;Cette facon de faire est pratique pour des fichiers aussi simple que celui utilisé mais il est mieux dans 
+certains cas d’opter pour des librairies qui ajoutent un niveau d’abstraction dans un souci de simplifier 
+la manipulation du json. C’est le cas de la librairie &lt;strong&gt;GSON&lt;/strong&gt; qui permet de faire le passage du JSON en &lt;strong&gt;POJO&lt;/strong&gt; 
+et vice versa.  Il y a aussi la librairie &lt;strong&gt;JACKSON&lt;/strong&gt; tout aussi puissante. 
+Il faut juste choisir celle qui nous rend efficace. &lt;/p&gt;
+
+&lt;h2&gt;Oui mais pourquoi faire?&lt;/h2&gt;
+
+&lt;p&gt;Apres avoir reçu les données du serveur, après avoir convertir le xml/json en objet java, en tant que 
+dévelopeur java, il n’y a pas vraiment de limite! 
+Dans le contexte d’un développement android, il y a plusieurs manières d’utiliser ces données: &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Mettre à jour une liste: exemple une vue qui affiche la timeline d’un compte twitter a besoin de récupérer 
+les informations des serveurs de twitter pour les exposer à l’utilisateur via une ListView ou une ListActivity;&lt;/li&gt;
+&lt;li&gt;Renseigner une base de données (sqlite) pour une utilisation de l’application en offline &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Les possibilités n’ont pas de limite. Ça dépendra de ce que l’application fait et de comment 
+le développeur veut le faire.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Prise en main rapide de git</title>
+   <link href="http://soulesidibe.github.com/2012/12/04/Prise-en-main-rapide-git/"/>
+   <updated>2012-12-04T00:00:00+00:00</updated>
+   <id>http://soulesidibe.github.com/2012/12/04/Prise-en-main-rapide-git</id>
+   <content type="html">&lt;p&gt;Lorsqu’on développe une application, en entreprise comme en solo, il est conseillé ou même essentiel 
+d’avoir de bonnes pratiques. L’une d’elle est l’utilisation d’un gestionnaire de version pour avoir 
+une certaine traçabilité de nos changements. Donc ici, on parla plus particulièrement de git qui est très célèbre 
+dans le monde le l’open source avec des implémentations en ligne comme &lt;strong&gt;github&lt;/strong&gt;, &lt;strong&gt;bitbucket&lt;/strong&gt;. &lt;/p&gt;
+
+&lt;h2&gt;C’est quoi un gestionnaire de version&lt;/h2&gt;
+
+&lt;p&gt;Ce n’est pas bien compliquer; c’est juste un logiciel qui va te permettre d’avoir l’historique de toutes 
+les modifications que tu as eu à apporter dans ton code ou tout simplement à un document. Et surtout de pouvoir 
+retourner sur une version antérieur d’un document sans grande difficulté. &lt;/p&gt;
+
+&lt;p&gt;Très sympa comme concept! 
+Imagines ton boss te dit: &amp;quot;Demain on doit présenter la version stable du produit à un nouveau client&amp;quot;. 
+Alors que entre temps, tu étais en pleine modification du code et donc qu’il sera presque impossible de revenir 
+à cette version stable vu que dés le départ tu n’as pas utiliser un système de versionning ou, comme 
+certains le font, tu n’as pas créer un dossier &lt;strong&gt;produitStableBackup&lt;/strong&gt;!
+Donc on voit clairement, que ce système peut nous éviter bien des soucis :-). 
+Il existe principalement deux modes de gestion de version:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Le mode centralisé ou client-serveur: dans ce mode, le code source est sur un serveur. 
+Tous les développeurs interagissent avec ce serveur soit pour récupérer les dernières mise à jour, 
+soit pour apporter une nouvelle mise à jour. On comprendra qu’il est impératif d’être connecté au réseau local 
+ou à internet pour que cette interaction puisse se faire. Exemple:Subversion(svn), cvs pour Concurrent versions system. &lt;/li&gt;
+&lt;li&gt;Le mode décentralisé: ici on peut dire que tout le monde est client et serveur. 
+Et on a la possibilité d’interagir avec toute l’équipe sans passer par un point central. Tu peux donc 
+travailler en n’étant pas connecté et faire des mises à jour en local; puis rendre ces mises à jour disponible 
+dès qu’elles sont prêtes. Cependant même dans ce mode, il existera un point qui jouera uniquement le rôle de 
+serveur mais ne sera pas indispensable pour travailler. Exemple: git, mercurial, bazaar. &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Vous l’avez compris, il s’agira ici de parler de git!&lt;/p&gt;
+
+&lt;h2&gt;Get started here&lt;/h2&gt;
+
+&lt;p&gt;Il faudrait déja installer la bête. Rien de plus simple: &lt;code&gt;sudo apt-get install git-core&lt;/code&gt; ou 
+&lt;code&gt;sudo yum install git-core&lt;/code&gt; et on peut enfin s’amuser ;-). &lt;/p&gt;
+
+&lt;p&gt;Bon avant de s’amuser il faut d’abord se présenter(c’est le minimum non?): &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Comment tu t’appelles? &lt;code&gt;git config –global user.name &amp;quot;Souleymane Sidibe&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Ton mail pour te joindre stp: &lt;code&gt;git config –global user.mail &amp;quot;souley@sidi.be&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Il faut bien qu’on puisse savoir qui a fait tel modification ou comment le joindre. &lt;/p&gt;
+
+&lt;p&gt;Maintenant que tout est prêt, il nous manque une chose. Un dépôt git. 
+S’il existe déjà, il faut le récupérer; on parle de cloner un dépot. Et c’est assez facile à faire: 
+&lt;code&gt;git clone http://chemin/vers/depot/killerApp.git [LeNomDuDepotEnLocal]&lt;/code&gt; &lt;/p&gt;
+
+&lt;p&gt;Si on ne met pas le nom, git va créer un dossier &amp;quot;killerApp&amp;quot;. 
+Petite précision, en plus du protocole http, il est possible d’avoir accès à un dépôt git via le protocole ssh 
+(étant plus sécurisé), le protocole git ou avec un bête chemin du genre &lt;code&gt;/home/lead/projects/killerApp.git&lt;/code&gt;.&lt;br&gt;
+Si le dépôt n’existe pas en l’initialise.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt; 
+&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /chemin/vers/code/source
+git init &lt;span class=&quot;c&quot;&gt;#pour initialiser un nouveau dépôt.&lt;/span&gt;
+git add fichier.java &lt;span class=&quot;c&quot;&gt;#pour dire à git de suivre le fichier fichier.java&lt;/span&gt;
+git add . &lt;span class=&quot;c&quot;&gt;#si on veut ajouter tous les fichiers du nouveau dépôt (même ceux des sous dossiers).&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ 
+
+&lt;p&gt;Il y a souvent des fichiers qui ne doivent pas être suivis. c’est le cas des fichiers .class, certains 
+fichiers de configuration. Pour ne pas que le système nous répéte après chaque &lt;code&gt;git st&lt;/code&gt;(statut) 
+qu’il y a des fichiers non suivis, il faut juste ajouter un fichier .gitignore et y mettre les noms 
+des fichiers et dossiers correspondants. Gitignore comprend aussi les caractères spéciaux 
+comme *.class (tous les fichiers .class).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/github/gitignore&quot;&gt;Ici&lt;/a&gt; un ensemble de prototypes de fichier .gitignore en fonction du langage ou de l’IDE. À personnaliser of course.
+Une commande que j’utilise beaucoup et qui permet de voir l’état du dépôt: &lt;code&gt;git status&lt;/code&gt;.
+Elle permet d’avoir une vision global et fourni des informations sur la branche actuelle, les fichiers qui on été modifiés, 
+les fichiers présents dans le dépôt et qui ne sont pas suivis. À propos des fichiers, on peut compter quatre statuts possibles: &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;untracked&lt;/strong&gt; = &amp;gt;le fichier n’est pas suivi, faire un git add pour qu’il le soit &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;unmodified&lt;/strong&gt; =&amp;gt; le fichier n’est pas modifié; git rm pour retourner à l’état untracked &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;modified&lt;/strong&gt; =&amp;gt; le fichier a été modifié; il s’agit d’un fichier unmodified qui a été édité &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;staged&lt;/strong&gt; =&amp;gt; le fichier est indexés, donc il fera parti du prochain commit et retournera à l’état unmodified. &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Un défaut/qualité de git, s’est le grand nombre de commandes et d’options disponibles. Mais on est aidé par 
+la complétion des commandes et aussi par la commande git help qui explique un peu ce qu’on peut faire et 
+&lt;code&gt;git help &amp;lt;option&amp;gt;&lt;/code&gt; pour avoir un man complet de la commande en question. &lt;/p&gt;
+
+&lt;p&gt;Apres avoir implémenter la fonction qui va te rendre riche, il faut la &amp;quot;committer&amp;quot;. En terme technique, 
+c’est le fait de faire passer les fichiers qui étaient &amp;quot;staged&amp;quot; en unmodified. En plus simple, c’est juste 
+le fait d’ajouter une entrée dans l’historique des modifications du dépôt. En général, il est accompagné 
+d’un commentaire pour expliquer ce qui a été ajouter, modifier, supprimer: &lt;code&gt;git commit -m &amp;quot;commentaires&amp;quot;&lt;/code&gt;.
+On peut aussi faire en une seule fois un git add et un git commit: &lt;code&gt;git commit -a -m &amp;quot;coms&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2&gt;L’utilisation des branches&lt;/h2&gt;
+
+&lt;p&gt;Retournons voir le développeur qui voulait modifier son code tout en ayant une version stable utilisable à tout moment.
+Il a le choix entre plusieurs possibilités: &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Créer un dossier avec des noms bizarres que lui seul peut comprendre (project&lt;em&gt;old&lt;/em&gt;bon&lt;em&gt;2012&lt;/em&gt;02&lt;em&gt;14&lt;/em&gt;back): ici on prend l
+e risque de se perdre dans sa forêt de dossiers ou de ne plus savoir lequel a ou n’a pas telle fonctionnalité&lt;/li&gt;
+&lt;li&gt;Créer un clone du projet avec un git clone /chemin/project.git: ça peut être une alternative sauf que pour un gros 
+projet, le disque dur peut crier!&lt;/li&gt;
+&lt;li&gt;Ou créer une branche! git branch new_feature: c’est la meilleur des manières si on veut tester de nouvelles 
+fonctionnalités tout en gardant une copie propre du projet.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Il faut savoir que quand on initialise un projet(&lt;code&gt;git init&lt;/code&gt;) ou qu’on clone un dépôt (&lt;code&gt;git clone&lt;/code&gt;). on est par&lt;br&gt;
+défaut sur la branche &amp;quot;master&amp;quot;. 
+&lt;code&gt;git branch&lt;/code&gt; permet d’avoir la liste des branches locales 
+&lt;code&gt;git branch &amp;lt;nom_de_la_nouvelle_branche&amp;gt;&lt;/code&gt;  pour créer une branche; en général je donne le nom de la feature 
+que je voudrai implémenter ou la correction d’un bug. 
+&lt;code&gt;git branche -d &amp;lt;nom_branche&amp;gt;&lt;/code&gt; supprime la branche. &lt;/p&gt;
+
+&lt;p&gt;Et bien d’autres options que tu peux explorer en faisant &lt;code&gt;git help branch&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Oui mais bon c’est bien de créer des branches de les supprimer et tout mais comment on fait pour passer 
+d’une branche à l’autre?! 
+Et bin il suffit de faire git checkout &lt;nom_branch&gt; et on peut se permettre de faire un 
+&lt;code&gt;git rm .&lt;/code&gt; (supprimer tout le contenu du dossier) 
+&lt;code&gt;git commit -m &amp;quot;tout supprimer!&amp;quot;&lt;/code&gt; sans aucune crainte! 
+Sur la branch master c’est comme s’il ne s’était rien passé (&lt;code&gt;git checkout master&lt;/code&gt; pour vérifier). 
+C’est cela la magie de git. Et il le fait avec une simplicité. On n’aura plus peur d’apporter de grosses 
+modifications à des projets critiques ;-). &lt;/p&gt;
+
+&lt;p&gt;A ce stade, tu dois pouvoir travailler avec git. Tu sais récupérer un dépôt ou en initialiser un, ajouter de
+s fichiers, commiter, créer des branches, c’est le minimum à connaitre!
+Dans un prochain article, on ira plus en profondeur dans l’utilisation de git.&lt;/p&gt;
 </content>
  </entry>
  
