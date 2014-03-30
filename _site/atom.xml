@@ -4,7 +4,7 @@
  <title>Soulesidibe</title>
  <link href="http://soulesidibe.github.io/atom.xml" rel="self"/>
  <link href="http://soulesidibe.github.io/"/>
- <updated>2014-03-30T19:01:22+00:00</updated>
+ <updated>2014-03-30T19:54:10+00:00</updated>
  <id>http://soulesidibe.github.io</id>
  <author>
    <name>Souleymane Sidibe</name>
@@ -257,7 +257,7 @@ Je vais essayer de revoir ce qui s’est passé :). &lt;/p&gt;
 
 &lt;h2&gt;Nexus 5&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://soulesidibe.files.wordpress.com/2013/11/lg-nexus-5-photo.png&quot; alt=&quot;nexus5&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/lg-nexus-5-photo.png&quot; alt=&quot;nexus5&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;Enfin! 
 Depuis un bon moment on nous parle de ce nouveau nexus sur les sites spécialisés. Il est là! Et il est beau! 
@@ -272,7 +272,7 @@ Surtout que vous recevrez bientôt la mise à jour KitKat… &lt;/p&gt;
 
 &lt;h2&gt;Android KiKat 4.4&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://soulesidibe.files.wordpress.com/2013/11/android-kitkat.jpg&quot; alt=&quot;kitkat&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/android-kitkat.jpg&quot; alt=&quot;kitkat&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;Celui la on la vraiment attendu et il n’a pas déçu! Cette version android est annoncée comme celle qui 
 va permettre de réduire encore plus la fragmentation du système Android. En effet, d’après les dires de 
@@ -306,9 +306,9 @@ NB: &lt;em&gt;Il faut etre sous &lt;strong&gt;kitkat&lt;/strong&gt;&lt;/em&gt;&l
 
 &lt;p&gt;Android supporte maintenant java 7! Un dév android c’est avant tout un dév java! et plus tu es bon en java plus tu l’es en dév android! Donc avec java 7 (je rentrerai pas dans les details) on peut par exemple faire un switch case avec des strings! Du multi catch:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://soulesidibe.files.wordpress.com/2013/11/multicatch1.png&quot; alt=&quot;Multi catch&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/multicatch1.png&quot; alt=&quot;Multi catch&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://soulesidibe.files.wordpress.com/2013/11/multicatch2.png&quot; alt=&quot;Multi catch&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/multicatch2.png&quot; alt=&quot;Multi catch&quot;&gt;&lt;/p&gt;
 
 &lt;h4&gt;Gradle integration&lt;/h4&gt;
 
@@ -316,7 +316,7 @@ NB: &lt;em&gt;Il faut etre sous &lt;strong&gt;kitkat&lt;/strong&gt;&lt;/em&gt;&l
 vous vous êtes rendu compte de la lenteur quand on fait un build! Une petite astuce permet d’améliorer ca en 
 utilisant le mode daemon de gradle. Maintenant avec studio une simple case à cocher permet de gagner en temps lors de vos builds! &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://soulesidibe.files.wordpress.com/2013/11/faster-builds.png&quot; alt=&quot;daemon gradle&quot;&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/faster-builds.png&quot; alt=&quot;daemon gradle&quot;&gt; &lt;/p&gt;
 
 &lt;p&gt;Voila voila en gros ce qui c’est passé hier! J’ai juste survolé mais je reviendrais sur les nombreuses nouveautés de l’API 19!&lt;/p&gt;
 </content>
@@ -369,7 +369,7 @@ La seconde grosse annonce fut le remplacement du système de build ant par gradl
 &lt;p&gt;Ok mais le souci est que tous nos projets actuels sont sous eclipse. Maintenant comment faire migrer ces projets 
 la vers SA et gradle? Google nous a fourni une démarche à suivre sur le site officiel. Pour un projet simple ca peut passer. Mais quand on a des projets librairies par ici ou des jars à en plus finir, ca devient un vrai casse-tête pour arriver à cette image:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://soulesidibe.files.wordpress.com/2013/08/capture-du-2013-08-11-140412.png&quot; alt=&quot;Android Studio&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/capture-du-2013-08-11-140412.png&quot; alt=&quot;Android Studio&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;Mais bon on est la pour atteindre cette objectif :-). 
 Il nous faut, avant de commencer, un projet concret où on retrouvera quelques librairies(sous forme de project library 
@@ -388,18 +388,18 @@ D’où la nécessité de mettre à jour le plugin mais aussi votre sdk pour bé
 
 &lt;p&gt;Il est temps maintenant d’exporter notre projet! La procédure est très simple! File -&amp;gt; Export et on a cette fenêtre qui s’affiche: &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://soulesidibe.files.wordpress.com/2013/08/capture-du-2013-08-11-151318.png&quot; alt=&quot;Eclipse adt&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/capture-du-2013-08-11-151318.png&quot; alt=&quot;Eclipse adt&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;Donc on choisit &amp;quot;Generate gradle build files&amp;quot;: &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://soulesidibe.files.wordpress.com/2013/08/capture-du-2013-08-11-151541.png&quot; alt=&quot;Eclipse adt&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/capture-du-2013-08-11-151541.png&quot; alt=&quot;Eclipse adt&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;La il suffit de sélectionner le projet et non les dépendances du projet. Ici KillerApp. 
 Le reste c’est du suivant suivant… A ce stade, eclipse nous a généré tous les fichiers qu’il faut. 
 Quelques explications s’imposent. 
 Nous avons l’apparition de quelques fichiers à la racine de notre projet mais aussi dans les répertoires de chaque module.  Oops! je ne vous ai pas dit! Avec AS ou IntellIJ, le workspace de Eclipse devient un projet, le projet de Eclipse devient un module. &lt;a href=&quot;http://confluence.jetbrains.com/display/IntelliJIDEA/FAQ+on+Migrating+to+IntelliJ+IDEA&quot;&gt;Plus de détails ici&lt;/a&gt;. Que représentent ces fichiers?&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://soulesidibe.files.wordpress.com/2013/08/capture-du-2013-08-11-152554.png&quot; alt=&quot;terminator&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/capture-du-2013-08-11-152554.png&quot; alt=&quot;terminator&quot;&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;gradle/: ce répertoire est une &amp;quot;installation locale&amp;quot; de l’outil gradle. on a donc pas besoin de l’installer sur notre pc. C’est la pratique qui est conseillé pour etre sure d’avoir tout le temps la bonne version de gradle pour builder nos projets&lt;/li&gt;
@@ -519,7 +519,7 @@ Pour rappel, on avait dit que certains paramètres devront être les mêmes pour
 &lt;p&gt;On lui spécifie qu’il aura besoin du support-v4 et des librairies ABS et pull&lt;em&gt;to&lt;/em&gt;refresh présentes à la racine.
 On y est! Tout a été configuré, maintenant il suffit de faire un  build pour voir que tout compile comme il faut! &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://soulesidibe.files.wordpress.com/2013/08/capture-du-2013-08-11-204553.png&quot; alt=&quot;AS&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/capture-du-2013-08-11-204553.png&quot; alt=&quot;AS&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;Nous venons de voir qu’il n’est pas très compliqué de passer de Éclipse à Android Studio. Il suffit juste d’avoir des connaissances sur gradle, maven et de se familiariser un peu avec l’IDE. &lt;/p&gt;
 

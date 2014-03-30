@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <script type="text/javascript">
 
-  ga('create', 'UA-44424399-2', 'soulesidibe.github.io');
-  ga('send', 'pageview');
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-44424399-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 
 </script>
   <head>
@@ -77,7 +80,7 @@ La seconde grosse annonce fut le remplacement du système de build ant par gradl
 <p>Ok mais le souci est que tous nos projets actuels sont sous eclipse. Maintenant comment faire migrer ces projets 
 la vers SA et gradle? Google nous a fourni une démarche à suivre sur le site officiel. Pour un projet simple ca peut passer. Mais quand on a des projets librairies par ici ou des jars à en plus finir, ca devient un vrai casse-tête pour arriver à cette image:</p>
 
-<p><img src="http://soulesidibe.files.wordpress.com/2013/08/capture-du-2013-08-11-140412.png" alt="Android Studio"></p>
+<p><img src="/assets/capture-du-2013-08-11-140412.png" alt="Android Studio"></p>
 
 <p>Mais bon on est la pour atteindre cette objectif :-). 
 Il nous faut, avant de commencer, un projet concret où on retrouvera quelques librairies(sous forme de project library 
@@ -96,18 +99,18 @@ D’où la nécessité de mettre à jour le plugin mais aussi votre sdk pour bé
 
 <p>Il est temps maintenant d’exporter notre projet! La procédure est très simple! File -&gt; Export et on a cette fenêtre qui s’affiche: </p>
 
-<p><img src="http://soulesidibe.files.wordpress.com/2013/08/capture-du-2013-08-11-151318.png" alt="Eclipse adt"></p>
+<p><img src="/assets/capture-du-2013-08-11-151318.png" alt="Eclipse adt"></p>
 
 <p>Donc on choisit &quot;Generate gradle build files&quot;: </p>
 
-<p><img src="http://soulesidibe.files.wordpress.com/2013/08/capture-du-2013-08-11-151541.png" alt="Eclipse adt"></p>
+<p><img src="/assets/capture-du-2013-08-11-151541.png" alt="Eclipse adt"></p>
 
 <p>La il suffit de sélectionner le projet et non les dépendances du projet. Ici KillerApp. 
 Le reste c’est du suivant suivant… A ce stade, eclipse nous a généré tous les fichiers qu’il faut. 
 Quelques explications s’imposent. 
 Nous avons l’apparition de quelques fichiers à la racine de notre projet mais aussi dans les répertoires de chaque module.  Oops! je ne vous ai pas dit! Avec AS ou IntellIJ, le workspace de Eclipse devient un projet, le projet de Eclipse devient un module. <a href="http://confluence.jetbrains.com/display/IntelliJIDEA/FAQ+on+Migrating+to+IntelliJ+IDEA">Plus de détails ici</a>. Que représentent ces fichiers?</p>
 
-<p><img src="http://soulesidibe.files.wordpress.com/2013/08/capture-du-2013-08-11-152554.png" alt="terminator"></p>
+<p><img src="/assets/capture-du-2013-08-11-152554.png" alt="terminator"></p>
 
 <ul>
 <li>gradle/: ce répertoire est une &quot;installation locale&quot; de l’outil gradle. on a donc pas besoin de l’installer sur notre pc. C’est la pratique qui est conseillé pour etre sure d’avoir tout le temps la bonne version de gradle pour builder nos projets</li>
@@ -227,7 +230,7 @@ Pour rappel, on avait dit que certains paramètres devront être les mêmes pour
 <p>On lui spécifie qu’il aura besoin du support-v4 et des librairies ABS et pull<em>to</em>refresh présentes à la racine.
 On y est! Tout a été configuré, maintenant il suffit de faire un  build pour voir que tout compile comme il faut! </p>
 
-<p><img src="http://soulesidibe.files.wordpress.com/2013/08/capture-du-2013-08-11-204553.png" alt="AS"></p>
+<p><img src="/assets/capture-du-2013-08-11-204553.png" alt="AS"></p>
 
 <p>Nous venons de voir qu’il n’est pas très compliqué de passer de Éclipse à Android Studio. Il suffit juste d’avoir des connaissances sur gradle, maven et de se familiariser un peu avec l’IDE. </p>
 
@@ -267,7 +270,7 @@ La seconde grosse annonce fut le remplacement du système de build ant par gradl
 <p>Ok mais le souci est que tous nos projets actuels sont sous eclipse. Maintenant comment faire migrer ces projets 
 la vers SA et gradle? Google nous a fourni une démarche à suivre sur le site officiel. Pour un projet simple ca peut passer. Mais quand on a des projets librairies par ici ou des jars à en plus finir, ca devient un vrai casse-tête pour arriver à cette image:</p>
 
-<p><img src="http://soulesidibe.files.wordpress.com/2013/08/capture-du-2013-08-11-140412.png" alt="Android Studio"></p>
+<p><img src="/assets/capture-du-2013-08-11-140412.png" alt="Android Studio"></p>
 
 <p>Mais bon on est la pour atteindre cette objectif :-). 
 Il nous faut, avant de commencer, un projet concret où on retrouvera quelques librairies(sous forme de project library 
@@ -286,18 +289,18 @@ D’où la nécessité de mettre à jour le plugin mais aussi votre sdk pour bé
 
 <p>Il est temps maintenant d’exporter notre projet! La procédure est très simple! File -&gt; Export et on a cette fenêtre qui s’affiche: </p>
 
-<p><img src="http://soulesidibe.files.wordpress.com/2013/08/capture-du-2013-08-11-151318.png" alt="Eclipse adt"></p>
+<p><img src="/assets/capture-du-2013-08-11-151318.png" alt="Eclipse adt"></p>
 
 <p>Donc on choisit &quot;Generate gradle build files&quot;: </p>
 
-<p><img src="http://soulesidibe.files.wordpress.com/2013/08/capture-du-2013-08-11-151541.png" alt="Eclipse adt"></p>
+<p><img src="/assets/capture-du-2013-08-11-151541.png" alt="Eclipse adt"></p>
 
 <p>La il suffit de sélectionner le projet et non les dépendances du projet. Ici KillerApp. 
 Le reste c’est du suivant suivant… A ce stade, eclipse nous a généré tous les fichiers qu’il faut. 
 Quelques explications s’imposent. 
 Nous avons l’apparition de quelques fichiers à la racine de notre projet mais aussi dans les répertoires de chaque module.  Oops! je ne vous ai pas dit! Avec AS ou IntellIJ, le workspace de Eclipse devient un projet, le projet de Eclipse devient un module. <a href="http://confluence.jetbrains.com/display/IntelliJIDEA/FAQ+on+Migrating+to+IntelliJ+IDEA">Plus de détails ici</a>. Que représentent ces fichiers?</p>
 
-<p><img src="http://soulesidibe.files.wordpress.com/2013/08/capture-du-2013-08-11-152554.png" alt="terminator"></p>
+<p><img src="/assets/capture-du-2013-08-11-152554.png" alt="terminator"></p>
 
 <ul>
 <li>gradle/: ce répertoire est une &quot;installation locale&quot; de l’outil gradle. on a donc pas besoin de l’installer sur notre pc. C’est la pratique qui est conseillé pour etre sure d’avoir tout le temps la bonne version de gradle pour builder nos projets</li>
@@ -417,7 +420,7 @@ Pour rappel, on avait dit que certains paramètres devront être les mêmes pour
 <p>On lui spécifie qu’il aura besoin du support-v4 et des librairies ABS et pull<em>to</em>refresh présentes à la racine.
 On y est! Tout a été configuré, maintenant il suffit de faire un  build pour voir que tout compile comme il faut! </p>
 
-<p><img src="http://soulesidibe.files.wordpress.com/2013/08/capture-du-2013-08-11-204553.png" alt="AS"></p>
+<p><img src="/assets/capture-du-2013-08-11-204553.png" alt="AS"></p>
 
 <p>Nous venons de voir qu’il n’est pas très compliqué de passer de Éclipse à Android Studio. Il suffit juste d’avoir des connaissances sur gradle, maven et de se familiariser un peu avec l’IDE. </p>
 
