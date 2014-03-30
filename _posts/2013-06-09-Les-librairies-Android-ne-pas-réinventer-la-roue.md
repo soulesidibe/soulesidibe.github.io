@@ -22,7 +22,7 @@ Dans une application Android, il est presque impossible de ne pas trouver de lis
 pas statiques. D’où la nécessite de proposer un mécanisme de mise à jour des données assez simple et 
 intuitif: le PullToRefresh! 
 
-![PullToRefresh](https://raw.github.com/chrisbanes/Android-PullToRefresh/master/header_graphic.png)
+![PullToRefresh](/assets/header_graphic.png)
 
 on le voit sur l’image, d’un simple tiret vers le bas de la liste puis d’un relachement, on a la possibilité 
 de mettre à jour les données! On peut imaginer appeler un service sur un autre thread pour récupérer les mises 
@@ -31,7 +31,7 @@ retrouve dans presque toutes les apps connues.
 
 ##Action Bar Sherlock
 
-![ActionBarSherlock](http://soulesidibe.files.wordpress.com/2013/05/actionbar.png)
+![ActionBarSherlock](/assets/actionbar.png)
 
 La prise en compte des tablettes à partir des version 3.0 d’Android est venu avec son lot de nouveautés dont 
 la action bar qui a rendu obseléte le bouton menu de nos anciens smartphones. 
@@ -56,7 +56,7 @@ le thème holo partout; les devices avec ICS inclus!
 
 ##Sliding Menu
 
-![SlidingMenu](http://soulesidibe.files.wordpress.com/2013/05/4png.png)
+![SlidingMenu](/assets/4png.png)
 
 Si vous avez un android phone(normalement oui en tant que développeur android), vous avez du remarqué une 
 nouvelle tendance dans les interfaces. En effet, certaines fonctions de l’application ne sont plus présentent 

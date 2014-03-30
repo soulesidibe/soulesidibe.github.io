@@ -4,7 +4,7 @@
  <title>Soulesidibe</title>
  <link href="http://soulesidibe.github.io/atom.xml" rel="self"/>
  <link href="http://soulesidibe.github.io/"/>
- <updated>2014-03-30T18:06:22+00:00</updated>
+ <updated>2014-03-30T19:01:22+00:00</updated>
  <id>http://soulesidibe.github.io</id>
  <author>
    <name>Souleymane Sidibe</name>
@@ -552,7 +552,7 @@ qui améliorent l’expériences utilisateurs tout en suivant les bonnes pratiqu
 pas statiques. D’où la nécessite de proposer un mécanisme de mise à jour des données assez simple et 
 intuitif: le PullToRefresh! &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://raw.github.com/chrisbanes/Android-PullToRefresh/master/header_graphic.png&quot; alt=&quot;PullToRefresh&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/header_graphic.png&quot; alt=&quot;PullToRefresh&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;on le voit sur l’image, d’un simple tiret vers le bas de la liste puis d’un relachement, on a la possibilité 
 de mettre à jour les données! On peut imaginer appeler un service sur un autre thread pour récupérer les mises 
@@ -561,7 +561,7 @@ retrouve dans presque toutes les apps connues. &lt;/p&gt;
 
 &lt;h2&gt;Action Bar Sherlock&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://soulesidibe.files.wordpress.com/2013/05/actionbar.png&quot; alt=&quot;ActionBarSherlock&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/actionbar.png&quot; alt=&quot;ActionBarSherlock&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;La prise en compte des tablettes à partir des version 3.0 d’Android est venu avec son lot de nouveautés dont 
 la action bar qui a rendu obseléte le bouton menu de nos anciens smartphones. 
@@ -586,7 +586,7 @@ le thème holo partout; les devices avec ICS inclus! &lt;/p&gt;
 
 &lt;h2&gt;Sliding Menu&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://soulesidibe.files.wordpress.com/2013/05/4png.png&quot; alt=&quot;SlidingMenu&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/4png.png&quot; alt=&quot;SlidingMenu&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;Si vous avez un android phone(normalement oui en tant que développeur android), vous avez du remarqué une 
 nouvelle tendance dans les interfaces. En effet, certaines fonctions de l’application ne sont plus présentent 

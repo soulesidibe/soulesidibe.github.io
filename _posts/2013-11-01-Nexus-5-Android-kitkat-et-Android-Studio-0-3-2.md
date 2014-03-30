@@ -8,7 +8,7 @@ Je vais essayer de revoir ce qui s’est passé :).
 
 ##Nexus 5
 
-![nexus5](http://soulesidibe.files.wordpress.com/2013/11/lg-nexus-5-photo.png)
+![nexus5](/assets/lg-nexus-5-photo.png)
 
 Enfin! 
 Depuis un bon moment on nous parle de ce nouveau nexus sur les sites spécialisés. Il est là! Et il est beau! 
@@ -23,7 +23,7 @@ Surtout que vous recevrez bientôt la mise à jour KitKat…
 
 ##Android KiKat 4.4
 
-![kitkat](http://soulesidibe.files.wordpress.com/2013/11/android-kitkat.jpg)
+![kitkat](/assets/android-kitkat.jpg)
 
 Celui la on la vraiment attendu et il n’a pas déçu! Cette version android est annoncée comme celle qui 
 va permettre de réduire encore plus la fragmentation du système Android. En effet, d’après les dires de 
@@ -55,9 +55,9 @@ NB: _Il faut etre sous **kitkat**_
 
 Android supporte maintenant java 7! Un dév android c’est avant tout un dév java! et plus tu es bon en java plus tu l’es en dév android! Donc avec java 7 (je rentrerai pas dans les details) on peut par exemple faire un switch case avec des strings! Du multi catch:
 
-![Multi catch](http://soulesidibe.files.wordpress.com/2013/11/multicatch1.png)
+![Multi catch](/assets/multicatch1.png)
 
-![Multi catch](http://soulesidibe.files.wordpress.com/2013/11/multicatch2.png)
+![Multi catch](/assets/multicatch2.png)
 
 ####Gradle integration
 
@@ -65,6 +65,6 @@ Si vous l’utilisez déjà comme IDE principal(je ne me rappelle même plus la 
 vous vous êtes rendu compte de la lenteur quand on fait un build! Une petite astuce permet d’améliorer ca en 
 utilisant le mode daemon de gradle. Maintenant avec studio une simple case à cocher permet de gagner en temps lors de vos builds! 
 
-![daemon gradle](http://soulesidibe.files.wordpress.com/2013/11/faster-builds.png) 
+![daemon gradle](/assets/faster-builds.png) 
 
 Voila voila en gros ce qui c’est passé hier! J’ai juste survolé mais je reviendrais sur les nombreuses nouveautés de l’API 19!
