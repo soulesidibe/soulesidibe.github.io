@@ -62,240 +62,84 @@
   
   <div class="post">
     <h1 class="post-title">
-      <a href="/2013/11/10/Linjection-de-dependances-roboguice/">
-        L’injection de dépendances:roboguice
+      <a href="/2014/04/13/Im-a-podcast-addict/">
+        I'm a podcast addict!
       </a>
     </h1>
 
-    <span class="post-date">10 Nov 2013</span>
+    <span class="post-date">13 Apr 2014</span>
 
-    <p>Je ne vais pas vous faire un cours sur l’injection de dépendances en java. Il y a de très bons livres 
-et de bonnes ressources sur le net. 
-Mais ce que je peux vous dire en gros, l’injection de dépendances va nous permettre de manager nos objects, 
-nos classes en vu d’un code plus claire et maintenable. 
-Pour vous donner un exemple de ce qu’on peut faire avec, on a l’habitude de faire ceci pour instancier 
-une view: </p>
+    <p>Depuis que j&#39;ai découvert ce concept(en fin 2012) je ne peux plus m&#39;en passer!
+C&#39;est un outil génial qui me permet d&#39;être informé sans founir d&#39;effort. Juste écouter!</p>
 
-<div class="highlight"><pre><code class="java"><span class="n">Button</span> <span class="n">button</span> <span class="o">=</span> <span class="o">(</span><span class="n">Button</span><span class="o">)</span><span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">button</span><span class="o">);</span> 
-</code></pre></div>
+<p>Alors pour ceux qui ne saurait pas c&#39;est quoi, c&#39;est tout juste un fichier, en général au format audio ou vidéo, diffusé par un tiers et surtout téléchargeable en s&#39;abonnant à un flux rss.  </p>
 
-<p>Avec de l’injection de dépendances on aura qu’à faire ceci: </p>
+<p>Je ne suis pas la pour vous faire un cours sur le <a href="http://en.wikipedia.org/wiki/Podcast">podcasting</a> mais plutôt de partager mes podcasts préférés 
+en tant qu&#39;amoureux de la tech!</p>
 
-<div class="highlight"><pre><code class="java"><span class="nd">@InjectView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">button</span><span class="o">)</span> <span class="n">Button</span> <span class="n">button</span><span class="o">;</span> 
-</code></pre></div>
+<h2>Les podcasts tech francais</h2>
 
-<p>Pas mal non? :D 
-Donc comme je l’ai dit ça va grandement simplifier notre code java.</p>
+<p>La france regorge de trés grands podcasteurs dont certains que j&#39;écoute toutes les semaines ou à chaque nouvel épisode.</p>
 
-<h2>Comment faire de l’injection de dépendances</h2>
+<h4>La famille <a href="http://nipcast.com">nipcast</a></h4>
 
-<p>Comme d’habitude dans le monde java, il existe un bon paquet de librairies open source pour nous 
-simplifier la vie. On aura pas besoin d’implémenter nous même notre système d’injection de 
-dépendances. On peut qu’en même retenir les types d’injections de dépendances qui existent:</p>
+<p><em>Nipcast</em> est un ensemble de podcast couvrant pas mal de domaines. La plus part tres orientée tech. 
+Mes préférés: </p>
 
 <ul>
-<li>l’injection par constructeur </li>
-<li>l’injection par interface </li>
-<li>l’injection par mutateur </li>
-<li>l’injection par champ </li>
+<li><a href="http://nipcast.com/category/nipdev/">NipDev</a> est un podcast orienté dev. On y discute de sujets spécifiques de la programation(les tests, les API rest, etc). De temps en temps des specialistes de leur domaine sont invités pour partager, informer. J&#39;ai bien aimé le <a href="http://nipcast.com/nipdev-15-tout-savoir-sur-amazon-web-services-avec-sebastien-stormacq/">nipdev</a> 15 avec <a href="https://twitter.com/sebsto">Sebastien Stormacq</a> qui est venu parler de l&#39;univers des services d&#39;amazon pour les développeurs, les startups, les entreprises. </li>
+<li><a href="http://www.niptech.com/podcast/category/niptech/">Niptech</a> est le podcast pour être au courant de tout ce qui se passe dans le monde de la tech et des startups partout dans le monde particuliérement en Europe et aux USA (Sillicon Valley). Franchement pas besoin de s&#39;abonner à des dizaines de sites d&#39;informations et perdre du temps à les lire ou à les empiler sur <a href="getpocket.com">Pocket</a>. Toute l&#39;information qui a marqué la semaine sera traitée par des podcasteurs avertis et la plus part travaillant dans le monde de la tech. </li>
 </ul>
 
-<p>Pour plus de détails je vous renvoie vers <a href="http://www-igm.univ-mlv.fr/%7Edr/XPOSE2010/guicespring/di_presentation.html">ce lien</a> qui explique assez clairement les choses… </p>
+<p>D&#39;autres podcast sont aussi de cette famille. Dont NipLife(qui parle de lifeHacking) que je suis beaucoup et de temps en temps NipSale(qui parle de la vente).</p>
 
-<h2>Roboguice</h2>
+<h4><a href="http://frenchspin.com/category/le-rdv-tech/">Le rendez-vous Tech</a></h4>
 
-<blockquote>
-<p>RoboGuice is a framework that brings the simplicity and ease of Dependency Injection to Android, using Google’s own Guice library. If you’ve ever used Spring (the #1 enterprise framework on Java, now more popular than J2EE itself) or Guice, you already know how convenient this style of programming can be.</p>
-</blockquote>
+<p>Le RVT est un plus orienté news tech par rapport à niptech. C&#39;est un exellent podcast pour ne rater aucune information dans cette univers des produits qui font le buzz, de la Sillicon Valley. etc.
+Il est édité par <a href="http://patrickbeja.com/">Patrick</a>. Un des plus célèbres podcasteurs de France. Il est aussi derrière <a href="">AppLoad</a> un autre podcast qui donne des conseilles d&#39;apps à tester sous Android, IOS et de temps en temps windows phone.</p>
 
-<p>Définition tirée du wiki du framework. 
-En résumé(ou pour traduire), roboguice permet d’adapter le framework d’injection de dépendances 
-<strong>Google Guice</strong> au monde android tout en y ajoutant des subtilités dues au cycle de vie particulier 
-d’une application android.
-Voici une liste non exhaustive des fonctionnalités de roboguice: </p>
+<h4><a href="http://lescastcodeurs.com/">Les cast codeurs</a></h4>
 
-<ul>
-<li>L’injection de view (@InjectView)</li>
-<li>l’injection de ressources(@InjectResource)</li>
-<li>l’injection de service(par exemple pour NotificationManager, on aura @Inject NoificationManager notifManager;)</li>
-<li>l’injection de pojo</li>
-</ul>
+<p>Si tu es développeur java, java ee, android ou tout simplement n&#39;importe quel language de la JVM, tu es 
+servi! On y parle des news dans le monde java (LCC 99 sujet: sortie de java 8!) mais aussi comme dans nipdev, de temps en temps des stars du dev sont invites. Je me rappelle encore du <a href="http://lescastcodeurs.com/2009/08/26/les-cast-codeurs-podcast-episode-8-interview-de-romain-guy-sur-google-android/">LCC 8</a> ou on avait invité Romain Guy.L&#39;un des développeurs les plus influants du monde android. Un podcast a écouter! Il date de 2009. C&#39;est assez drole de voir que le systéme a beaucoup évolué et surtout trés vite!</p>
 
-<p>et bien d’autres bonnes choses…</p>
+<h2>Les podcasts tech us</h2>
 
-<h2>Comment ça marche</h2>
+<p>Les podcast us sont tout aussi nombreux, voir plus, que ceux francais. Il y en a pour tous les goûts.
+Et surtout des podcasts specialisés.</p>
 
-<p>Je vais vous montrer quelques fonctionnalités de roboguice. Le code est disponible sur github(see below…)
-On commence par se faire un petit projet dans android studio(regarde ceci si tu n’utilise pas encore l’IDE).
-Je suppose que vous êtes prêt  donc allons-y! </p>
+<h4><a href="http://androidbackstage.blogspot.com/">Android Developers Backstage</a></h4>
 
-<p>NB: <em>Le projet que j’utilise a pour min SDK API 14 et pour target API 19 raison pour laquelle je n’ai pas pu injecter de view dans des fragments. Roboguice ne supportant pour le moment que la class Fragment du support V4.</em> </p>
+<p>Le podcast pour les développeurs android et par les concepteurs d&#39;android! On ne peut pas rêver de mieux.
+La publication n&#39;est pas constante mais on a des informations pointues venant de ceux mêmes qui les ont mises en place. J&#39;ai bien aimé l&#39;episode 4 sur les Google Play Services.</p>
 
-<p>Ajout de la dépendances dans le fichier build.gradle: </p>
+<h4><a href="http://www.androidpolice.com/tags/android-police-podcast/">Android Police Podcast</a></h4>
 
-<div class="highlight"><pre><code class="groovy"><span class="n">dependencies</span> <span class="o">{</span>
-    <span class="n">compile</span> <span class="s1">&#39;org.roboguice:roboguice:2.0&#39;</span>
-<span class="o">}</span> 
-</code></pre></div>
+<p>Si vous êtes intéressés par android vous connaissez forcément le site <a href="http://www.androidpolice.com/">Android Police</a>. Ils ont un podcast et chaque semaine l&#39;information autour d&#39;android(les apps, les release d&#39;android, les nouveaux devices, etc.) est traité pour notre plus grand bonheur :).</p>
 
-<p>Dans votre activity, vous devez hériter de RoboActivity à la place de Activity. Jettez un coup d’oeil 
-dans le package <strong>roboguice.activity</strong> pour voir un peu les types d’activity disponibles.</p>
+<h4><a href="http://twit.tv/show/this-week-in-tech/452">Twit</a> et <a href="http://twit.tv/show/this-week-in-google/244">Twig</a></h4>
 
-<p>Voici à quoi ressemble mon fichier layout. C’est un simple écran de connexion avec deux EditText 
-et un Button de connexion: </p>
+<p>TWIT pour This Week In Tech et Twig (In Google). Je peux dire que c&#39;est le meilleur podcast pour être
+informé sur l&#39;actu tech aux USA. On vous dit tout! Ce sont des épisodes qui peuvent aller jusqu&#39;à 2h de temps. Je peux l&#39;écouter sur plusieurs jours. J&#39;aime bien la rubrique Google changeLog dans TWIG. On y parle des changements qui ont été apportés sur les services Google.</p>
 
-<div class="highlight"><pre><code class="xml"><span class="nt">&lt;RelativeLayout</span> <span class="na">xmlns:android=</span><span class="s">&quot;http://schemas.android.com/apk/res/android&quot;</span>
-    <span class="na">xmlns:tools=</span><span class="s">&quot;http://schemas.android.com/tools&quot;</span>
-    <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
-    <span class="na">android:layout_height=</span><span class="s">&quot;match_parent&quot;</span>
-    <span class="na">tools:context=</span><span class="s">&quot;.MainActivity&quot;</span><span class="nt">&gt;</span>
+<h4>Les autres</h4>
 
-        <span class="nt">&lt;EditText</span>
-            <span class="na">android:id=</span><span class="s">&quot;@+id/edt_name&quot;</span>
-            <span class="na">android:singleLine=</span><span class="s">&quot;true&quot;</span>
-            <span class="na">android:hint=</span><span class="s">&quot;@string/str_login_name&quot;</span>
-            <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
-            <span class="na">android:layout_width=</span><span class="s">&quot;wrap_content&quot;</span>
-            <span class="na">android:layout_centerVertical=</span><span class="s">&quot;true&quot;</span>
-            <span class="na">android:layout_alignParentRight=</span><span class="s">&quot;true&quot;</span>
-            <span class="na">android:layout_alignParentLeft=</span><span class="s">&quot;true&quot;</span> <span class="nt">/&gt;</span>
+<p>Il y a vraiment beaucoup de trés bon podcast us. mais bon on ne peut pas tout écouter aussi. Pas par manque de temps mais du fait que c&#39;est la même information qui revient dans chacun des podcasts.
+Je peux donc rajouter à cette liste <a href="http://www.theverge.com/video/the-vergecast">The VergeCast</a>, <a href="http://autocomplete.fm/">AutoComplete</a>, etc.</p>
 
-        <span class="nt">&lt;EditText</span>
-            <span class="na">android:singleLine=</span><span class="s">&quot;true&quot;</span>
-            <span class="na">android:id=</span><span class="s">&quot;@+id/edt_passwd&quot;</span>
-            <span class="na">android:inputType=</span><span class="s">&quot;textPassword&quot;</span>
-            <span class="na">android:hint=</span><span class="s">&quot;@string/str_login_name&quot;</span>
-            <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
-            <span class="na">android:layout_width=</span><span class="s">&quot;wrap_content&quot;</span>
-            <span class="na">android:layout_marginTop=</span><span class="s">&quot;30dp&quot;</span>
-            <span class="na">android:layout_below=</span><span class="s">&quot;@+id/edt_name&quot;</span>
-            <span class="na">android:layout_alignParentLeft=</span><span class="s">&quot;true&quot;</span>
-            <span class="na">android:layout_alignParentRight=</span><span class="s">&quot;true&quot;</span> <span class="nt">/&gt;</span>
+<h2>Le PodCast Sénégalais!</h2>
 
-        <span class="nt">&lt;Button</span>
-            <span class="na">android:id=</span><span class="s">&quot;@+id/btn_connect&quot;</span>
-            <span class="na">android:text=</span><span class="s">&quot;@string/str_button_signin&quot;</span>
-            <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
-            <span class="na">android:layout_width=</span><span class="s">&quot;wrap_content&quot;</span>
-            <span class="na">android:layout_alignParentBottom=</span><span class="s">&quot;true&quot;</span>
-            <span class="na">android:layout_alignParentRight=</span><span class="s">&quot;true&quot;</span>
-            <span class="na">android:layout_alignParentLeft=</span><span class="s">&quot;true&quot;</span> <span class="nt">/&gt;</span>
-<span class="nt">&lt;/RelativeLayout&gt;</span>
-</code></pre></div>
+<p>Ce n&#39;est pas une erreur. Nous aussi, on a notre podcast! Bon il n&#39;est pas au niveau des autres mais je suis super content de cette initiative de <a href="https://plus.google.com/+L%C3%A9gerDjiba">Leger Djiba</a>. Il s&#39;agit de <a href="http://www.mixcloud.com/gateway4africa/">Gateway4Africa</a>.<br>
+On y parle de l&#39;actu tech au Sénégal mais aussi en Afrique. On parle aussi des efforts que nous devont faire pour être la premiére nation en Afrique en terme de nouvelle technologie. Et on en a vraiment les capacités.
+Bonne continuation!</p>
 
-<p>Ma class MainActivity.java: </p>
+<h2>Les outils</h2>
 
-<div class="highlight"><pre><code class="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">RoboActivity</span> <span class="o">{</span>
+<p>Pour écouter ces podcasts, les télécharger, les rangers, planifier, supprimer les anciens épisodes, verrouiller des épisodes qu&#39;on aimerait écouter encore, il nous faut bien des apps. 
+Côte mobile, pour moi les deux meilleures apps mobiles sont <a href="http://www.beyondpod.com/Android/">BeyondPod</a> et <a href="http://www.shiftyjelly.com/pocketcasts">PocketCast</a>. BeyondPod a une version free mais les versions payantes de ces deux apps offrent beaucoup plus de fonctionnalités.
+Cote desktop, étant sous Ubuntu 13.10, je n&#39;ai pas trouvé l&#39;application qui me convient.</p>
 
-    <span class="nd">@InjectView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">edt_name</span><span class="o">)</span>
-    <span class="n">EditText</span> <span class="n">name</span><span class="o">;</span>
-    <span class="nd">@InjectView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">edt_passwd</span><span class="o">)</span>
-    <span class="n">EditText</span> <span class="n">passwd</span><span class="o">;</span>
-    <span class="nd">@InjectView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">btn_connect</span><span class="o">)</span>
-    <span class="n">Button</span> <span class="n">signin</span><span class="o">;</span>
-
-    <span class="nd">@InjectResource</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">string</span><span class="o">.</span><span class="na">str_welcome</span><span class="o">)</span>
-    <span class="n">String</span> <span class="n">welcome</span><span class="o">;</span>
-
-    <span class="nd">@Override</span>
-    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
-         <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
-         <span class="n">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_main</span><span class="o">);</span>
-
-         <span class="n">signin</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
-         <span class="nd">@Override</span>
-             <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">v</span><span class="o">)</span> <span class="o">{</span>
-                 <span class="n">String</span> <span class="n">strName</span> <span class="o">=</span> <span class="s">&quot; &quot;</span> <span class="o">+</span> <span class="n">name</span><span class="o">.</span><span class="na">getText</span><span class="o">().</span><span class="na">toString</span><span class="o">();</span>
-                 <span class="n">Toast</span><span class="o">.</span><span class="na">makeText</span><span class="o">(</span><span class="n">MainActivity</span><span class="o">.</span><span class="na">this</span><span class="o">,</span> <span class="n">welcome</span> <span class="o">+</span> <span class="n">strName</span><span class="o">,</span> <span class="n">Toast</span><span class="o">.</span><span class="na">LENGTH_SHORT</span><span class="o">).</span><span class="na">show</span><span class="o">();</span>
-             <span class="o">}</span>
-        <span class="o">});</span>
-   <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div>
- 
-
-<p>That’s it! C’est super simple à utiliser. Il ne faut juste pas oublier qu’on utilise <strong>RoboActivity</strong> 
-à la place de Activity! Sinon, on se retouve avec des java.lang.NullPointerException!
-Regardons un peu notre méthode onCreate(). Elle s’est grandement simplifiée. Et il faut reconnaitre 
-que ce code ci-dessus est plus facile à lire et à maintenir que si on devait faire ceci: </p>
-
-<div class="highlight"><pre><code class="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">Activity</span> <span class="o">{</span>
-    <span class="kd">private</span> <span class="n">EditText</span> <span class="n">name</span><span class="o">;</span>
-    <span class="kd">private</span> <span class="n">EditText</span> <span class="n">passwd</span><span class="o">;</span>
-    <span class="kd">private</span> <span class="n">Button</span> <span class="n">signin</span><span class="o">;</span>
-
-    <span class="nd">@Override</span>
-    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
-        <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
-        <span class="n">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_main</span><span class="o">);</span>
-        <span class="n">name</span> <span class="o">=</span> <span class="o">(</span><span class="n">EditText</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">edt_name</span><span class="o">);</span>
-        <span class="n">passwd</span> <span class="o">=</span> <span class="o">(</span><span class="n">EditText</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">edt_passwd</span><span class="o">);</span>
-        <span class="n">signin</span> <span class="o">=</span> <span class="o">(</span><span class="n">Button</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">btn_connect</span><span class="o">);</span>
-        <span class="kd">final</span> <span class="n">String</span> <span class="n">welcome</span> <span class="o">=</span> <span class="n">getResources</span><span class="o">().</span><span class="na">getString</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">string</span><span class="o">.</span><span class="na">str_welcome</span><span class="o">);</span>
-
-        <span class="n">signin</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
-            <span class="nd">@Override</span>
-            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">v</span><span class="o">){</span>
-                <span class="n">String</span> <span class="n">strName</span> <span class="o">=</span> <span class="s">&quot; &quot;</span> <span class="o">+</span> <span class="n">name</span><span class="o">.</span><span class="na">getText</span><span class="o">().</span><span class="na">toString</span><span class="o">();</span>
-                <span class="n">Toast</span><span class="o">.</span><span class="na">makeText</span><span class="o">(</span><span class="n">MainActivity</span><span class="o">.</span><span class="na">this</span><span class="o">,</span> <span class="n">welcome</span> <span class="o">+</span> <span class="n">strName</span><span class="o">,</span> <span class="n">Toast</span><span class="o">.</span><span class="na">LENGTH_SHORT</span><span class="o">).</span><span class="na">show</span><span class="o">();</span>
-            <span class="o">}</span>
-        <span class="o">});</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div>
- 
-
-<p>Vous êtes convaincus? Non? Bon voici quelques exemples d’applications utilisant Roboguice:</p>
-
-<ul>
-<li>Facebook Messenger</li>
-<li>Pulse</li>
-<li>Swiftkey</li>
-<li>Google Docs</li>
-</ul>
-
-<p>Pas mal non?
-Bon la librairie n’est pas parfaite non plus. Ce que je n’ai pas aimé:</p>
-
-<p>Si on utilise des fragments et qu’on a comme minSDKVersion 14, on ne peut tout simplement pas faire d’injections dans un fragment. La raison est que la classe RoboFragment, fournie, utilise android.support.v4.app.Fragment.
-Le non support de l’ActionBarCompat
-Heureusement que ces soucis seront corrigés dans les prochaines release! </p>
-
-<h2>Alternative à Roboguice</h2>
-
-<p>Il existe d’autres solutions pour faire de l’injection de dépendances. Je vais en citer deux!</p>
-
-<h3>Dagger</h3>
-
-<p>C’est une solution issue des labos de la célébre startup square. Elle permet d&#39;injecter tout ce que l&#39;on veut
-dans notre application. Pas uniquement des vues.
-Pour plus d’informations <a href="http://square.github.io/dagger/">le site officiel</a> </p>
-
-<h3>AndroidAnnotation</h3>
-
-<p>Je pourrai écrire un post sur ce framework tellement il y a des choses à dire. Déjà le but de cette 
-librairie d’après les concepteurs:</p>
-
-<blockquote>
-<p>We want to facilitate the writing and the maintenance of Android applications.
- We believe that simple code with clear intents is the best way to achieve those goals. </p>
-</blockquote>
-
-<p>Pour atteindre leurs objectifs, on n’y trouve évidemment de l’injection de dépendances. Avec de simples annotations, 
-on peut faire des appels <strong>REST</strong>, exécuter du code en background, mettre en place des listeners avec <em>@Click</em>, etc. 
-Autre point fort, il supporte RoboGuice :). 
-Un truc sympa avec android annotation, supposons qu’on ait une vue avec comme id, <em>@+id/signin</em>. Pour la récupérer dans le code il suffit de faire:</p>
-
-<div class="highlight"><pre><code class="java"><span class="nd">@ViewById</span>
-<span class="n">ListView</span> <span class="n">signin</span><span class="o">;</span>
-</code></pre></div>
-
-<p>Pas besoin de lui spécifier l’id comme avec Roboguice. Il fera le mapping avec R.id.signin tout seul :).</p>
-
-<p>Voila voila!
-Si vous avez ce souci de vouloir toujours un code plus propre et maintenable, je vous conseille vivement 
-de revoir Roboguice ou plus généralement l’injection de dépendances.
-Le petit exemple de prise en main est dispo sur <a href="https://github.com/soulesidibe/roboguicesample">github</a>.</p>
+<p>Je vous conseille vivement de vous mettre aux podcasts. C&#39;est une façon assez efficace de s&#39;informer, d&#39;être au courant. Perso j&#39;utilise de moins en moins feedly et ça me fait gagner beaucoup de temps!</p>
 
   </div>
   
@@ -312,238 +156,82 @@ Le petit exemple de prise en main est dispo sur <a href="https://github.com/soul
 
 <!-- 
 
-  <h1><a href="/2013/11/10/Linjection-de-dependances-roboguice/">L’injection de dépendances:roboguice</a></h1>
+  <h1><a href="/2014/04/13/Im-a-podcast-addict/">I'm a podcast addict!</a></h1>
   <p class="author">
-    <span class="date">2013-11-10 00:00:00 +0000</span>
+    <span class="date">2014-04-13 00:00:00 +0000</span>
   </p>
   <div class="content">
-    <p>Je ne vais pas vous faire un cours sur l’injection de dépendances en java. Il y a de très bons livres 
-et de bonnes ressources sur le net. 
-Mais ce que je peux vous dire en gros, l’injection de dépendances va nous permettre de manager nos objects, 
-nos classes en vu d’un code plus claire et maintenable. 
-Pour vous donner un exemple de ce qu’on peut faire avec, on a l’habitude de faire ceci pour instancier 
-une view: </p>
+    <p>Depuis que j&#39;ai découvert ce concept(en fin 2012) je ne peux plus m&#39;en passer!
+C&#39;est un outil génial qui me permet d&#39;être informé sans founir d&#39;effort. Juste écouter!</p>
 
-<div class="highlight"><pre><code class="java"><span class="n">Button</span> <span class="n">button</span> <span class="o">=</span> <span class="o">(</span><span class="n">Button</span><span class="o">)</span><span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">button</span><span class="o">);</span> 
-</code></pre></div>
+<p>Alors pour ceux qui ne saurait pas c&#39;est quoi, c&#39;est tout juste un fichier, en général au format audio ou vidéo, diffusé par un tiers et surtout téléchargeable en s&#39;abonnant à un flux rss.  </p>
 
-<p>Avec de l’injection de dépendances on aura qu’à faire ceci: </p>
+<p>Je ne suis pas la pour vous faire un cours sur le <a href="http://en.wikipedia.org/wiki/Podcast">podcasting</a> mais plutôt de partager mes podcasts préférés 
+en tant qu&#39;amoureux de la tech!</p>
 
-<div class="highlight"><pre><code class="java"><span class="nd">@InjectView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">button</span><span class="o">)</span> <span class="n">Button</span> <span class="n">button</span><span class="o">;</span> 
-</code></pre></div>
+<h2>Les podcasts tech francais</h2>
 
-<p>Pas mal non? :D 
-Donc comme je l’ai dit ça va grandement simplifier notre code java.</p>
+<p>La france regorge de trés grands podcasteurs dont certains que j&#39;écoute toutes les semaines ou à chaque nouvel épisode.</p>
 
-<h2>Comment faire de l’injection de dépendances</h2>
+<h4>La famille <a href="http://nipcast.com">nipcast</a></h4>
 
-<p>Comme d’habitude dans le monde java, il existe un bon paquet de librairies open source pour nous 
-simplifier la vie. On aura pas besoin d’implémenter nous même notre système d’injection de 
-dépendances. On peut qu’en même retenir les types d’injections de dépendances qui existent:</p>
+<p><em>Nipcast</em> est un ensemble de podcast couvrant pas mal de domaines. La plus part tres orientée tech. 
+Mes préférés: </p>
 
 <ul>
-<li>l’injection par constructeur </li>
-<li>l’injection par interface </li>
-<li>l’injection par mutateur </li>
-<li>l’injection par champ </li>
+<li><a href="http://nipcast.com/category/nipdev/">NipDev</a> est un podcast orienté dev. On y discute de sujets spécifiques de la programation(les tests, les API rest, etc). De temps en temps des specialistes de leur domaine sont invités pour partager, informer. J&#39;ai bien aimé le <a href="http://nipcast.com/nipdev-15-tout-savoir-sur-amazon-web-services-avec-sebastien-stormacq/">nipdev</a> 15 avec <a href="https://twitter.com/sebsto">Sebastien Stormacq</a> qui est venu parler de l&#39;univers des services d&#39;amazon pour les développeurs, les startups, les entreprises. </li>
+<li><a href="http://www.niptech.com/podcast/category/niptech/">Niptech</a> est le podcast pour être au courant de tout ce qui se passe dans le monde de la tech et des startups partout dans le monde particuliérement en Europe et aux USA (Sillicon Valley). Franchement pas besoin de s&#39;abonner à des dizaines de sites d&#39;informations et perdre du temps à les lire ou à les empiler sur <a href="getpocket.com">Pocket</a>. Toute l&#39;information qui a marqué la semaine sera traitée par des podcasteurs avertis et la plus part travaillant dans le monde de la tech. </li>
 </ul>
 
-<p>Pour plus de détails je vous renvoie vers <a href="http://www-igm.univ-mlv.fr/%7Edr/XPOSE2010/guicespring/di_presentation.html">ce lien</a> qui explique assez clairement les choses… </p>
+<p>D&#39;autres podcast sont aussi de cette famille. Dont NipLife(qui parle de lifeHacking) que je suis beaucoup et de temps en temps NipSale(qui parle de la vente).</p>
 
-<h2>Roboguice</h2>
+<h4><a href="http://frenchspin.com/category/le-rdv-tech/">Le rendez-vous Tech</a></h4>
 
-<blockquote>
-<p>RoboGuice is a framework that brings the simplicity and ease of Dependency Injection to Android, using Google’s own Guice library. If you’ve ever used Spring (the #1 enterprise framework on Java, now more popular than J2EE itself) or Guice, you already know how convenient this style of programming can be.</p>
-</blockquote>
+<p>Le RVT est un plus orienté news tech par rapport à niptech. C&#39;est un exellent podcast pour ne rater aucune information dans cette univers des produits qui font le buzz, de la Sillicon Valley. etc.
+Il est édité par <a href="http://patrickbeja.com/">Patrick</a>. Un des plus célèbres podcasteurs de France. Il est aussi derrière <a href="">AppLoad</a> un autre podcast qui donne des conseilles d&#39;apps à tester sous Android, IOS et de temps en temps windows phone.</p>
 
-<p>Définition tirée du wiki du framework. 
-En résumé(ou pour traduire), roboguice permet d’adapter le framework d’injection de dépendances 
-<strong>Google Guice</strong> au monde android tout en y ajoutant des subtilités dues au cycle de vie particulier 
-d’une application android.
-Voici une liste non exhaustive des fonctionnalités de roboguice: </p>
+<h4><a href="http://lescastcodeurs.com/">Les cast codeurs</a></h4>
 
-<ul>
-<li>L’injection de view (@InjectView)</li>
-<li>l’injection de ressources(@InjectResource)</li>
-<li>l’injection de service(par exemple pour NotificationManager, on aura @Inject NoificationManager notifManager;)</li>
-<li>l’injection de pojo</li>
-</ul>
+<p>Si tu es développeur java, java ee, android ou tout simplement n&#39;importe quel language de la JVM, tu es 
+servi! On y parle des news dans le monde java (LCC 99 sujet: sortie de java 8!) mais aussi comme dans nipdev, de temps en temps des stars du dev sont invites. Je me rappelle encore du <a href="http://lescastcodeurs.com/2009/08/26/les-cast-codeurs-podcast-episode-8-interview-de-romain-guy-sur-google-android/">LCC 8</a> ou on avait invité Romain Guy.L&#39;un des développeurs les plus influants du monde android. Un podcast a écouter! Il date de 2009. C&#39;est assez drole de voir que le systéme a beaucoup évolué et surtout trés vite!</p>
 
-<p>et bien d’autres bonnes choses…</p>
+<h2>Les podcasts tech us</h2>
 
-<h2>Comment ça marche</h2>
+<p>Les podcast us sont tout aussi nombreux, voir plus, que ceux francais. Il y en a pour tous les goûts.
+Et surtout des podcasts specialisés.</p>
 
-<p>Je vais vous montrer quelques fonctionnalités de roboguice. Le code est disponible sur github(see below…)
-On commence par se faire un petit projet dans android studio(regarde ceci si tu n’utilise pas encore l’IDE).
-Je suppose que vous êtes prêt  donc allons-y! </p>
+<h4><a href="http://androidbackstage.blogspot.com/">Android Developers Backstage</a></h4>
 
-<p>NB: <em>Le projet que j’utilise a pour min SDK API 14 et pour target API 19 raison pour laquelle je n’ai pas pu injecter de view dans des fragments. Roboguice ne supportant pour le moment que la class Fragment du support V4.</em> </p>
+<p>Le podcast pour les développeurs android et par les concepteurs d&#39;android! On ne peut pas rêver de mieux.
+La publication n&#39;est pas constante mais on a des informations pointues venant de ceux mêmes qui les ont mises en place. J&#39;ai bien aimé l&#39;episode 4 sur les Google Play Services.</p>
 
-<p>Ajout de la dépendances dans le fichier build.gradle: </p>
+<h4><a href="http://www.androidpolice.com/tags/android-police-podcast/">Android Police Podcast</a></h4>
 
-<div class="highlight"><pre><code class="groovy"><span class="n">dependencies</span> <span class="o">{</span>
-    <span class="n">compile</span> <span class="s1">&#39;org.roboguice:roboguice:2.0&#39;</span>
-<span class="o">}</span> 
-</code></pre></div>
+<p>Si vous êtes intéressés par android vous connaissez forcément le site <a href="http://www.androidpolice.com/">Android Police</a>. Ils ont un podcast et chaque semaine l&#39;information autour d&#39;android(les apps, les release d&#39;android, les nouveaux devices, etc.) est traité pour notre plus grand bonheur :).</p>
 
-<p>Dans votre activity, vous devez hériter de RoboActivity à la place de Activity. Jettez un coup d’oeil 
-dans le package <strong>roboguice.activity</strong> pour voir un peu les types d’activity disponibles.</p>
+<h4><a href="http://twit.tv/show/this-week-in-tech/452">Twit</a> et <a href="http://twit.tv/show/this-week-in-google/244">Twig</a></h4>
 
-<p>Voici à quoi ressemble mon fichier layout. C’est un simple écran de connexion avec deux EditText 
-et un Button de connexion: </p>
+<p>TWIT pour This Week In Tech et Twig (In Google). Je peux dire que c&#39;est le meilleur podcast pour être
+informé sur l&#39;actu tech aux USA. On vous dit tout! Ce sont des épisodes qui peuvent aller jusqu&#39;à 2h de temps. Je peux l&#39;écouter sur plusieurs jours. J&#39;aime bien la rubrique Google changeLog dans TWIG. On y parle des changements qui ont été apportés sur les services Google.</p>
 
-<div class="highlight"><pre><code class="xml"><span class="nt">&lt;RelativeLayout</span> <span class="na">xmlns:android=</span><span class="s">&quot;http://schemas.android.com/apk/res/android&quot;</span>
-    <span class="na">xmlns:tools=</span><span class="s">&quot;http://schemas.android.com/tools&quot;</span>
-    <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
-    <span class="na">android:layout_height=</span><span class="s">&quot;match_parent&quot;</span>
-    <span class="na">tools:context=</span><span class="s">&quot;.MainActivity&quot;</span><span class="nt">&gt;</span>
+<h4>Les autres</h4>
 
-        <span class="nt">&lt;EditText</span>
-            <span class="na">android:id=</span><span class="s">&quot;@+id/edt_name&quot;</span>
-            <span class="na">android:singleLine=</span><span class="s">&quot;true&quot;</span>
-            <span class="na">android:hint=</span><span class="s">&quot;@string/str_login_name&quot;</span>
-            <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
-            <span class="na">android:layout_width=</span><span class="s">&quot;wrap_content&quot;</span>
-            <span class="na">android:layout_centerVertical=</span><span class="s">&quot;true&quot;</span>
-            <span class="na">android:layout_alignParentRight=</span><span class="s">&quot;true&quot;</span>
-            <span class="na">android:layout_alignParentLeft=</span><span class="s">&quot;true&quot;</span> <span class="nt">/&gt;</span>
+<p>Il y a vraiment beaucoup de trés bon podcast us. mais bon on ne peut pas tout écouter aussi. Pas par manque de temps mais du fait que c&#39;est la même information qui revient dans chacun des podcasts.
+Je peux donc rajouter à cette liste <a href="http://www.theverge.com/video/the-vergecast">The VergeCast</a>, <a href="http://autocomplete.fm/">AutoComplete</a>, etc.</p>
 
-        <span class="nt">&lt;EditText</span>
-            <span class="na">android:singleLine=</span><span class="s">&quot;true&quot;</span>
-            <span class="na">android:id=</span><span class="s">&quot;@+id/edt_passwd&quot;</span>
-            <span class="na">android:inputType=</span><span class="s">&quot;textPassword&quot;</span>
-            <span class="na">android:hint=</span><span class="s">&quot;@string/str_login_name&quot;</span>
-            <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
-            <span class="na">android:layout_width=</span><span class="s">&quot;wrap_content&quot;</span>
-            <span class="na">android:layout_marginTop=</span><span class="s">&quot;30dp&quot;</span>
-            <span class="na">android:layout_below=</span><span class="s">&quot;@+id/edt_name&quot;</span>
-            <span class="na">android:layout_alignParentLeft=</span><span class="s">&quot;true&quot;</span>
-            <span class="na">android:layout_alignParentRight=</span><span class="s">&quot;true&quot;</span> <span class="nt">/&gt;</span>
+<h2>Le PodCast Sénégalais!</h2>
 
-        <span class="nt">&lt;Button</span>
-            <span class="na">android:id=</span><span class="s">&quot;@+id/btn_connect&quot;</span>
-            <span class="na">android:text=</span><span class="s">&quot;@string/str_button_signin&quot;</span>
-            <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
-            <span class="na">android:layout_width=</span><span class="s">&quot;wrap_content&quot;</span>
-            <span class="na">android:layout_alignParentBottom=</span><span class="s">&quot;true&quot;</span>
-            <span class="na">android:layout_alignParentRight=</span><span class="s">&quot;true&quot;</span>
-            <span class="na">android:layout_alignParentLeft=</span><span class="s">&quot;true&quot;</span> <span class="nt">/&gt;</span>
-<span class="nt">&lt;/RelativeLayout&gt;</span>
-</code></pre></div>
+<p>Ce n&#39;est pas une erreur. Nous aussi, on a notre podcast! Bon il n&#39;est pas au niveau des autres mais je suis super content de cette initiative de <a href="https://plus.google.com/+L%C3%A9gerDjiba">Leger Djiba</a>. Il s&#39;agit de <a href="http://www.mixcloud.com/gateway4africa/">Gateway4Africa</a>.<br>
+On y parle de l&#39;actu tech au Sénégal mais aussi en Afrique. On parle aussi des efforts que nous devont faire pour être la premiére nation en Afrique en terme de nouvelle technologie. Et on en a vraiment les capacités.
+Bonne continuation!</p>
 
-<p>Ma class MainActivity.java: </p>
+<h2>Les outils</h2>
 
-<div class="highlight"><pre><code class="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">RoboActivity</span> <span class="o">{</span>
+<p>Pour écouter ces podcasts, les télécharger, les rangers, planifier, supprimer les anciens épisodes, verrouiller des épisodes qu&#39;on aimerait écouter encore, il nous faut bien des apps. 
+Côte mobile, pour moi les deux meilleures apps mobiles sont <a href="http://www.beyondpod.com/Android/">BeyondPod</a> et <a href="http://www.shiftyjelly.com/pocketcasts">PocketCast</a>. BeyondPod a une version free mais les versions payantes de ces deux apps offrent beaucoup plus de fonctionnalités.
+Cote desktop, étant sous Ubuntu 13.10, je n&#39;ai pas trouvé l&#39;application qui me convient.</p>
 
-    <span class="nd">@InjectView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">edt_name</span><span class="o">)</span>
-    <span class="n">EditText</span> <span class="n">name</span><span class="o">;</span>
-    <span class="nd">@InjectView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">edt_passwd</span><span class="o">)</span>
-    <span class="n">EditText</span> <span class="n">passwd</span><span class="o">;</span>
-    <span class="nd">@InjectView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">btn_connect</span><span class="o">)</span>
-    <span class="n">Button</span> <span class="n">signin</span><span class="o">;</span>
-
-    <span class="nd">@InjectResource</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">string</span><span class="o">.</span><span class="na">str_welcome</span><span class="o">)</span>
-    <span class="n">String</span> <span class="n">welcome</span><span class="o">;</span>
-
-    <span class="nd">@Override</span>
-    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
-         <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
-         <span class="n">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_main</span><span class="o">);</span>
-
-         <span class="n">signin</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
-         <span class="nd">@Override</span>
-             <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">v</span><span class="o">)</span> <span class="o">{</span>
-                 <span class="n">String</span> <span class="n">strName</span> <span class="o">=</span> <span class="s">&quot; &quot;</span> <span class="o">+</span> <span class="n">name</span><span class="o">.</span><span class="na">getText</span><span class="o">().</span><span class="na">toString</span><span class="o">();</span>
-                 <span class="n">Toast</span><span class="o">.</span><span class="na">makeText</span><span class="o">(</span><span class="n">MainActivity</span><span class="o">.</span><span class="na">this</span><span class="o">,</span> <span class="n">welcome</span> <span class="o">+</span> <span class="n">strName</span><span class="o">,</span> <span class="n">Toast</span><span class="o">.</span><span class="na">LENGTH_SHORT</span><span class="o">).</span><span class="na">show</span><span class="o">();</span>
-             <span class="o">}</span>
-        <span class="o">});</span>
-   <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div>
- 
-
-<p>That’s it! C’est super simple à utiliser. Il ne faut juste pas oublier qu’on utilise <strong>RoboActivity</strong> 
-à la place de Activity! Sinon, on se retouve avec des java.lang.NullPointerException!
-Regardons un peu notre méthode onCreate(). Elle s’est grandement simplifiée. Et il faut reconnaitre 
-que ce code ci-dessus est plus facile à lire et à maintenir que si on devait faire ceci: </p>
-
-<div class="highlight"><pre><code class="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">Activity</span> <span class="o">{</span>
-    <span class="kd">private</span> <span class="n">EditText</span> <span class="n">name</span><span class="o">;</span>
-    <span class="kd">private</span> <span class="n">EditText</span> <span class="n">passwd</span><span class="o">;</span>
-    <span class="kd">private</span> <span class="n">Button</span> <span class="n">signin</span><span class="o">;</span>
-
-    <span class="nd">@Override</span>
-    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
-        <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
-        <span class="n">setContentView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_main</span><span class="o">);</span>
-        <span class="n">name</span> <span class="o">=</span> <span class="o">(</span><span class="n">EditText</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">edt_name</span><span class="o">);</span>
-        <span class="n">passwd</span> <span class="o">=</span> <span class="o">(</span><span class="n">EditText</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">edt_passwd</span><span class="o">);</span>
-        <span class="n">signin</span> <span class="o">=</span> <span class="o">(</span><span class="n">Button</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">btn_connect</span><span class="o">);</span>
-        <span class="kd">final</span> <span class="n">String</span> <span class="n">welcome</span> <span class="o">=</span> <span class="n">getResources</span><span class="o">().</span><span class="na">getString</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">string</span><span class="o">.</span><span class="na">str_welcome</span><span class="o">);</span>
-
-        <span class="n">signin</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
-            <span class="nd">@Override</span>
-            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">v</span><span class="o">){</span>
-                <span class="n">String</span> <span class="n">strName</span> <span class="o">=</span> <span class="s">&quot; &quot;</span> <span class="o">+</span> <span class="n">name</span><span class="o">.</span><span class="na">getText</span><span class="o">().</span><span class="na">toString</span><span class="o">();</span>
-                <span class="n">Toast</span><span class="o">.</span><span class="na">makeText</span><span class="o">(</span><span class="n">MainActivity</span><span class="o">.</span><span class="na">this</span><span class="o">,</span> <span class="n">welcome</span> <span class="o">+</span> <span class="n">strName</span><span class="o">,</span> <span class="n">Toast</span><span class="o">.</span><span class="na">LENGTH_SHORT</span><span class="o">).</span><span class="na">show</span><span class="o">();</span>
-            <span class="o">}</span>
-        <span class="o">});</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div>
- 
-
-<p>Vous êtes convaincus? Non? Bon voici quelques exemples d’applications utilisant Roboguice:</p>
-
-<ul>
-<li>Facebook Messenger</li>
-<li>Pulse</li>
-<li>Swiftkey</li>
-<li>Google Docs</li>
-</ul>
-
-<p>Pas mal non?
-Bon la librairie n’est pas parfaite non plus. Ce que je n’ai pas aimé:</p>
-
-<p>Si on utilise des fragments et qu’on a comme minSDKVersion 14, on ne peut tout simplement pas faire d’injections dans un fragment. La raison est que la classe RoboFragment, fournie, utilise android.support.v4.app.Fragment.
-Le non support de l’ActionBarCompat
-Heureusement que ces soucis seront corrigés dans les prochaines release! </p>
-
-<h2>Alternative à Roboguice</h2>
-
-<p>Il existe d’autres solutions pour faire de l’injection de dépendances. Je vais en citer deux!</p>
-
-<h3>Dagger</h3>
-
-<p>C’est une solution issue des labos de la célébre startup square. Elle permet d&#39;injecter tout ce que l&#39;on veut
-dans notre application. Pas uniquement des vues.
-Pour plus d’informations <a href="http://square.github.io/dagger/">le site officiel</a> </p>
-
-<h3>AndroidAnnotation</h3>
-
-<p>Je pourrai écrire un post sur ce framework tellement il y a des choses à dire. Déjà le but de cette 
-librairie d’après les concepteurs:</p>
-
-<blockquote>
-<p>We want to facilitate the writing and the maintenance of Android applications.
- We believe that simple code with clear intents is the best way to achieve those goals. </p>
-</blockquote>
-
-<p>Pour atteindre leurs objectifs, on n’y trouve évidemment de l’injection de dépendances. Avec de simples annotations, 
-on peut faire des appels <strong>REST</strong>, exécuter du code en background, mettre en place des listeners avec <em>@Click</em>, etc. 
-Autre point fort, il supporte RoboGuice :). 
-Un truc sympa avec android annotation, supposons qu’on ait une vue avec comme id, <em>@+id/signin</em>. Pour la récupérer dans le code il suffit de faire:</p>
-
-<div class="highlight"><pre><code class="java"><span class="nd">@ViewById</span>
-<span class="n">ListView</span> <span class="n">signin</span><span class="o">;</span>
-</code></pre></div>
-
-<p>Pas besoin de lui spécifier l’id comme avec Roboguice. Il fera le mapping avec R.id.signin tout seul :).</p>
-
-<p>Voila voila!
-Si vous avez ce souci de vouloir toujours un code plus propre et maintenable, je vous conseille vivement 
-de revoir Roboguice ou plus généralement l’injection de dépendances.
-Le petit exemple de prise en main est dispo sur <a href="https://github.com/soulesidibe/roboguicesample">github</a>.</p>
+<p>Je vous conseille vivement de vous mettre aux podcasts. C&#39;est une façon assez efficace de s&#39;informer, d&#39;être au courant. Perso j&#39;utilise de moins en moins feedly et ça me fait gagner beaucoup de temps!</p>
 
   </div>
 
@@ -553,7 +241,7 @@ Le petit exemple de prise en main est dispo sur <a href="https://github.com/soul
   
     <span class="previous">Previous</span>
   
-  <span class="page_number ">Page: 1 of 8</span>
+  <span class="page_number ">Page: 1 of 9</span>
   
     <a href="/page2" class="next">Next</a>
   

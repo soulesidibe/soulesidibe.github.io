@@ -123,7 +123,8 @@ settings.gradle: </p>
 <div class="highlight"><pre><code class="groovy"><span class="n">include</span> <span class="s1">&#39;:pull_to_refresh&#39;</span>
 <span class="n">include</span> <span class="s1">&#39;:ABS&#39;</span>
 <span class="n">include</span> <span class="s1">&#39;:KillerApp&#39;</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 <p>Donc on comprends que c’est dans ce fichier qu’on déclare les modules à inclure dans le build.
 Le build lui même est configuré dans le fichier du même nom, build.gradle: </p>
@@ -136,7 +137,8 @@ Le build lui même est configuré dans le fichier du même nom, build.gradle: </
         <span class="n">classpath</span> <span class="s1">&#39;com.android.tools.build:gradle:0.5.+&#39;</span>
     <span class="o">}</span>
 <span class="o">}</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 <p>Il est assez simple comme fichier. La raison de cette simplicité est que la tendance est à avoir une convention de base dans la façon de construire un apk. Ce que l’on rajoute dans le fichier de configuration ce sont les informations qui font que le projet est spécifique. À savoir, les dépendances, l’emplacement de certains dossiers sources, etc. 
 Ici, une dépendance au plugin android pour gradle en version 0.5 au moins. </p>
@@ -158,7 +160,8 @@ Ici, une dépendance au plugin android pour gradle en version 0.5 au moins. </p>
     <span class="n">ext</span><span class="o">.</span><span class="na">minSdkVersion</span><span class="o">=</span><span class="mi">8</span>
     <span class="n">ext</span><span class="o">.</span><span class="na">targetSdkVersion</span><span class="o">=</span><span class="mi">18</span>
 <span class="o">}</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 <p>Passons aux dépendances du module ActionBarSherlock. Il a besoin de la librairie android support-v4. Il y a deux façons de procéder: </p>
 
@@ -170,7 +173,8 @@ Ici, une dépendance au plugin android pour gradle en version 0.5 au moins. </p>
         <span class="n">compile</span> <span class="nf">fileTree</span><span class="o">(</span><span class="nl">dir:</span> <span class="s1">&#39;libs&#39;</span><span class="o">,</span> <span class="nl">include:</span> <span class="s1">&#39;*.jar&#39;</span><span class="o">)</span>
     <span class="o">}</span>
     
-</code></pre></div>
+</code></pre>
+</div>
 
 <ul>
 <li>soit on utilise la pleine puissance de maven pour qu’il nous gére nos dépendances sans qu’on n’ait à se préoccuper des fichiers jars. Dans ce cas il suffira de rajouter ces quelques lignes: </li>
@@ -183,7 +187,8 @@ Ici, une dépendance au plugin android pour gradle en version 0.5 au moins. </p>
         <span class="n">compile</span> <span class="s1">&#39;com.android.support:support-v4:18.0.0&#39;</span>
     <span class="o">}</span>
     
-</code></pre></div>
+</code></pre>
+</div>
 
 <p>Ainsi, on peut se débarrasser du dossier libs. gradle se chargera d’aller chercher le bon fichier jar et de l’inclure au classpath de notre projet.</p>
 
@@ -192,13 +197,15 @@ Il ne faudra pas oublier de remplacer ceci: </p>
 
 <div class="highlight"><pre><code class="groovy"><span class="n">compileSdkVersion</span> <span class="mi">14</span>    
 <span class="n">buildToolsVersion</span> <span class="s2">&quot;18.0.1&quot;</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 <p>par:</p>
 
 <div class="highlight"><pre><code class="groovy"><span class="n">compileSdkVersion</span> <span class="n">rootProject</span><span class="o">.</span><span class="na">compileSdkVersion</span>
 <span class="n">buildToolsVersion</span> <span class="n">rootProject</span><span class="o">.</span><span class="na">buildToolsVersion</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 <p>dans tous les modules du projet.
 Pour rappel, on avait dit que certains paramètres devront être les mêmes pour tous les modules du projet par souci de cohérence. </p>
@@ -217,7 +224,8 @@ Pour rappel, on avait dit que certains paramètres devront être les mêmes pour
     <span class="n">compile</span> <span class="nf">project</span><span class="o">(</span><span class="s1">&#39;:ABS&#39;</span><span class="o">)</span>
     <span class="n">compile</span> <span class="nf">project</span><span class="o">(</span><span class="s1">&#39;:pull_to_refresh&#39;</span><span class="o">)</span>
 <span class="o">}</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 <p>On lui spécifie qu’il aura besoin du support-v4 et des librairies ABS et pull<em>to</em>refresh présentes à la racine.
 On y est! Tout a été configuré, maintenant il suffit de faire un  build pour voir que tout compile comme il faut! </p>
@@ -261,6 +269,15 @@ Avec cela vous pourrez avoir un usage professionnel de ces outils assez puissant
     
       <li>
         <h3>
+          <a href="/2014/04/13/Im-a-podcast-addict/">
+            I'm a podcast addict!
+            <small>13 Apr 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
           <a href="/2013/11/10/Linjection-de-dependances-roboguice/">
             L’injection de dépendances:roboguice
             <small>10 Nov 2013</small>
@@ -273,15 +290,6 @@ Avec cela vous pourrez avoir un usage professionnel de ces outils assez puissant
           <a href="/2013/11/01/Nexus-5-Android-kitkat-et-Android-Studio-0-3-2/">
             Nexus 5, Android kitkat et Android Studio 0.3.2
             <small>01 Nov 2013</small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
-          <a href="/2013/10/15/gradle-please/">
-            Gradle Please!
-            <small>15 Oct 2013</small>
           </a>
         </h3>
       </li>

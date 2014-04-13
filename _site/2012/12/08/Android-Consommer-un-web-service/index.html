@@ -97,13 +97,15 @@ grandement les échanges entres les différentes entités. </p>
 de type URL qui va contenir l’adresse de la ressource ou tout simplement le lien du service: </p>
 
 <div class="highlight"><pre><code class="java"><span class="n">URL</span> <span class="n">url</span> <span class="o">=</span> <span class="k">new</span> <span class="n">URL</span><span class="o">(</span><span class="s">&quot;http://chemin/vers/service&quot;</span><span class="o">);</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 <p>On ouvre une connexion</p>
 
 <div class="highlight"><pre><code class="java"><span class="n">URLConnection</span> <span class="n">connection</span> <span class="o">=</span> <span class="n">url</span><span class="o">.</span><span class="na">openConnection</span><span class="o">();</span>
 <span class="n">HttpURLConnection</span> <span class="n">httpConnection</span> <span class="o">=</span> <span class="o">(</span><span class="n">HttpURLConnection</span><span class="o">)</span> <span class="n">connection</span><span class="o">;</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 <p>Récupération du code de retour. Vu qu’on est en HTTP. Si tout c’est bien passé on doit recevoir le code 200 (ici HttpURLConnection.HTTP_OK) et enfin récupérer notre flux:</p>
 
@@ -111,7 +113,8 @@ de type URL qui va contenir l’adresse de la ressource ou tout simplement le li
 <span class="k">if</span> <span class="o">(</span><span class="n">responseCode</span> <span class="o">==</span> <span class="n">HttpURLConnection</span><span class="o">.</span><span class="na">HTTP_OK</span><span class="o">)</span> <span class="o">{</span>
    <span class="n">in</span> <span class="o">=</span> <span class="n">httpConnection</span><span class="o">.</span><span class="na">getInputStream</span><span class="o">();</span>
 <span class="o">}</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 <p>A ce stade nous avons un objet de type InputStream qui contient les informations que le serveur a renvoyé.</p>
 
@@ -135,8 +138,8 @@ rencontré. Voici un exemple de xml que l’on peut recevoir: </p>
       <span class="nt">&lt;age&gt;</span>25<span class="nt">&lt;/age&gt;</span>
    <span class="nt">&lt;/personne&gt;</span>
 <span class="nt">&lt;/personnes&gt;</span>
-</code></pre></div>
- 
+</code></pre>
+</div>
 
 <p>On aura besoin d’un objet String pour contenir la valeur d’un tag à chaque passage., un objet qui va nous 
 fournir un parseur qui aura les paramètres indiqués( ici le support des espaces de noms, voir doc de <strong>XmlPullParserFactory</strong>), 
@@ -147,8 +150,8 @@ Et enfin générer notre parseur et lui spécifier l’objet InputStream avec le
 <span class="n">factory</span><span class="o">.</span><span class="na">setNamespaceAware</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
 <span class="n">XmlPullParser</span> <span class="n">xpp</span> <span class="o">=</span> <span class="n">factory</span><span class="o">.</span><span class="na">newPullParser</span><span class="o">();</span>
 <span class="n">xpp</span><span class="o">.</span><span class="na">setInput</span><span class="o">(</span><span class="n">in</span><span class="o">,</span> <span class="kc">null</span><span class="o">);</span>
-</code></pre></div>
- 
+</code></pre>
+</div>
 
 <p>Voici un morceau de code tiré de la doc officiel qu’on peut utiliser pour extraire les informations du InputStream: </p>
 
@@ -173,8 +176,8 @@ Et enfin générer notre parseur et lui spécifier l’objet InputStream avec le
    <span class="o">}</span>
    <span class="n">eventType</span> <span class="o">=</span> <span class="n">xpp</span><span class="o">.</span><span class="na">next</span><span class="o">();</span>
 <span class="o">}</span>
-</code></pre></div>
- 
+</code></pre>
+</div>
 
 <p>Une petite astuce que vous avez surement remarqué, en début de tag on récupére les attributs du tag, en fin de 
 tag on récupère la valeur pour ce tag. 
@@ -201,8 +204,8 @@ pour faire le job: <strong>org.json.</strong>* .Elles sont très simples d’uti
       <span class="p">}</span>
    <span class="p">]</span>
 <span class="p">}</span>
-</code></pre></div>
- 
+</code></pre>
+</div>
 
 <p>Le code pour récupérer les informations ci-dessus: </p>
 
@@ -225,8 +228,8 @@ pour faire le job: <strong>org.json.</strong>* .Elles sont très simples d’uti
 <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">array</span><span class="o">.</span><span class="na">length</span><span class="o">()</span> <span class="o">;</span> <span class="n">i</span><span class="o">++){</span>
     <span class="n">nom</span> <span class="o">=</span> <span class="n">array</span><span class="o">.</span><span class="na">getJSONObject</span><span class="o">(</span><span class="n">i</span><span class="o">).</span><span class="na">getString</span><span class="o">(</span><span class="s">&quot;nom&quot;</span><span class="o">);</span>
 <span class="o">}</span>
-</code></pre></div>
- 
+</code></pre>
+</div>
 
 <p>Un cas concret de manipulation du json sur <a href="https://github.com/soulesidibe/JsonParserExemple">github</a>. </p>
 
@@ -283,6 +286,15 @@ le développeur veut le faire.</p>
     
       <li>
         <h3>
+          <a href="/2014/04/13/Im-a-podcast-addict/">
+            I'm a podcast addict!
+            <small>13 Apr 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
           <a href="/2013/11/10/Linjection-de-dependances-roboguice/">
             L’injection de dépendances:roboguice
             <small>10 Nov 2013</small>
@@ -295,15 +307,6 @@ le développeur veut le faire.</p>
           <a href="/2013/11/01/Nexus-5-Android-kitkat-et-Android-Studio-0-3-2/">
             Nexus 5, Android kitkat et Android Studio 0.3.2
             <small>01 Nov 2013</small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
-          <a href="/2013/10/15/gradle-please/">
-            Gradle Please!
-            <small>15 Oct 2013</small>
           </a>
         </h3>
       </li>

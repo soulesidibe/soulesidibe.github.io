@@ -85,8 +85,8 @@ C’est très simple à faire: </li>
 
 <div class="highlight"><pre><code class="bash">git co master
 git merge newFeature
-</code></pre></div>
- 
+</code></pre>
+</div>
 
 <p>D’abord on se positionne sur la branche master (co= checkout, je ferai un article sur les raccourcis git et comment en rajouter) 
 puis on fait un merge en donnant en paramètre le nom de la branche que l’on doit merger (l’auto-complétion marche pour les branches). 
@@ -102,8 +102,8 @@ située au niveau du serveur. </li>
 <p>Pour récupérer une branche distante: </p>
 
 <div class="highlight"><pre><code class="bash">git co --track origin/newFeature
-</code></pre></div>
- 
+</code></pre>
+</div>
 
 <p>La on aura une nouvelle branche newFeature et on sera en même temps connecter deçu. 
 Avant de pousser sur la branche distante il faut toujours récupérer les derniers changements au cas où il y en a; 
@@ -111,7 +111,8 @@ puis faire son push:</p>
 
 <div class="highlight"><pre><code class="bash">git pull
 git push
-</code></pre></div>
+</code></pre>
+</div>
 
 <p>Lors du pull, il est possible que git vous sort votre éditeur par défaut(vim, gedit, ou autre). C’est dans le cas où la branche 
 de suivi et la branche distante diverge(en plus simple, ne sont plus identiques). Donc git fait un merge des deux. 
@@ -122,13 +123,14 @@ Il suffit de pousser la branche! </p>
 
 <div class="highlight"><pre><code class="bash">git branch nouvelleBranche
 git push origin nouvelleBranche
-</code></pre></div>
- 
+</code></pre>
+</div>
 
 <p>De même si on veut en supprimer une:</p>
 
 <div class="highlight"><pre><code class="bash">git push origin :nouvelleBranche
-</code></pre></div>
+</code></pre>
+</div>
 
 <p>Le &quot;:&quot; suffit pour supprimer la branche distante! Mais elle sera toujours présente en local.</p>
 
@@ -202,6 +204,15 @@ qui feront l’objet d’un article! :D </p>
     
       <li>
         <h3>
+          <a href="/2014/04/13/Im-a-podcast-addict/">
+            I'm a podcast addict!
+            <small>13 Apr 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
           <a href="/2013/11/10/Linjection-de-dependances-roboguice/">
             L’injection de dépendances:roboguice
             <small>10 Nov 2013</small>
@@ -214,15 +225,6 @@ qui feront l’objet d’un article! :D </p>
           <a href="/2013/11/01/Nexus-5-Android-kitkat-et-Android-Studio-0-3-2/">
             Nexus 5, Android kitkat et Android Studio 0.3.2
             <small>01 Nov 2013</small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
-          <a href="/2013/10/15/gradle-please/">
-            Gradle Please!
-            <small>15 Oct 2013</small>
           </a>
         </h3>
       </li>

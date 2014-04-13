@@ -69,12 +69,14 @@ Pour vous donner un exemple de ce qu’on peut faire avec, on a l’habitude de 
 une view: </p>
 
 <div class="highlight"><pre><code class="java"><span class="n">Button</span> <span class="n">button</span> <span class="o">=</span> <span class="o">(</span><span class="n">Button</span><span class="o">)</span><span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">button</span><span class="o">);</span> 
-</code></pre></div>
+</code></pre>
+</div>
 
 <p>Avec de l’injection de dépendances on aura qu’à faire ceci: </p>
 
 <div class="highlight"><pre><code class="java"><span class="nd">@InjectView</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">button</span><span class="o">)</span> <span class="n">Button</span> <span class="n">button</span><span class="o">;</span> 
-</code></pre></div>
+</code></pre>
+</div>
 
 <p>Pas mal non? :D 
 Donc comme je l’ai dit ça va grandement simplifier notre code java.</p>
@@ -128,7 +130,8 @@ Je suppose que vous êtes prêt  donc allons-y! </p>
 <div class="highlight"><pre><code class="groovy"><span class="n">dependencies</span> <span class="o">{</span>
     <span class="n">compile</span> <span class="s1">&#39;org.roboguice:roboguice:2.0&#39;</span>
 <span class="o">}</span> 
-</code></pre></div>
+</code></pre>
+</div>
 
 <p>Dans votre activity, vous devez hériter de RoboActivity à la place de Activity. Jettez un coup d’oeil 
 dans le package <strong>roboguice.activity</strong> pour voir un peu les types d’activity disponibles.</p>
@@ -173,7 +176,8 @@ et un Button de connexion: </p>
             <span class="na">android:layout_alignParentRight=</span><span class="s">&quot;true&quot;</span>
             <span class="na">android:layout_alignParentLeft=</span><span class="s">&quot;true&quot;</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/RelativeLayout&gt;</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 <p>Ma class MainActivity.java: </p>
 
@@ -203,8 +207,8 @@ et un Button de connexion: </p>
         <span class="o">});</span>
    <span class="o">}</span>
 <span class="o">}</span>
-</code></pre></div>
- 
+</code></pre>
+</div>
 
 <p>That’s it! C’est super simple à utiliser. Il ne faut juste pas oublier qu’on utilise <strong>RoboActivity</strong> 
 à la place de Activity! Sinon, on se retouve avec des java.lang.NullPointerException!
@@ -234,8 +238,8 @@ que ce code ci-dessus est plus facile à lire et à maintenir que si on devait f
         <span class="o">});</span>
     <span class="o">}</span>
 <span class="o">}</span>
-</code></pre></div>
- 
+</code></pre>
+</div>
 
 <p>Vous êtes convaincus? Non? Bon voici quelques exemples d’applications utilisant Roboguice:</p>
 
@@ -280,7 +284,8 @@ Un truc sympa avec android annotation, supposons qu’on ait une vue avec comme 
 
 <div class="highlight"><pre><code class="java"><span class="nd">@ViewById</span>
 <span class="n">ListView</span> <span class="n">signin</span><span class="o">;</span>
-</code></pre></div>
+</code></pre>
+</div>
 
 <p>Pas besoin de lui spécifier l’id comme avec Roboguice. Il fera le mapping avec R.id.signin tout seul :).</p>
 
@@ -321,6 +326,15 @@ Le petit exemple de prise en main est dispo sur <a href="https://github.com/soul
     
       <li>
         <h3>
+          <a href="/2014/04/13/Im-a-podcast-addict/">
+            I'm a podcast addict!
+            <small>13 Apr 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
           <a href="/2013/11/01/Nexus-5-Android-kitkat-et-Android-Studio-0-3-2/">
             Nexus 5, Android kitkat et Android Studio 0.3.2
             <small>01 Nov 2013</small>
@@ -333,15 +347,6 @@ Le petit exemple de prise en main est dispo sur <a href="https://github.com/soul
           <a href="/2013/10/15/gradle-please/">
             Gradle Please!
             <small>15 Oct 2013</small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
-          <a href="/2013/08/11/de-eclipse-a-android-studio/">
-            De eclipse à android Studio
-            <small>11 Aug 2013</small>
           </a>
         </h3>
       </li>

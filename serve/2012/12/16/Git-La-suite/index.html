@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-44424399-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Git:La suite &middot; Soulesidibe
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+    <div class="container content">
+      <div class="masthead">
+       <h3 class="masthead-title">
+    <a href="/" title="Home">Soulesidibe</a>
+
+    
+      &nbsp;&nbsp;&nbsp;
+      <small><a href="/about">About</a></small>
+    
+      &nbsp;&nbsp;&nbsp;
+      <small><a href="/archive">Archive</a></small>
+    
+      &nbsp;&nbsp;&nbsp;
+      <small><a href="/atom.xml">Feed</a></small>
+    
+    </h3>
+      </div>
+
+      <div class="post">
+  <h1 class="post-title">Git:La suite</h1>
+  <span class="post-date">16 Dec 2012</span>
+  <p>Dans un précédent article je vous parlais de git et d’une certaine façon de bien démarrer avec cette outil très puissant 
+et surtout incontournable en ce moment.Maintenant qu’on arrive à travailler avec git on peut essayer de voir un peu plus 
+ce qu’offre la bête. </p>
+
+<h2>Merge, push, pull</h2>
+
+<p>Imaginons que vous avez créez une nouvelle branche &quot;newFeature&quot; histoire de tester une nouvelle fonction que vous 
+trouvez pertinente. 
+Vous codez, vous commitez. Tout marche! vous venez de mettre en place une fonctionnalité qui va vous valoir 
+une prime! Bah il ne reste plus qu’à faire un push! 
+Oops non mais attend je suis sur une autre branche; ai-je le droit de faire qu’en même le push? 
+Heuu oui et non. </p>
+
+<ul>
+<li>Non du fait que, au niveau du dépôt distant, il n’y a pas de banche &quot;<em>newFeature</em>&quot;. Donc si on fait un <code>git push origin master</code> 
+on aura comme message &quot;Everything up-to-date&quot;. Ce qui est normal si on comprend un peu comment marche les branches. 
+On demande à git de mettre à jour le dépôt distant identifié par &quot;origin&quot; avec nos modifications locales de la 
+branche master(<code>git push origin master</code>). Alors que nos modifications ont été faites sur la branche &quot;newFeature&quot;. 
+Pour y remédier: il faut informer la branche master qu’il s’est passé des trucs et qu’elle doit se mettre au parfum: on merge! 
+C’est très simple à faire: </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git co master
+git merge newFeature
+</code></pre>
+</div>
+
+<p>D’abord on se positionne sur la branche master (co= checkout, je ferai un article sur les raccourcis git et comment en rajouter) 
+puis on fait un merge en donnant en paramètre le nom de la branche que l’on doit merger (l’auto-complétion marche pour les branches). 
+Si on est seul à travailler sur ce dépôt local tout devrait bien se passer. Mais si ce n’est pas le cas et que un autre 
+développeur a modifié un des fichiers sur lesquels vous avez apporté des modifications, il peut y avoir des conflits! 
+Pour rappel, git ne gère pas les fichiers mais le contenu des fichiers. Donc en cas de conflit, git vous guidera à régler le conflit. </p>
+
+<ul>
+<li>Oui Dans le cas où newFeature est une branche de suivi.Une branche de suivi est une branche locale liée à une branche 
+située au niveau du serveur. </li>
+</ul>
+
+<p>Pour récupérer une branche distante: </p>
+
+<div class="highlight"><pre><code class="bash">git co --track origin/newFeature
+</code></pre>
+</div>
+
+<p>La on aura une nouvelle branche newFeature et on sera en même temps connecter deçu. 
+Avant de pousser sur la branche distante il faut toujours récupérer les derniers changements au cas où il y en a; 
+puis faire son push:</p>
+
+<div class="highlight"><pre><code class="bash">git pull
+git push
+</code></pre>
+</div>
+
+<p>Lors du pull, il est possible que git vous sort votre éditeur par défaut(vim, gedit, ou autre). C’est dans le cas où la branche 
+de suivi et la branche distante diverge(en plus simple, ne sont plus identiques). Donc git fait un merge des deux. 
+Il est malin ce git! </p>
+
+<p>Mais au fait comment on crée une nouvelle branche sur le dépôt distant? 
+Il suffit de pousser la branche! </p>
+
+<div class="highlight"><pre><code class="bash">git branch nouvelleBranche
+git push origin nouvelleBranche
+</code></pre>
+</div>
+
+<p>De même si on veut en supprimer une:</p>
+
+<div class="highlight"><pre><code class="bash">git push origin :nouvelleBranche
+</code></pre>
+</div>
+
+<p>Le &quot;:&quot; suffit pour supprimer la branche distante! Mais elle sera toujours présente en local.</p>
+
+<h2>Git Stash</h2>
+
+<p>Il arrive qu’on soit entrain de coder un truc dans une branche et que à un moment on ait besoin de changer de branche 
+pour corriger un bug ou un truc du genre. Vu que git n’aime pas quand on essaye de faire un checkout alors que la branche 
+actuelle a subit des modifications et que on ne veux pas commiter du code non fini, la solution ici est de dire à git de 
+garder les modifications dans un coin et qu’on reviendra continuer notre travail plus tard: <code>git stash</code>.</p>
+
+<p>Si on fait un <code>git status</code>, on remarque que le répertoire de travail est propre! les modifications ont été mises à l’écart. 
+Et si à un moment on souhaite revenir sur notre sauvegarde: <code>git stash apply</code> ou <code>git stash pop</code>.</p>
+
+<p>Et la on se rend compte que tout est revenu comme on l’avait laissé! C’est génial. 
+La différence entre git stash pop et git stash apply est que avec pop, le stash est appliqué et supprimé mais 
+avec apply il est juste appliqué; donc on peut toujours le retrouver et l’appliquer à nouveau. 
+Au passage pour supprimer un stash, <code>git stash drop [nomStash]</code>. 
+Pour éviter de faire un <code>git add</code> apres un git stash apply, rajoutez <code>–index</code> à la fin: <code>git stash apply --index</code>. </p>
+
+<p>Il est possible qu’on est mis, de la même manière, en quarantaine d’autres modifications. 
+Pour voir la liste des stashs, il suffit de faire <code>git stash list</code>. Et git nous affiche des lignes de ce genre: 
+<code>stash@{0}: WIP on master: 25af4b3 autre commit</code> </p>
+
+<p>Et là, on a le nom du stash (<em>stash@{0}</em>), le nom de la branche(ici <em>master</em>) et des informations sur le commit qui 
+précède ce stash (<em>25af4b3</em> autre commit). 
+Avec le nom du stash, on peut appliquer un stash spécifique en faisant <code>git stash apply [nomStash]</code>. 
+Si on ne met pas de nom, le dernier stash sera utilisé. 
+Et un petit dernier, Si un stash devient important et que vous sentez que c’est plus qu’une petite modification, 
+vous pouvez la transformer en une branche! 
+<code>git stash branch nomBranche nomStash</code> 
+Et git vous connecte automatiquement à cette nouvelle branche! 
+Git stash est une commande très puissante avec laquelle on peut faire énormément de choses. 
+Je vous conseille d’aller lire le man (man git-stash ou git help stash)  pour voir les autres possibilités. 
+D’ailleurs, je vous conseille d’aller consulter le man pour toutes les autres fonctionnalités de git. On y rencontre 
+des astuces qu’on ne voit pas souvent dans les tutos. </p>
+
+<p>Vous le savez git est vraiment puissant. Il permet de ne plus perdre des heures à chercher des fichiers ou des dossiers. 
+Et ainsi se concentrer sur l’essentiel! 
+Mais git peut aussi être fun. J’entends par là, personnaliser les commandes, la coloration de git et bien d’autres 
+qui feront l’objet d’un article! :D </p>
+
+  <a href="https://twitter.com/intent/tweet?url=http://soulesidibe.github.io/2012/12/16/Git-La-suite/&text=Git:La suite&via=soulesidibe" class="twitter-share-button" >Tweet</a>
+<!-- Place this tag where you want the share button to render. -->
+<div class="g-plus" data-action="share"></div>
+<div class="fb-like" data-href="http://soulesidibe.github.io/2012/12/16/Git-La-suite/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<!-- Place this tag after the last share tag. -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+ var js, fjs = d.getElementsByTagName(s)[0];
+ if (d.getElementById(id)) return;
+ js = d.createElement(s); js.id = id;
+ js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1&appId=300028946818970";
+ fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2014/04/04/Les-builds-flavors/">
+            Les builds flavors
+            <small>04 Apr 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2013/11/10/Linjection-de-dependances-roboguice/">
+            L’injection de dépendances:roboguice
+            <small>10 Nov 2013</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2013/11/01/Nexus-5-Android-kitkat-et-Android-Studio-0-3-2/">
+            Nexus 5, Android kitkat et Android Studio 0.3.2
+            <small>01 Nov 2013</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+        <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'soulesidibe'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+      <div class="footer">
+        <p>
+          &copy; 2014. All rights reserved.
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>

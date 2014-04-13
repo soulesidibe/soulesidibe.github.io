@@ -4,13 +4,92 @@
  <title>Soulesidibe</title>
  <link href="http://soulesidibe.github.io/atom.xml" rel="self"/>
  <link href="http://soulesidibe.github.io/"/>
- <updated>2014-03-30T21:07:46+00:00</updated>
+ <updated>2014-04-13T00:37:13+00:00</updated>
  <id>http://soulesidibe.github.io</id>
  <author>
    <name>Souleymane Sidibe</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>I'm a podcast addict!</title>
+   <link href="http://soulesidibe.github.io/2014/04/13/Im-a-podcast-addict/"/>
+   <updated>2014-04-13T00:00:00+00:00</updated>
+   <id>http://soulesidibe.github.io/2014/04/13/Im-a-podcast-addict</id>
+   <content type="html">&lt;p&gt;Depuis que j&amp;#39;ai découvert ce concept(en fin 2012) je ne peux plus m&amp;#39;en passer!
+C&amp;#39;est un outil génial qui me permet d&amp;#39;être informé sans founir d&amp;#39;effort. Juste écouter!&lt;/p&gt;
+
+&lt;p&gt;Alors pour ceux qui ne saurait pas c&amp;#39;est quoi, c&amp;#39;est tout juste un fichier, en général au format audio ou vidéo, diffusé par un tiers et surtout téléchargeable en s&amp;#39;abonnant à un flux rss.  &lt;/p&gt;
+
+&lt;p&gt;Je ne suis pas la pour vous faire un cours sur le &lt;a href=&quot;http://en.wikipedia.org/wiki/Podcast&quot;&gt;podcasting&lt;/a&gt; mais plutôt de partager mes podcasts préférés 
+en tant qu&amp;#39;amoureux de la tech!&lt;/p&gt;
+
+&lt;h2&gt;Les podcasts tech francais&lt;/h2&gt;
+
+&lt;p&gt;La france regorge de trés grands podcasteurs dont certains que j&amp;#39;écoute toutes les semaines ou à chaque nouvel épisode.&lt;/p&gt;
+
+&lt;h4&gt;La famille &lt;a href=&quot;http://nipcast.com&quot;&gt;nipcast&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;em&gt;Nipcast&lt;/em&gt; est un ensemble de podcast couvrant pas mal de domaines. La plus part tres orientée tech. 
+Mes préférés: &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://nipcast.com/category/nipdev/&quot;&gt;NipDev&lt;/a&gt; est un podcast orienté dev. On y discute de sujets spécifiques de la programation(les tests, les API rest, etc). De temps en temps des specialistes de leur domaine sont invités pour partager, informer. J&amp;#39;ai bien aimé le &lt;a href=&quot;http://nipcast.com/nipdev-15-tout-savoir-sur-amazon-web-services-avec-sebastien-stormacq/&quot;&gt;nipdev&lt;/a&gt; 15 avec &lt;a href=&quot;https://twitter.com/sebsto&quot;&gt;Sebastien Stormacq&lt;/a&gt; qui est venu parler de l&amp;#39;univers des services d&amp;#39;amazon pour les développeurs, les startups, les entreprises. &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.niptech.com/podcast/category/niptech/&quot;&gt;Niptech&lt;/a&gt; est le podcast pour être au courant de tout ce qui se passe dans le monde de la tech et des startups partout dans le monde particuliérement en Europe et aux USA (Sillicon Valley). Franchement pas besoin de s&amp;#39;abonner à des dizaines de sites d&amp;#39;informations et perdre du temps à les lire ou à les empiler sur &lt;a href=&quot;getpocket.com&quot;&gt;Pocket&lt;/a&gt;. Toute l&amp;#39;information qui a marqué la semaine sera traitée par des podcasteurs avertis et la plus part travaillant dans le monde de la tech. &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;D&amp;#39;autres podcast sont aussi de cette famille. Dont NipLife(qui parle de lifeHacking) que je suis beaucoup et de temps en temps NipSale(qui parle de la vente).&lt;/p&gt;
+
+&lt;h4&gt;&lt;a href=&quot;http://frenchspin.com/category/le-rdv-tech/&quot;&gt;Le rendez-vous Tech&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Le RVT est un plus orienté news tech par rapport à niptech. C&amp;#39;est un exellent podcast pour ne rater aucune information dans cette univers des produits qui font le buzz, de la Sillicon Valley. etc.
+Il est édité par &lt;a href=&quot;http://patrickbeja.com/&quot;&gt;Patrick&lt;/a&gt;. Un des plus célèbres podcasteurs de France. Il est aussi derrière &lt;a href=&quot;&quot;&gt;AppLoad&lt;/a&gt; un autre podcast qui donne des conseilles d&amp;#39;apps à tester sous Android, IOS et de temps en temps windows phone.&lt;/p&gt;
+
+&lt;h4&gt;&lt;a href=&quot;http://lescastcodeurs.com/&quot;&gt;Les cast codeurs&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Si tu es développeur java, java ee, android ou tout simplement n&amp;#39;importe quel language de la JVM, tu es 
+servi! On y parle des news dans le monde java (LCC 99 sujet: sortie de java 8!) mais aussi comme dans nipdev, de temps en temps des stars du dev sont invites. Je me rappelle encore du &lt;a href=&quot;http://lescastcodeurs.com/2009/08/26/les-cast-codeurs-podcast-episode-8-interview-de-romain-guy-sur-google-android/&quot;&gt;LCC 8&lt;/a&gt; ou on avait invité Romain Guy.L&amp;#39;un des développeurs les plus influants du monde android. Un podcast a écouter! Il date de 2009. C&amp;#39;est assez drole de voir que le systéme a beaucoup évolué et surtout trés vite!&lt;/p&gt;
+
+&lt;h2&gt;Les podcasts tech us&lt;/h2&gt;
+
+&lt;p&gt;Les podcast us sont tout aussi nombreux, voir plus, que ceux francais. Il y en a pour tous les goûts.
+Et surtout des podcasts specialisés.&lt;/p&gt;
+
+&lt;h4&gt;&lt;a href=&quot;http://androidbackstage.blogspot.com/&quot;&gt;Android Developers Backstage&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Le podcast pour les développeurs android et par les concepteurs d&amp;#39;android! On ne peut pas rêver de mieux.
+La publication n&amp;#39;est pas constante mais on a des informations pointues venant de ceux mêmes qui les ont mises en place. J&amp;#39;ai bien aimé l&amp;#39;episode 4 sur les Google Play Services.&lt;/p&gt;
+
+&lt;h4&gt;&lt;a href=&quot;http://www.androidpolice.com/tags/android-police-podcast/&quot;&gt;Android Police Podcast&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;Si vous êtes intéressés par android vous connaissez forcément le site &lt;a href=&quot;http://www.androidpolice.com/&quot;&gt;Android Police&lt;/a&gt;. Ils ont un podcast et chaque semaine l&amp;#39;information autour d&amp;#39;android(les apps, les release d&amp;#39;android, les nouveaux devices, etc.) est traité pour notre plus grand bonheur :).&lt;/p&gt;
+
+&lt;h4&gt;&lt;a href=&quot;http://twit.tv/show/this-week-in-tech/452&quot;&gt;Twit&lt;/a&gt; et &lt;a href=&quot;http://twit.tv/show/this-week-in-google/244&quot;&gt;Twig&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;TWIT pour This Week In Tech et Twig (In Google). Je peux dire que c&amp;#39;est le meilleur podcast pour être
+informé sur l&amp;#39;actu tech aux USA. On vous dit tout! Ce sont des épisodes qui peuvent aller jusqu&amp;#39;à 2h de temps. Je peux l&amp;#39;écouter sur plusieurs jours. J&amp;#39;aime bien la rubrique Google changeLog dans TWIG. On y parle des changements qui ont été apportés sur les services Google.&lt;/p&gt;
+
+&lt;h4&gt;Les autres&lt;/h4&gt;
+
+&lt;p&gt;Il y a vraiment beaucoup de trés bon podcast us. mais bon on ne peut pas tout écouter aussi. Pas par manque de temps mais du fait que c&amp;#39;est la même information qui revient dans chacun des podcasts.
+Je peux donc rajouter à cette liste &lt;a href=&quot;http://www.theverge.com/video/the-vergecast&quot;&gt;The VergeCast&lt;/a&gt;, &lt;a href=&quot;http://autocomplete.fm/&quot;&gt;AutoComplete&lt;/a&gt;, etc.&lt;/p&gt;
+
+&lt;h2&gt;Le PodCast Sénégalais!&lt;/h2&gt;
+
+&lt;p&gt;Ce n&amp;#39;est pas une erreur. Nous aussi, on a notre podcast! Bon il n&amp;#39;est pas au niveau des autres mais je suis super content de cette initiative de &lt;a href=&quot;https://plus.google.com/+L%C3%A9gerDjiba&quot;&gt;Leger Djiba&lt;/a&gt;. Il s&amp;#39;agit de &lt;a href=&quot;http://www.mixcloud.com/gateway4africa/&quot;&gt;Gateway4Africa&lt;/a&gt;.&lt;br&gt;
+On y parle de l&amp;#39;actu tech au Sénégal mais aussi en Afrique. On parle aussi des efforts que nous devont faire pour être la premiére nation en Afrique en terme de nouvelle technologie. Et on en a vraiment les capacités.
+Bonne continuation!&lt;/p&gt;
+
+&lt;h2&gt;Les outils&lt;/h2&gt;
+
+&lt;p&gt;Pour écouter ces podcasts, les télécharger, les rangers, planifier, supprimer les anciens épisodes, verrouiller des épisodes qu&amp;#39;on aimerait écouter encore, il nous faut bien des apps. 
+Côte mobile, pour moi les deux meilleures apps mobiles sont &lt;a href=&quot;http://www.beyondpod.com/Android/&quot;&gt;BeyondPod&lt;/a&gt; et &lt;a href=&quot;http://www.shiftyjelly.com/pocketcasts&quot;&gt;PocketCast&lt;/a&gt;. BeyondPod a une version free mais les versions payantes de ces deux apps offrent beaucoup plus de fonctionnalités.
+Cote desktop, étant sous Ubuntu 13.10, je n&amp;#39;ai pas trouvé l&amp;#39;application qui me convient.&lt;/p&gt;
+
+&lt;p&gt;Je vous conseille vivement de vous mettre aux podcasts. C&amp;#39;est une façon assez efficace de s&amp;#39;informer, d&amp;#39;être au courant. Perso j&amp;#39;utilise de moins en moins feedly et ça me fait gagner beaucoup de temps!&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>L’injection de dépendances:roboguice</title>
@@ -25,12 +104,14 @@ Pour vous donner un exemple de ce qu’on peut faire avec, on a l’habitude de 
 une view: &lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;findViewById&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;button&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Avec de l’injection de dépendances on aura qu’à faire ceci: &lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@InjectView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;button&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;button&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Pas mal non? :D 
 Donc comme je l’ai dit ça va grandement simplifier notre code java.&lt;/p&gt;
@@ -84,7 +165,8 @@ Je suppose que vous êtes prêt  donc allons-y! &lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;groovy&quot;&gt;&lt;span class=&quot;n&quot;&gt;dependencies&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;compile&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;org.roboguice:roboguice:2.0&amp;#39;&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Dans votre activity, vous devez hériter de RoboActivity à la place de Activity. Jettez un coup d’oeil 
 dans le package &lt;strong&gt;roboguice.activity&lt;/strong&gt; pour voir un peu les types d’activity disponibles.&lt;/p&gt;
@@ -129,7 +211,8 @@ et un Button de connexion: &lt;/p&gt;
             &lt;span class=&quot;na&quot;&gt;android:layout_alignParentRight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;true&amp;quot;&lt;/span&gt;
             &lt;span class=&quot;na&quot;&gt;android:layout_alignParentLeft=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;true&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/RelativeLayout&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Ma class MainActivity.java: &lt;/p&gt;
 
@@ -159,8 +242,8 @@ et un Button de connexion: &lt;/p&gt;
         &lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;
    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
- 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;That’s it! C’est super simple à utiliser. Il ne faut juste pas oublier qu’on utilise &lt;strong&gt;RoboActivity&lt;/strong&gt; 
 à la place de Activity! Sinon, on se retouve avec des java.lang.NullPointerException!
@@ -190,8 +273,8 @@ que ce code ci-dessus est plus facile à lire et à maintenir que si on devait f
         &lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;
     &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
- 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Vous êtes convaincus? Non? Bon voici quelques exemples d’applications utilisant Roboguice:&lt;/p&gt;
 
@@ -236,7 +319,8 @@ Un truc sympa avec android annotation, supposons qu’on ait une vue avec comme 
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@ViewById&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;ListView&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;signin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Pas besoin de lui spécifier l’id comme avec Roboguice. Il fera le mapping avec R.id.signin tout seul :).&lt;/p&gt;
 
@@ -335,7 +419,8 @@ Plus besoin d’importer des librairies à en plus finir! Un exemple d’ajout d
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;groovy&quot;&gt;&lt;span class=&quot;n&quot;&gt;dependencies&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
    &lt;span class=&quot;n&quot;&gt;compile&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;com.crashlytics.android:crashlytics:1.+&amp;#39;&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Donc comme on le voit pour utiliser crashlytics c’est speed. Gradle se chargera de récupérer les fichiers qu’il faut et de les mettre dans le build path.&lt;/p&gt;
 
@@ -420,7 +505,8 @@ settings.gradle: &lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;groovy&quot;&gt;&lt;span class=&quot;n&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;:pull_to_refresh&amp;#39;&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;:ABS&amp;#39;&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;:KillerApp&amp;#39;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Donc on comprends que c’est dans ce fichier qu’on déclare les modules à inclure dans le build.
 Le build lui même est configuré dans le fichier du même nom, build.gradle: &lt;/p&gt;
@@ -433,7 +519,8 @@ Le build lui même est configuré dans le fichier du même nom, build.gradle: &l
         &lt;span class=&quot;n&quot;&gt;classpath&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;com.android.tools.build:gradle:0.5.+&amp;#39;&lt;/span&gt;
     &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Il est assez simple comme fichier. La raison de cette simplicité est que la tendance est à avoir une convention de base dans la façon de construire un apk. Ce que l’on rajoute dans le fichier de configuration ce sont les informations qui font que le projet est spécifique. À savoir, les dépendances, l’emplacement de certains dossiers sources, etc. 
 Ici, une dépendance au plugin android pour gradle en version 0.5 au moins. &lt;/p&gt;
@@ -455,7 +542,8 @@ Ici, une dépendance au plugin android pour gradle en version 0.5 au moins. &lt;
     &lt;span class=&quot;n&quot;&gt;ext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;minSdkVersion&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;ext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;targetSdkVersion&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Passons aux dépendances du module ActionBarSherlock. Il a besoin de la librairie android support-v4. Il y a deux façons de procéder: &lt;/p&gt;
 
@@ -467,7 +555,8 @@ Ici, une dépendance au plugin android pour gradle en version 0.5 au moins. &lt;
         &lt;span class=&quot;n&quot;&gt;compile&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;fileTree&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;dir:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;libs&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;include:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;*.jar&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
     &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
     
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;ul&gt;
 &lt;li&gt;soit on utilise la pleine puissance de maven pour qu’il nous gére nos dépendances sans qu’on n’ait à se préoccuper des fichiers jars. Dans ce cas il suffira de rajouter ces quelques lignes: &lt;/li&gt;
@@ -480,7 +569,8 @@ Ici, une dépendance au plugin android pour gradle en version 0.5 au moins. &lt;
         &lt;span class=&quot;n&quot;&gt;compile&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;com.android.support:support-v4:18.0.0&amp;#39;&lt;/span&gt;
     &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
     
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Ainsi, on peut se débarrasser du dossier libs. gradle se chargera d’aller chercher le bon fichier jar et de l’inclure au classpath de notre projet.&lt;/p&gt;
 
@@ -489,13 +579,15 @@ Il ne faudra pas oublier de remplacer ceci: &lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;groovy&quot;&gt;&lt;span class=&quot;n&quot;&gt;compileSdkVersion&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;14&lt;/span&gt;    
 &lt;span class=&quot;n&quot;&gt;buildToolsVersion&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;18.0.1&amp;quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;par:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;groovy&quot;&gt;&lt;span class=&quot;n&quot;&gt;compileSdkVersion&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rootProject&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;compileSdkVersion&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;buildToolsVersion&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rootProject&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;buildToolsVersion&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;dans tous les modules du projet.
 Pour rappel, on avait dit que certains paramètres devront être les mêmes pour tous les modules du projet par souci de cohérence. &lt;/p&gt;
@@ -514,7 +606,8 @@ Pour rappel, on avait dit que certains paramètres devront être les mêmes pour
     &lt;span class=&quot;n&quot;&gt;compile&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;project&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;:ABS&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;compile&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;project&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;:pull_to_refresh&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;On lui spécifie qu’il aura besoin du support-v4 et des librairies ABS et pull&lt;em&gt;to&lt;/em&gt;refresh présentes à la racine.
 On y est! Tout a été configuré, maintenant il suffit de faire un  build pour voir que tout compile comme il faut! &lt;/p&gt;
@@ -648,8 +741,8 @@ C’est très simple à faire: &lt;/li&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;git co master
 git merge newFeature
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
- 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;D’abord on se positionne sur la branche master (co= checkout, je ferai un article sur les raccourcis git et comment en rajouter) 
 puis on fait un merge en donnant en paramètre le nom de la branche que l’on doit merger (l’auto-complétion marche pour les branches). 
@@ -665,8 +758,8 @@ située au niveau du serveur. &lt;/li&gt;
 &lt;p&gt;Pour récupérer une branche distante: &lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;git co --track origin/newFeature
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
- 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;La on aura une nouvelle branche newFeature et on sera en même temps connecter deçu. 
 Avant de pousser sur la branche distante il faut toujours récupérer les derniers changements au cas où il y en a; 
@@ -674,7 +767,8 @@ puis faire son push:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;git pull
 git push
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Lors du pull, il est possible que git vous sort votre éditeur par défaut(vim, gedit, ou autre). C’est dans le cas où la branche 
 de suivi et la branche distante diverge(en plus simple, ne sont plus identiques). Donc git fait un merge des deux. 
@@ -685,13 +779,14 @@ Il suffit de pousser la branche! &lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;git branch nouvelleBranche
 git push origin nouvelleBranche
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
- 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;De même si on veut en supprimer une:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;git push origin :nouvelleBranche
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Le &amp;quot;:&amp;quot; suffit pour supprimer la branche distante! Mais elle sera toujours présente en local.&lt;/p&gt;
 
@@ -776,13 +871,15 @@ grandement les échanges entres les différentes entités. &lt;/p&gt;
 de type URL qui va contenir l’adresse de la ressource ou tout simplement le lien du service: &lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;URL&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;URL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;http://chemin/vers/service&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;On ouvre une connexion&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;URLConnection&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;connection&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;openConnection&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;HttpURLConnection&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;httpConnection&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HttpURLConnection&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;connection&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Récupération du code de retour. Vu qu’on est en HTTP. Si tout c’est bien passé on doit recevoir le code 200 (ici HttpURLConnection.HTTP_OK) et enfin récupérer notre flux:&lt;/p&gt;
 
@@ -790,7 +887,8 @@ de type URL qui va contenir l’adresse de la ressource ou tout simplement le li
 &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;responseCode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HttpURLConnection&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;HTTP_OK&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
    &lt;span class=&quot;n&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;httpConnection&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getInputStream&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;A ce stade nous avons un objet de type InputStream qui contient les informations que le serveur a renvoyé.&lt;/p&gt;
 
@@ -814,8 +912,8 @@ rencontré. Voici un exemple de xml que l’on peut recevoir: &lt;/p&gt;
       &lt;span class=&quot;nt&quot;&gt;&amp;lt;age&amp;gt;&lt;/span&gt;25&lt;span class=&quot;nt&quot;&gt;&amp;lt;/age&amp;gt;&lt;/span&gt;
    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/personne&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/personnes&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
- 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;On aura besoin d’un objet String pour contenir la valeur d’un tag à chaque passage., un objet qui va nous 
 fournir un parseur qui aura les paramètres indiqués( ici le support des espaces de noms, voir doc de &lt;strong&gt;XmlPullParserFactory&lt;/strong&gt;), 
@@ -826,8 +924,8 @@ Et enfin générer notre parseur et lui spécifier l’objet InputStream avec le
 &lt;span class=&quot;n&quot;&gt;factory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setNamespaceAware&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;XmlPullParser&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xpp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;factory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;newPullParser&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;xpp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setInput&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
- 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Voici un morceau de code tiré de la doc officiel qu’on peut utiliser pour extraire les informations du InputStream: &lt;/p&gt;
 
@@ -852,8 +950,8 @@ Et enfin générer notre parseur et lui spécifier l’objet InputStream avec le
    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
    &lt;span class=&quot;n&quot;&gt;eventType&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xpp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
- 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Une petite astuce que vous avez surement remarqué, en début de tag on récupére les attributs du tag, en fin de 
 tag on récupère la valeur pour ce tag. 
@@ -880,8 +978,8 @@ pour faire le job: &lt;strong&gt;org.json.&lt;/strong&gt;* .Elles sont très sim
       &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
    &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
- 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Le code pour récupérer les informations ci-dessus: &lt;/p&gt;
 
@@ -904,8 +1002,8 @@ pour faire le job: &lt;strong&gt;org.json.&lt;/strong&gt;* .Elles sont très sim
 &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++){&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;nom&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getJSONObject&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;nom&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
- 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Un cas concret de manipulation du json sur &lt;a href=&quot;https://github.com/soulesidibe/JsonParserExemple&quot;&gt;github&lt;/a&gt;. &lt;/p&gt;
 
@@ -998,8 +1096,8 @@ Si le dépôt n’existe pas en l’initialise.&lt;/p&gt;
 git init &lt;span class=&quot;c&quot;&gt;#pour initialiser un nouveau dépôt.&lt;/span&gt;
 git add fichier.java &lt;span class=&quot;c&quot;&gt;#pour dire à git de suivre le fichier fichier.java&lt;/span&gt;
 git add . &lt;span class=&quot;c&quot;&gt;#si on veut ajouter tous les fichiers du nouveau dépôt (même ceux des sous dossiers).&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
- 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Il y a souvent des fichiers qui ne doivent pas être suivis. c’est le cas des fichiers .class, certains 
 fichiers de configuration. Pour ne pas que le système nous répéte après chaque &lt;code&gt;git st&lt;/code&gt;(statut) 
