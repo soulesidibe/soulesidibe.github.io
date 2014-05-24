@@ -3,17 +3,15 @@ layout: page
 title: About
 ---
 
-Salut moi c’est soulesidibe. 
+Salut moi c’est Souleymane Sidibé. Je suis tombé sur Android en 2011 et depuis je me défini comme étant  un développeur android! 
 
-Je suis un passionné des technologies. 
+Pour moi un bon développeur est avant tout un consommateur d'Android. Il a un smartphone android, il installe des apps sur le playstore. Il en achète quand celles-ci lui rendent servir et sont bien designées. Il vit dans se monde d'apps qui influence ces choix dans ces dévelopements. 
 
-En pro, je suis un développeur android! Pour moi un bon développeur a de bons outils et essaye de respecter au max possible les guidelines. 
-j’aime aller à la découverte de ces outils qui rendent beaucoup plus productif et efficace!
+Un développeur(pas que d'android) maitrise son environement de dev et a de bons outils. Mais surtout,  il essaye de respecter au max possible les guidelines de sa plateforme.  
+j’aime aller à la découverte de ces outils qui rendent beaucoup plus productifs et efficaces!
 
-Ce blog sera dedié aux tools que j'utilise au quotidien. 
-J'essaierai aussi de partager des **tips** que je trouve utils à connaitre.
-Je suis enormément l'actualité tech. De temps en temps, je donnerai mon avis sur les évènements marquants du moments.
+Le blogging est, pour moi la meilleur façon d'apprendre de nouvelles choses et de partager avec une communaute de passionnés.
 
-Pour me contacter c’est assez simple! Sur twitter c’est **@soulesidibe** et sur google Plus **+SouleymaneSidibe.**
+Pour me contacter c’est assez simple! Je suis  sur twitter **[@soulesidibe](https://twitter.com/soulesidibe)** et sur google Plus **[+SouleymaneSidibe](https://plus.google.com/u/0/+souleymanesidibe).**. 
 
 Thanks for reading!
