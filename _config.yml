@@ -7,9 +7,10 @@ permalink:        pretty
 
 # Setup
 title:            Soulesidibe
-tagline:          'android, developer, mobile, startup, tech, news, webs'
+tagline:          'android development, mobile, startup, tech, news, webs'
 description:      'An android enthusiast'
 url:              http://soulesidibe.github.io
+
 
 author:
   name:           'Souleymane Sidibe'
@@ -24,6 +25,5 @@ github:
   repo:           https://github.com/poole/poole
 
 pages_list:       
-  About: '/about'
-  Archive: '/archive'
+  Blog: '/blog.md'
   Feed: '/atom.xml'
