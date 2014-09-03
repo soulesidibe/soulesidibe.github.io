@@ -25,5 +25,5 @@ github:
   repo:           https://github.com/poole/poole
 
 pages_list:       
-  Blog: '/blog.md'
+  Blog: '/blog'
   Feed: '/atom.xml'
