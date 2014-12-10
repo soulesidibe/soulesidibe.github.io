@@ -3,7 +3,7 @@ layout: ind
 title: Home
 ---
 
-Salut moi c’est Souleymane Sidibé. Je suis tombé sur Android en 2011 et depuis je me défini comme étant  un développeur android! 
+Salut moi c’est Souleymane Sidibé. Je suis tombé sur Android en 2011 et depuis je me définis comme étant  un développeur android! 
 
 Pour moi un bon développeur est avant tout un consommateur d'Android. Il a un smartphone android, il installe des apps sur le playstore. Il en achète quand celles-ci lui rendent servir et sont bien designées. Il vit dans ce monde d'apps qui influence ces choix dans ces dévelopements. 
 
