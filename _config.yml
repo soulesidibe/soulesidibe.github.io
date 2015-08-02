@@ -1,13 +1,13 @@
 # Dependencies
 markdown:         redcarpet
-pygments:         true
+highlighter:         true
 
 # Permalinks
 permalink:        pretty
 
 # Setup
 title:            Soulesidibe
-tagline:          'android development, mobile, startup, tech, news, webs'
+tagline:          'android development, backend, Play!, mobile, startup, tech, news, web'
 description:      'An android enthusiast'
 url:              http://soulesidibe.github.io
 
@@ -16,7 +16,7 @@ author:
   name:           'Souleymane Sidibe'
   url:            https://twitter.com/soulesidibe
 
-paginate:         1
+#paginate:         1
 
 # Custom vars
 version:          1.0.0
@@ -25,5 +25,5 @@ github:
   repo:           https://github.com/poole/poole
 
 pages_list:       
-  Blog: '/blog'
+  About: '/about'
   Feed: '/atom.xml'
