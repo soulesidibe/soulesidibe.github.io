@@ -4,6 +4,8 @@ title: Android 6.0 Marshmallow est la! (Part 1)
 ---
 
 ![android 6.0](/assets/marshmallow.jpg)
+
+
 L'équipe Android a annoncé il y a quelques jours le nom de la prochaine version. On savait que le nom commencerait par __M__. Mais la c'est dit. Let me introduce you __Marshmallow__! Pour l'occasion on passe à __android 6.0 API version 23__. Donc vous savez ce que vous avec à faire dès maintenant:
 
 {% highlight groovy %}
