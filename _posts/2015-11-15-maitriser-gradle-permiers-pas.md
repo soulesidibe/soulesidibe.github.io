@@ -58,7 +58,10 @@ Pour veririfier que tout va bien: `gradle --version`
 
 Voici un exemple de fichier `build.gradle` provenant d'un projet android: 
 
+<<<<<<< HEAD
 ``` gradle
+=======
+>>>>>>> d323f4db034efb5a688aa9a1ff68d3638077fee9
 
 	apply plugin: 'com.android.application'
 	
@@ -78,7 +81,6 @@ Voici un exemple de fichier `build.gradle` provenant d'un projet android:
 		}
 	}
 
-```
 
 Il a un format similaire à celui du `json`. En fait, cela est du au language groovy qui permet d'écrire du code qui est facile à lire et à comprendre.  
 Mais surtout à cause de ce qu'on appelle la DSL (Domain Specific Language) qui est un langage au dessus de Groovy qui en fonction du plugin qui est appliqué nous donne accès à un ensemble de fonctionnalités qui nous permet de décrire notre build. Ici avec le plugin `com.android.application` on a accès au mots cle `android`, `task`. Pour un autre plugin on n'aura pas acccès aux mêmes fonctionnalités. 
