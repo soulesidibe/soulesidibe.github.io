@@ -58,7 +58,7 @@ Pour veririfier que tout va bien: `gradle --version`
 
 Voici un exemple de fichier `build.gradle` provenant d'un projet android: 
 
-```
+
 	apply plugin: 'com.android.application'
 	
 	android {
@@ -77,7 +77,6 @@ Voici un exemple de fichier `build.gradle` provenant d'un projet android:
 		}
 	}
 
-```
 
 Il a un format similaire à celui du `json`. En fait, cela est du au language groovy qui permet d'écrire du code qui est facile à lire et à comprendre.  
 Mais surtout à cause de ce qu'on appelle la DSL (Domain Specific Language) qui est un langage au dessus de Groovy qui en fonction du plugin qui est appliqué nous donne accès à un ensemble de fonctionnalités qui nous permet de décrire notre build. Ici avec le plugin `com.android.application` on a accès au mots cle `android`, `task`. Pour un autre plugin on n'aura pas acccès aux mêmes fonctionnalités. 
@@ -98,7 +97,6 @@ Gradle nous offre différente façon de créer une tache dans notre fichier buil
 * Encore mieux Gradle comprend aussi `task myTask`. Ce qui n'est pas du code groovy valide vu que `myTask` n'a pas étè déclaré. Ceci est du a ce qu'ils appellent [AST Transformations](http://groovy-lang.org/metaprogramming.html#_compile_time_metaprogramming) qui permet à la compilation de générer du code ce qui permet de reduire le code inutile et de rendre encore plus comprehensible le fichier de build.
 * la facon la plus répandue de créer une tache est la suivance :
 	
-	```
 		task myTask {
 			//Donnons une description a notre tache
 			description "My first task"
@@ -117,7 +115,7 @@ Gradle nous offre différente façon de créer une tache dans notre fichier buil
 			}
 		}
 		
-	```
+
 	Pour une tache simple, on peut utiliser une syntaxe reduit `task myTask << { println "Hello"}`. Et le closure sera executer en dernier comme un `doLast`
 	
 Pour executer une tache on utilise la commande `gradle` suivit du nom de la tache  
@@ -127,7 +125,7 @@ Pour executer une tache on utilise la commande `gradle` suivit du nom de la tach
   
   Gradle nous donne la possibilité de configurer les dépendances des tâches que nous créons. Entre elles ou par rapport aux tâches disponibles. La commande `dependsOn` nous permet de déclarer une ou plusieurs dépendances pour une tâche:
   
-  ```
+  
   task putOnSocks {
   	doLast {
    		println "Putting on Socks."
@@ -141,7 +139,7 @@ Pour executer une tache on utilise la commande `gradle` suivit du nom de la tach
     }
   }
   
-  ```
+  
 Ici `putOnShoes`, pour s'executer, va dépendre de `putOnSocks`. Autrement dit `putOnSocks` sera s'executera en premier. Quand une tâche dépend de plusieurs autres taches, on passe a dependsOn une liste: `dependsOn = ["taskA", "taskB", "taskC"]`.
   
 Dès lors qu'une tâche peut dépendre de plusieurs autres tâches, l'ordre d'execution de ces tâches peut devenir important. Gradle nous permet de gérer l'ordre grace aux commandes suivantes:  
