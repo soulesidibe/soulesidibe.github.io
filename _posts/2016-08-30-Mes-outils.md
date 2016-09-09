@@ -26,7 +26,7 @@ Je ne présenterai que des applications mac(yes mac is best). La majorité d’e
 **[Sublime Text](https://www.sublimetext.com/)** est pour moi le meilleur éditeur de text du moment. Les fonctionnalités que j’utilise le plus sont la recherche de text dans un fichier ou un dossier et le fait de ne pas avoir a enregister un fichier même après fermeture de l’éditeur. Il est aussi extrêmement personnalisable avec un system de plugin.  
 **[Vim](http://stackoverflow.com/questions/21012203/how-can-i-install-macvim-on-os-x)** est l’un des premiers outils que je cherche à installer sur mon poste ou sur un serveur.  Quand on prend le temps de l’étudier, on se rend compte qu’il est tout aussi puissant.
 
-Atom de chez facebook semble prometteur mais je n'ai pas eu le temps de l'utiliser.
+Atom de chez Github semble prometteur mais je n'ai pas eu le temps de l'utiliser.
 
 ###Terminal
 
